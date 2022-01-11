@@ -38,13 +38,13 @@ require_once get_stylesheet_directory() . '/lib/customize.php';
 require_once get_stylesheet_directory() . '/lib/output.php';
 
 // Adds WooCommerce support.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
+// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
 
 // Adds the required WooCommerce styles and Customizer CSS.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
+// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
 
 // Adds the Genesis Connect WooCommerce notice.
-require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
+// require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
 /**
@@ -263,4 +263,95 @@ function genesis_sample_comments_gravatar( $args ) {
 	$args['avatar_size'] = 60;
 	return $args;
 
+}
+
+/**
+ * Load Ser Madre core scripts
+ *
+ * @since 3.4.1
+ *
+ */
+add_action('wp_enqueue_scripts', 'ser_madre_theme_core_scripts');
+
+function ser_madre_theme_core_scripts() {
+	wp_register_script( 'tailwind-css', "https://cdn.tailwindcss.com", [], '3.0.12', true );
+	wp_register_script( 'fontawesome', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/js/all.min.js", [], '5.15.4', true );
+	wp_register_script( 'serma-core', get_stylesheet_directory_uri() . "/assets/js/serma-core.js", [], '1.0.0', true );
+	
+	wp_enqueue_script( 'tailwind-css' );
+	wp_enqueue_script( 'fontawesome' );
+	wp_enqueue_script( 'serma-core' );
+
+	wp_add_inline_script( 'tailwind-css', "
+	tailwind.config = {
+		variants: {
+			extend: {
+				// ...
+				display: ['hover', 'focus', 'group-hover'],
+			}
+		},
+		theme: {
+			extend: {
+				colors: {
+					primary: '#5FC2EC',
+					secondary: '#4D4D4D',
+					icon: '#8D8D8D',
+					text: '#6A6B7A',
+					'lighten-grey': '#F1F2F3',
+				}
+			},
+			fontFamily: {
+				'body': ['\"Inter\"']
+			},
+			fontSize: {
+				sm: ['14px', '20px'],
+				base: ['16px', '24px'],
+				lg: ['20px', '28px'],
+				xl: ['24px', '32px'],
+			}
+		},
+
+	}" );
+}
+
+add_action('wp_enqueue_scripts', 'ser_madre_theme_core_styles');
+
+function ser_madre_theme_core_styles() {
+	wp_register_style( 'fontawesome', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/css/fontawesome.min.css", '' ,'5.15.4', true );
+	wp_register_style( 'fontawesome-all', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/css/all.min.css", ['fontawesome'], '5.15.4', true );
+	wp_register_style( 'google-font-inter', "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap" );
+
+	wp_enqueue_style( 'fontawesome' );
+	wp_enqueue_style( 'fontawesome-all' );
+	wp_enqueue_style( 'google-font-inter' );
+
+
+}
+
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'serma_genesis_footer' );
+
+/**
+ * Ser Madre footer
+ *
+ * @since 3.4.1
+ *
+ * @return mixed Footer template
+ */
+
+function serma_genesis_footer () {
+	get_template_part( 'template-parts/layout/footer' );
+}
+
+remove_action( 'genesis_header', 'genesis_do_header' );
+add_action( 'genesis_header', 'serma_genesis_header' );
+
+function serma_genesis_header () {
+	get_template_part( 'template-parts/layout/header' );
+}
+
+//* TN Dequeue Styles - Remove Dashicons from Genesis Theme
+add_action( 'wp_print_styles', 'tn_dequeue_dashicons_style' );
+function tn_dequeue_dashicons_style() { 
+      wp_dequeue_style( 'dashicons' );
 }

@@ -8,3 +8,5 @@ vendor/
 process.yml
 *.zip
 *.*.json
+fontawesome-5.15.4
+*.code-workspace

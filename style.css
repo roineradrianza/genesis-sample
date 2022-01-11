@@ -1,8 +1,8 @@
 /*
-Theme Name: Genesis Sample
+Theme Name: Ser Madre Genesis Theme
 Theme URI: https://demo.studiopress.com/
-Description: This is the sample theme created for the Genesis Framework.
-Author: StudioPress
+Description: Tema desarrollado para Ser Madre bajo el framework de Genesis.
+Author: Ser Madre
 Author URI: https://www.studiopress.com/
 
 Version: 3.4.1
@@ -79,6 +79,15 @@ Requires PHP: 5.6
 - Print Styles
 */
 
+/* Global Vars
+---------------------------------------------------------------------------- */
+
+:root {
+	--main-color: #62cef9;
+	--text-color: #4D4D4D;
+	--heading-color: #2d3e48;
+	--purple-color: #585CE5;
+}
 
 /* HTML5 Reset
 ---------------------------------------------------------------------------- */
@@ -157,8 +166,8 @@ html {
 body {
 	background-color: #fff;
 	color: #333;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.625;
 	margin: 0;
@@ -177,7 +186,7 @@ textarea:focus,
 }
 
 a {
-	color: #0073e5;
+	color: var(--main-color);
 	text-decoration: underline;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
@@ -191,6 +200,7 @@ a:hover {
 p {
 	margin: 0 0 28px;
 	padding: 0;
+	color: var(--text-color);
 }
 
 ol,
@@ -201,6 +211,7 @@ ul {
 
 li {
 	list-style-type: none;
+	color: var(--text-color);
 }
 
 hr {
@@ -391,7 +402,6 @@ textarea {
 
 input:focus,
 textarea:focus {
-	border: 1px solid #999;
 	outline: none;
 }
 
@@ -431,7 +441,7 @@ input[type="submit"],
 	white-space: normal;
 	width: auto;
 }
-
+/*
 button:focus,
 button:hover,
 input[type="button"]:focus,
@@ -450,6 +460,7 @@ input[type="submit"]:hover,
 	border-width: 0;
 	color: #fff;
 }
+*/
 
 .entry-content .button:focus,
 .entry-content .button:hover {
@@ -988,8 +999,7 @@ figcaption,
 
 .site-header {
 	background-color: #fff;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-	padding: 0 30px;
+	/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
 }
 
 /* Title Area
@@ -1442,17 +1452,10 @@ p.entry-meta {
 
 .site-footer {
 	background-color: #fff;
-	border-top: 1px solid #eee;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.5;
 	padding: 30px;
-	text-align: center;
 }
-
-.site-footer p {
-	margin-bottom: 0;
-}
-
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
@@ -1470,13 +1473,6 @@ p.entry-meta {
 
 	/* Site Header
 	--------------------------------------------- */
-
-	.site-header {
-		position: -webkit-sticky;
-		position: sticky;
-		top: 0;
-		z-index: 9999;
-	}
 
 	.admin-bar .site-header {
 		top: 32px;
