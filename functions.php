@@ -298,16 +298,29 @@ function ser_madre_theme_core_scripts() {
 					icon: '#8D8D8D',
 					text: '#6A6B7A',
 					'lighten-grey': '#F1F2F3',
+					'purple-lighten': '#A28EEC',
+					'purple-darken': '#585CE5',
+					'green-lighten': '#4AC989',
+					'yellow-lighten': 'rgba(236, 172, 74, 0.25)',
 				}
 			},
 			fontFamily: {
 				'body': ['\"Inter\"']
 			},
 			fontSize: {
-				sm: ['14px', '20px'],
-				base: ['16px', '24px'],
-				lg: ['20px', '28px'],
-				xl: ['24px', '32px'],
+				'xs': '.75rem',
+				'sm': '.875rem',
+				'tiny': '.875rem',
+				'base': '1rem',
+				'lg': '1.125rem',
+				'xl': '1.25rem',
+				'2xl': '1.5rem',
+				'3xl': '1.875rem',
+				'4xl': '2.25rem',
+				'4-5xl': '2.50rem',
+				'5xl': '3rem',
+				'6xl': '4rem',
+				'7xl': '5rem',
 			}
 		},
 

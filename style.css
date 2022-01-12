@@ -595,7 +595,7 @@ th {
 .site-inner {
 	clear: both;
 	margin: 0 auto;
-	padding: 60px 30px 0;
+	padding: 0px;
 }
 
 
@@ -1457,8 +1457,27 @@ p.entry-meta {
 	padding: 30px;
 }
 
+
+/* Home Layout
+--------------------------------------------- */
+
+.footer-widget-area {
+	float: left;
+	margin-bottom: 0;
+	width: calc(100% / 3);
+}
+
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 479px) {
+
+	.serma-home-hero-container {
+		background-image: none !important;
+	}
+
+}
 
 @media only screen and (min-width: 480px) {
 
@@ -1565,7 +1584,8 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.site-inner {
-		max-width: 1140px;
+		max-width: 1920px;
+		padding: 60px 0px;
 	}
 
 	/* Content
@@ -1573,7 +1593,12 @@ p.entry-meta {
 
 	.content {
 		float: left;
-		width: 65%;
+		width: 100%;
+	}
+
+	.home-body .site-inner .content {
+		float: left;
+		width: 100%;
 	}
 
 	.sidebar-content .content {
