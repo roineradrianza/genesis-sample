@@ -3,7 +3,7 @@
         href="#primary"><?php esc_html_e('Skip to content', 'ser-madre-theme');?></a>
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="relative bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto px-4 md:px-0">
             <div class="flex justify-between items-center py-3 md:justify-start">
                 <div class="-mr-2 -my-2 md:hidden">
                     <button type="button"

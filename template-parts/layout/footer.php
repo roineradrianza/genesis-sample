@@ -1,4 +1,4 @@
-<div class="container mx-auto py-2 max-w-screen-xl sm:px-6">
+<div class="container mx-auto py-2 max-w-screen-xl px-4 md:px-0">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-14">
         <div>
             <div class="flex justify-center md:justify-start">
@@ -121,7 +121,7 @@
     <div class="grid grid-cols-1 border-b-2 border-gray-200" style="height: 2px">
     </div>
 </div>
-<div class="container mx-auto py-2 max-w-screen-xl sm:px-6">
+<div class="container mx-auto py-2 max-w-screen-xl">
     <div class="flex justify-center text-center md:text-right black-text font-semibold">
         Sermadre.com 2021 © Todos los derechos reservados
     </div>
