@@ -293,7 +293,7 @@ function ser_madre_theme_core_scripts() {
 		theme: {
 			extend: {
 				colors: {
-					primary: '#5FC2EC',
+					primary: '#62CEF9',
 					secondary: '#4D4D4D',
 					icon: '#8D8D8D',
 					text: '#6A6B7A',
@@ -302,6 +302,9 @@ function ser_madre_theme_core_scripts() {
 					'purple-darken': '#585CE5',
 					'green-lighten': '#4AC989',
 					'yellow-lighten': 'rgba(236, 172, 74, 0.25)',
+				},
+				margin: {
+					'n1': '-1px',
 				}
 			},
 			fontFamily: {
