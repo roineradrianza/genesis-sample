@@ -300,11 +300,18 @@ function ser_madre_theme_core_scripts() {
 					'lighten-grey': '#F1F2F3',
 					'purple-lighten': '#A28EEC',
 					'purple-darken': '#585CE5',
+					'purple-lighten-1': '#a28eec1a',
+					'purple-lighten-2': '#a28eec26',
+					'purple-lighten-3': '#a28eec40',
+					'purple-lighten-4': '#a28eec59',
 					'green-lighten': '#4AC989',
 					'yellow-lighten': 'rgba(236, 172, 74, 0.25)',
 				},
 				margin: {
 					'n1': '-1px',
+				},
+				borderRadius: {
+					'lg-2x': '1em'
 				}
 			},
 			fontFamily: {

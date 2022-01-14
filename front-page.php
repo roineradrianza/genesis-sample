@@ -32,6 +32,38 @@ function wphe_body_classes( $classes ) {
     return $classes;
 }
 
+add_action('wp_head', 'homepage_inline_css', 100);
+
+function homepage_inline_css()
+{
+ echo "
+    <style id='homepage_styles'>
+        .serma-home-hero-container {
+            background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/hero-bg.svg');
+        }
+
+        .serma-home-pregnancy-week-container {
+            background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/semanas-de-embarazo/section-bg.svg');
+            background-size: cover;
+        }
+
+        .serma-home-pregnancy-week-container .day-default {
+            background-image: url('".get_stylesheet_directory_uri()."/assets/icons/pregnancy-weeks/default.svg');
+            background-repeat: no-repeat;
+        }
+
+            .serma-home-pregnancy-week-container .day-default:hover {
+                background-image: url('".get_stylesheet_directory_uri()."/assets/icons/pregnancy-weeks/active.svg');
+            }
+
+        .pregnancy-image {
+            width: 164px;
+            height: 150px;
+        }
+    </style>
+ ";
+}
+
 add_filter( 'body_class', 'wphe_body_classes' );
 
 function my_custom_loop () {  

@@ -1,6 +1,6 @@
 <section class="container max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-7 md:px-14 bg-yellow-lighten rounded-lg serma-home-hero-container"
-        style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-bg.svg');">
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 px-7 md:px-14 bg-yellow-lighten rounded-lg serma-home-hero-container">
         <div class="py-7 md:py-14">
             <h1 class="text-center md:text-left text-4-5xl md:text-6xl font-bold text-purple-lighten">Estamos contigo
             </h1>
@@ -46,7 +46,8 @@
 
 </section>
 
-<section class="relative container max-w-7xl mx-auto px-2 md:px-4 md:px-0 py-8">
+<section class="relative container max-w-7xl mx-auto px-2 md:px-4 md:px-0 py-8"
+    style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/semanas-de-embarazo/section-bg.svg');">
     <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-6">Artículos médicos</h3>
     <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
         Contenidos sobre maternidad y embarazo
@@ -125,5 +126,22 @@
         <?php endforeach ?>
     </div>
 
+    </div>
+</section>
+
+
+<section
+    class="serma-home-pregnancy-week-container relative container max-w-full px-2 md:px-4 md:px-0 py-12 md:py-16 bg-purple-lighten-1">
+    <div class="relative container max-w-7xl mx-auto">
+        <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-4 md:mb-8">
+            Tu embarazo semana tras semana
+        </h2>
+        <h3 class="text-lg md:text-xl font-medium text-center mb-5 md:mb-10">
+            Conoce el desarrollo de tu bebé en
+            cada una de las etapas en la que te encuentres.
+        </h3>
+    </div>
+    <div class="relative container max-w-7xl px-2 md:px-4 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-visible">
+        <?=get_template_part('template-parts/home/pregnancy-weeks')?> 
     </div>
 </section>

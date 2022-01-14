@@ -1473,7 +1473,7 @@ p.entry-meta {
 
 @media only screen and (max-width: 479px) {
 
-	.serma-home-hero-container {
+	.serma-home-hero-container, .serma-home-pregnancy-week-container {
 		background-image: none !important;
 	}
 
