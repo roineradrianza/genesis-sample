@@ -16,7 +16,7 @@
                 +Únete a la comunidad
             </button>
         </div>
-        <!-- ... -->
+
         <div class="md:pt-3 pb-3">
             <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-image.png" alt="Estamos contigo">
             <div class="flex justify-center md:hidden">
@@ -29,18 +29,18 @@
 </section>
 
 <section class="relative container max-w-7xl mx-auto flex px-4 md:px-0 py-8">
-    <div
-        class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-28 left-0 rounded-full w-10 h-10 z-10">
-        <span class="fas fa-chevron-left text-secondary fa-lg text-center"></i>
+    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-28 left-0 rounded-full w-10 h-10 z-10"
+        serma-carousel-target="areas_carousel">
+        <span class="fas fa-chevron-left text-secondary fa-sm text-center"></i>
     </div>
 
-    <div
-        class="hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute inset-y-28 right-0 rounded-full w-10 h-10 z-10">
-        <span class="fas fa-chevron-right text-secondary fa-lg text-center"></span>
+    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute inset-y-28 right-0 rounded-full w-10 h-10 z-10"
+        serma-carousel-target="areas_carousel">
+        <span class="fas fa-chevron-right text-secondary fa-sm text-center"></span>
     </div>
 
-    <div
-        class="serma-carousel scroll-smooth container max-w-7xl mx-auto flex gap-4 pb-4 overflow-x-scroll md:overflow-hidden">
+    <div class="serma-carousel scroll-smooth container max-w-7xl mx-auto flex gap-4 pb-4 overflow-x-scroll md:overflow-hidden"
+        serma-carousel-id="areas_carousel">
         <?=get_template_part('template-parts/home/carousel')?>
     </div>
 
@@ -54,37 +54,41 @@
         <br>
         verificados por especialistas
     </h2>
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="rounded-lg border-2 border-t-0 border-gray-300">
-            <div class="relative serma-image-container ml-n1">
-                <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
-                    <img class="rounded-lg" src="<?=$args['medical_articles'][0]['featured_image']?>">
-                    <div class="bg-gradient-to-b from-transparent to-neutral-800 h-14 w-full absolute bottom-0">
-                </a>
-                <span
-                    class="absolute bottom-6 left-8 text-white font-normal text-md capitalize "><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
-                <button
-                    class="cursor-default h-10 px-3 md:px-5 text-white bg-green-lighten rounded-lg absolute bottom-5 right-8">
-                    <span class="flex">
-                        <img class="mr-0 md:mr-2"
-                            src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg" width="20px"
-                            height="20px">
-                        <span class="hidden md:inline text-sm font-normal">Verificado por un especialista</span>
-                    </span>
-                </button>
+        <div>
+            <div class="rounded-lg border-2 border-t-0 border-gray-300">
+                <div class="relative serma-image-container ml-n1">
+                    <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
+                        <img class="rounded-lg" src="<?=$args['medical_articles'][0]['featured_image']?>">
+                        <div class="bg-gradient-to-b from-transparent to-neutral-800 h-14 w-full absolute bottom-0">
+                    </a>
+                    <span
+                        class="absolute bottom-6 left-8 text-white font-normal text-md capitalize "><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
+                    <button
+                        class="cursor-default h-10 px-3 md:px-5 text-white bg-green-lighten rounded-lg absolute bottom-5 right-8">
+                        <span class="flex">
+                            <img class="mr-0 md:mr-2"
+                                src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
+                                width="20px" height="20px">
+                            <span class="hidden md:inline text-sm font-normal">Verificado por un especialista</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="serma-post-content-container px-8 pt-4 pb-8">
+                <p class="serma-category text-primary mb-2 font-medium">
+                    <?=$args['medical_articles'][0]['category']['name']?></p>
+                <h4 class="text-black text-xl md:text-3xl font-semibold">
+                    <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
+                        <?=$args['medical_articles'][0]['title']?>
+                    </a>
+                </h4>
             </div>
         </div>
-        <div class="serma-post-content-container px-8 pt-4 pb-8">
-            <p class="serma-category text-primary mb-2 font-medium">
-                <?=$args['medical_articles'][0]['category']['name']?></p>
-            <h4 class="text-black text-xl md:text-3xl font-semibold">
-                <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
-                    <?=$args['medical_articles'][0]['title']?>
-                </a>
-            </h4>
-        </div>
+
     </div>
-    <!-- ... -->
+    
     <div>
         <?php unset($args['medical_articles'][0]) ?>
         <?php foreach ( $args['medical_articles'] as $article ): ?>
@@ -126,7 +130,6 @@
         <?php endforeach ?>
     </div>
 
-    </div>
 </section>
 
 
@@ -141,7 +144,40 @@
             cada una de las etapas en la que te encuentres.
         </h3>
     </div>
-    <div class="relative container max-w-7xl px-2 md:px-4 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-visible">
-        <?=get_template_part('template-parts/home/pregnancy-weeks')?> 
+    <div
+        class="relative container max-w-7xl px-2 md:px-4 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-visible">
+        <?=get_template_part('template-parts/home/pregnancy-weeks')?>
+    </div>
+</section>
+
+<section class="relative container max-w-7xl mx-auto px-2 md:px-4 py-8"
+    style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/semanas-de-embarazo/section-bg.svg');">
+    <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-6">Novedades</h3>
+    <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
+        Consejos y tips que acompañan a las
+        <br class="hidden md:inline">
+        mamás en su etapa de maternidad
+    </h2>
+
+    <div class="relative container max-w-7xl px-2 md:px-4 mx-auto">
+        <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute left-0 rounded-full w-10 h-10 z-10"
+            serma-carousel-target="blog_categories">
+            <span class="fas fa-chevron-left text-secondary fa-sm text-center"></i>
+        </div>
+
+        <div class="hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute right-0 rounded-full w-10 h-10 z-10"
+            serma-carousel-target="blog_categories">
+            <span class="fas fa-chevron-right text-secondary fa-sm text-center"></span>
+        </div>
+
+        <div class="serma-carousel relative container max-w-7xl md:max-w-6xl px-2 md:px-4 mx-auto md:mx-2 scroll-smooth overflow-x-scroll md:overflow-x-hidden"
+            serma-carousel-id="blog_categories">
+            <?=get_template_part('template-parts/home/blog/categories-carousel', null, $args)?>
+        </div>
+
+    </div>
+
+    <div class="container max-w-7xl mx-auto mt-10">
+        <?=get_template_part('template-parts/home/blog/articles', null, $args)?> 
     </div>
 </section>
