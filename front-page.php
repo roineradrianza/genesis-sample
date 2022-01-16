@@ -38,6 +38,12 @@ function homepage_inline_css()
             background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/hero-bg.svg');
         }
 
+        .serma-community-cta-container{
+            background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/comunidad/bg.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         .serma-home-pregnancy-week-container {
             background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/semanas-de-embarazo/section-bg.svg');
             background-size: cover;

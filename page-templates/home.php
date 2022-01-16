@@ -28,7 +28,7 @@
     </div>
 </section>
 
-<section class="relative container max-w-7xl mx-auto flex px-4 md:px-0 py-8">
+<section class="relative container max-w-7xl mx-auto flex px-4 xl:px-0 py-8">
     <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-28 left-0 rounded-full w-10 h-10 z-10"
         serma-carousel-target="areas_carousel">
         <span class="fas fa-chevron-left text-secondary fa-sm text-center"></i>
@@ -46,8 +46,7 @@
 
 </section>
 
-<section class="relative container max-w-7xl mx-auto px-2 md:px-4 md:px-0 py-8"
-    style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/semanas-de-embarazo/section-bg.svg');">
+<section class="relative container max-w-7xl mx-auto px-4 xl:px-0 py-8">
     <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-6">Artículos médicos</h3>
     <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
         Contenidos sobre maternidad y embarazo
@@ -88,7 +87,7 @@
         </div>
 
     </div>
-    
+
     <div>
         <?php unset($args['medical_articles'][0]) ?>
         <?php foreach ( $args['medical_articles'] as $article ): ?>
@@ -134,7 +133,7 @@
 
 
 <section
-    class="serma-home-pregnancy-week-container relative container max-w-full px-2 md:px-4 md:px-0 py-12 md:py-16 bg-purple-lighten-1">
+    class="serma-home-pregnancy-week-container relative container max-w-full px-4 xl:px-0 py-12 md:py-16 bg-purple-lighten-1">
     <div class="relative container max-w-7xl mx-auto">
         <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-4 md:mb-8">
             Tu embarazo semana tras semana
@@ -150,7 +149,7 @@
     </div>
 </section>
 
-<section class="relative container max-w-7xl mx-auto px-2 md:px-4 py-8"
+<section class="relative container max-w-7xl mx-auto px-4 xl:px-0 py-8"
     style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/semanas-de-embarazo/section-bg.svg');">
     <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-6">Novedades</h3>
     <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
@@ -178,6 +177,53 @@
     </div>
 
     <div class="container max-w-7xl mx-auto mt-10">
-        <?=get_template_part('template-parts/home/blog/articles', null, $args)?> 
+        <?=get_template_part('template-parts/home/blog/articles', null, $args)?>
     </div>
+</section>
+
+<section class="container max-w-7xl mx-auto">
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-purple-lighten rounded-lg serma-community-cta-container">
+        <div class="pt-4 md:pt-12">
+            <h2 class="text-center md:text-left text-3xl md:text-5xl font-light text-white">
+                Obtén un acceso a la <span class="font-bold">comunidad</span>
+            </h2>
+            <p class="my-2 md:my-6 text-center md:text-left font-light text-md md:text-lg text-white">
+                Tu experiencia podria ayudar a una mami con dificultad.
+            </p>
+            <div class="flex justify-center md:inline">
+                <button class="rounded bg-white px-7 py-2 font-normal">
+                    <span class="flex items-center text-black">
+                        <img class="w-6 h-6 md:w-8 md:h-8 mr-2"
+                            src="<?=get_stylesheet_directory_uri()?>/assets/icons/community-invitation/cta-icon.svg"
+                            width="30px" height="30px">
+                        ¡Invitación limitada!
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:pt-3 pb-3">
+            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/comunidad/comunidad-preview.png"
+                alt="Acceso a la comunidad">
+        </div>
+    </div>
+</section>
+
+
+<section class="relative container hidden md:block max-w-7xl mx-auto px-4 xl:px-0 py-8 break-all">
+    <h2 class="text-black text-2xl font-semibold mb-8">
+        SerMadre es un sitio web sobre el embarazo y la maternidad
+    </h2>
+
+    <p class="text-base text-secondary">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
+        productos, atención de
+        maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de
+        embarazo, revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios
+        de embarazo y desarrollo infantil, calendario de embarazo, revisiones de productos, atención de maternidad y
+        muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de embarazo,
+        revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo
+        y desarrollo infantil, calendario de embarazo, revisiones de productos, atención de maternidad y muchas otras
+        secciones y servicios útiles.
+    </p>
 </section>
