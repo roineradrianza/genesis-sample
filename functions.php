@@ -305,6 +305,8 @@ function ser_madre_theme_core_scripts() {
 					'purple-lighten-3': '#a28eec40',
 					'purple-lighten-4': '#a28eec59',
 					'green-lighten': '#4AC989',
+					'green-lighten-1': '#4ac98926',
+					'red-lighten-1': '#ff707026',
 					'yellow-lighten': 'rgba(236, 172, 74, 0.25)',
 				},
 				margin: {

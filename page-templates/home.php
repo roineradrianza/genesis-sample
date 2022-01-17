@@ -149,7 +149,7 @@
     </div>
 </section>
 
-<section class="relative container max-w-7xl mx-auto px-4 xl:px-0 py-8"
+<section class="relative container max-w-7xl mx-auto px-4 xl:px-0 pb-0 md:pb-12 py-8"
     style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/semanas-de-embarazo/section-bg.svg');">
     <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-6">Novedades</h3>
     <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
@@ -181,7 +181,62 @@
     </div>
 </section>
 
-<section class="container max-w-7xl mx-auto">
+<section class="container max-w-7xl mx-auto my-4 md:my-8 py-4 md:py-16 md:border-t-2 border-gray-300">
+    <div class="grid grid-cols-3 gap-4 mx-4 md:mx-0">
+        <div class="col-span-3 md:col-span-1 pt-8">
+            <h2 class="text-center md:text-left text-2xl md:text-3xl text-black font-semibold">
+                Asesórate en linea con un especialista
+            </h2>
+            <p class="text-center md:text-left text-md text-secondary my-6">
+                Actualmente brindamos asesorias virtuales sobre
+                estos temas:
+            </p>
+        </div>
+        <div
+            class="relative container max-w-7xl col-span-3 md:col-span-2 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-visible">
+            <div class="flex flex-row space-x-5">
+                <div class="flex-none md:flex-auto w-11/12 md:w-auto">
+                    <div class="grid grid-cols-2 bg-red-lighten-1 rounded-lg">
+                        <div class="pt-8 pl-6">
+                            <h2 class="text-xl md:text-3xl font-bold mb-4 md:font-semibold">
+                                Lactancia Materna
+                            </h2>
+                            <button class="bg-transparent font-normal text-purple-darken text-sm md:text-base">
+                                Ver detalles <span class="fas fa-arrow-right"></span>
+                            </button>
+                        </div>
+
+                        <div>
+                            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-1.png"
+                                alt="Acceso a la comunidad">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none md:flex-auto w-11/12 md:w-auto">
+                    <div class="grid grid-cols-2 bg-green-lighten-1 rounded-lg">
+                        <div class="pt-8 pl-6">
+                            <h2 class="text-xl md:text-3xl font-bold md:font-semibold mb-4">
+                                Psicología Prenatal
+                            </h2>
+                            <button class="bg-transparent font-normal text-purple-darken text-sm md:text-base">
+                                Ver detalles <span class="fas fa-arrow-right"></span>
+                            </button>
+                        </div>
+
+                        <div>
+                            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-2.png"
+                                alt="Acceso a la comunidad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="container max-w-7xl mt-6 md:mt-auto mx-auto">
     <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-purple-lighten rounded-lg serma-community-cta-container">
         <div class="pt-4 md:pt-12">
