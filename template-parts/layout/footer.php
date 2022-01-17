@@ -1,10 +1,10 @@
-<div class="container mx-auto py-2 max-w-screen-xl px-4 md:px-0">
+<div class="container mx-auto py-2 max-w-screen-lg px-4 md:px-0">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-14">
         <div>
             <div class="flex justify-center md:justify-start">
                 <?php the_custom_logo(); ?>
             </div>
-            <p class="text-center md:text-left mt-8">
+            <p class="text-center md:text-left mt-8 text-base">
                 Ser Madre Perú es la comunidad <br> más grande para el embarazo.
             </p>
             <div class="flex justify-center md:justify-start mt-6">
@@ -21,34 +21,34 @@
         </div>
 
         <div class="hidden md:inline">
-            <h4 class="font-bold md:font-semibold text-base">Sobre Sermadre</h4>
+            <h4 class="font-bold md:font-semibold text-lg">Sobre Sermadre</h4>
             <ul class="mt-3">
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Comunidad
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Utilidades
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Contenido
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Servicios
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Herramientas
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Marketplace
                 </li>
@@ -56,34 +56,34 @@
         </div>
 
         <div class="hidden md:inline">
-            <h4 class="font-bold md:font-semibold text-base">Recursos</h4>
+            <h4 class="font-bold md:font-semibold text-lg">Recursos</h4>
             <ul class="mt-3">
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Nosotros
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Preguntas frecuentes
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Contacto
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Condiciones de uso
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Políticas de privacidad
                 </li>
 
-                <li class="py-2 font-awesome-icons">
+                <li class="py-2 font-awesome-icons text-base">
                     <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
                     Empresas
                 </li>
@@ -91,7 +91,7 @@
         </div>
 
         <div>
-            <h4 class="font-bold md:font-semibold md:text-base text-center md:text-left my-6 md:my-0">Contacto</h4>
+            <h4 class="font-bold md:font-semibold md:text-lg text-center md:text-left my-6 md:my-0">Contacto</h4>
             <div class="mt-3">
                 <p class="font-regular text-base mb-6 text-center md:text-left">
                     <a href="mailto:contacto@sermadre.com">

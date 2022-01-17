@@ -62,6 +62,24 @@ function homepage_inline_css()
             width: 164px;
             height: 150px;
         }
+        
+        .utilities-cta-1{
+            background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/utilidades/cta-1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+                
+        .utilities-cta-2{
+            background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/utilidades/cta-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      
+        .utilities-cta-3{
+            background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/utilidades/cta-3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
  ";
 }
@@ -98,7 +116,7 @@ if ( is_front_page() ) {
 }    
 
 function ser_madre_theme_home_scripts() {
-	wp_register_script( 'serma-home', get_stylesheet_directory_uri() . "/assets/js/serma-home.js", [], '1.0.0', true );
+	wp_register_script( 'serma-home', get_stylesheet_directory_uri() . "/assets/js/serma-home.js", [], '1.0.1', true );
 	wp_enqueue_script( 'serma-home' );
     wp_localize_script( 'serma-home', 'serma_ajax_url', esc_url(admin_url('admin-ajax.php')) . "?action=" );
 }

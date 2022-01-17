@@ -133,9 +133,9 @@ class blogPosts {
 
     getPostCardSm (element, index) {
         return `
-        <div class="grid grid-cols-3 gap-2 py-4 md:py-8 border-2 border-gray-300 rounded-lg mb-4">
-            <div class="pl-4 md:pl-8 col-span-2">
-                <p class="serma-category text-sm md:text-md text-primary md:mb-2 font-medium">
+        <div class="grid grid-cols-3 gap-2 py-4 md:py-6 border-2 border-gray-300 rounded-lg mb-4">
+            <div class="pl-4 md:pl-6 col-span-2">
+                <p class="serma-category text-tiny md:text-base text-primary md:mb-2 font-medium">
                     ${element.category.name}
                 </p>
                 <h4 class="text-black text-lg md:text-xl font-semibold mb-4">
@@ -143,11 +143,11 @@ class blogPosts {
                     ${element.title}
                     </a>
                 </h4>
-                <p class="text-secondary text-xs md:text-sm font-normal capitalize">
+                <p class="text-secondary text-tiny md:text-base font-normal capitalize">
                     ${element.published_at_formatted}
                 </p>
             </div>
-            <div class="md:px-6">
+            <div class="md:pr-6">
                 <a href="${element.link}" target="_blank">
                     <img class="rounded-lg w-20 md:w-24 h-20 object-cover" src="${element.featured_image}">
                 </a>

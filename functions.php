@@ -307,6 +307,7 @@ function ser_madre_theme_core_scripts() {
 					'green-lighten': '#4AC989',
 					'green-lighten-1': '#4ac98926',
 					'red-lighten-1': '#ff707026',
+					'cyan-lighten-1': '#62cef940',
 					'yellow-lighten': 'rgba(236, 172, 74, 0.25)',
 				},
 				margin: {
@@ -320,19 +321,19 @@ function ser_madre_theme_core_scripts() {
 				'body': ['\"Inter\"']
 			},
 			fontSize: {
-				'xs': '.75rem',
-				'sm': '.875rem',
-				'tiny': '.875rem',
-				'base': '1rem',
-				'lg': '1.125rem',
-				'xl': '1.25rem',
-				'2xl': '1.5rem',
-				'3xl': '1.875rem',
-				'4xl': '2.25rem',
-				'4-5xl': '2.50rem',
-				'5xl': '3rem',
-				'6xl': '4rem',
-				'7xl': '5rem',
+				'xs': '.0.63rem',
+				'sm': '.473rem',
+				'tiny': '.7225rem',
+				'base': '0.85rem',
+				'lg': '0.956rem',
+				'xl': '1.06rem',
+				'2xl': '1.275rem',
+				'3xl': '1.593rem',
+				'4xl': '1.91rem',
+				'4-5xl': '2.125rem',
+				'5xl': '2.55rem',
+				'6xl': '3.4rem',
+				'7xl': '4.25rem',
 			}
 		},
 
@@ -421,7 +422,7 @@ function serma_get_posts_rest($base_url, $endpoint = ['api' => 'posts','url' => 
                 $article = [
                     'title' => $post->title->rendered,
                     'featured_image' => $embedded['wp:featuredmedia'][0]->source_url,
-                    'excerpt' => mb_strimwidth(wp_strip_all_tags($post->content->rendered), 0, 70, '...'),
+                    'excerpt' => mb_strimwidth(wp_strip_all_tags($post->content->rendered), 0, 65, '...'),
                     'category' => [
                         'id' => $category[0]->id,
                         'name' => $category[0]->name,
