@@ -28,7 +28,7 @@
     </div>
 </section>
 
-<section class="relative container max-w-screen-lg mx-auto flex px-4 xl:px-0 py-8">
+<section class="relative container max-w-screen-lg mx-auto flex px-4 xl:px-0 pt-8 md:py-8">
     <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-28 left-0 rounded-full w-10 h-10 z-10"
         serma-carousel-target="areas_carousel">
         <span class="fas fa-chevron-left text-secondary fa-sm text-center"></i>
@@ -46,7 +46,7 @@
 
 </section>
 
-<section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 py-8">
+<section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 py-4 md:py-8">
     <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
     <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
         Contenidos sobre maternidad y embarazo
@@ -180,24 +180,22 @@
     </div>
 </section>
 
-<section class="container max-w-full py-4 mb-12 md:py-16 border-gray-300 bg-[#F2F6FE] serma">
+<section class="container max-w-full py-4 md:mb-12 md:py-16 mt-6 border-gray-300 bg-[#F2F6FE] bg-[length:0px] md:bg-auto md:bg-transparent serma-utilities-container">
     <div class="relative container max-w-screen-lg mx-auto">
         <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-2 md:mb-6">Utilidades</h3>
-        <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
+        <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8 px-4 md:px-0">
             Encuentra los mejores nombres, cuentos
             <br class="hidden md:inline">
             infantiles y mucho más
         </h2>
         <div
             class="relative container max-w-screen-lg col-span-3 md:col-span-2 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-visible">
-            <div class="grid grid-cols-3 gap-4 mx-4 md:mx-0">
                 <?=get_template_part('template-parts/home/utilities', null, $args)?>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="container max-w-screen-lg mx-auto my-4 md:my-8 py-4 md:py-8 md:border-t-2 border-gray-300 pt-12 md:border-t-2">
+<section class="container max-w-screen-lg mx-auto mb-2 md:my-8 py-4 md:py-8 md:border-t-2 border-gray-300 md:pt-12 md:border-t-2">
     <div class="grid grid-cols-3 gap-4 mx-4 md:mx-0">
         <div class="col-span-3 md:col-span-1 pt-8">
             <h2 class="text-center md:text-left text-3xl text-black font-semibold">

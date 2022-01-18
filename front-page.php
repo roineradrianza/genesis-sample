@@ -41,12 +41,10 @@ function homepage_inline_css()
         .serma-community-cta-container{
             background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/comunidad/bg.svg');
             background-repeat: no-repeat;
-            background-size: cover;
         }
 
         .serma-home-pregnancy-week-container {
             background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/semanas-de-embarazo/section-bg.svg');
-            background-size: cover;
         }
 
         .serma-home-pregnancy-week-container .day-default {
@@ -54,9 +52,18 @@ function homepage_inline_css()
             background-repeat: no-repeat;
         }
 
-            .serma-home-pregnancy-week-container .day-default:hover {
+            .serma-home-pregnancy-week-container .day-default:hover, .serma-home-pregnancy-week-container .day-default:active {
                 background-image: url('".get_stylesheet_directory_uri()."/assets/icons/pregnancy-weeks/active.svg');
             }
+
+        .serma-utilities-container {
+            background-image: url('".get_stylesheet_directory_uri()."/assets/img/home/utilidades/bg.svg');
+            background-repeat: no-repeat;
+        }
+        
+        .serma-community-cta-container, .serma-home-pregnancy-week-container {
+            background-size: cover
+        }
 
         .pregnancy-image {
             width: 164px;
