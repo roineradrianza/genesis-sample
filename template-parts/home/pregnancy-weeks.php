@@ -1,4 +1,4 @@
-<div class="flex flex-row">
+<div class="flex flex-row md:max-w-[95%]">
 
     <div class="flex-none bg-purple-lighten-2 px-0 md:px-5 py-3 md:py-6 rounded-lg-2x mr-3 md:mr-6 md:w-2/6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
@@ -14,9 +14,10 @@
             </div>
             <div class="grid grid-cols-5 md:grid-cols-3 gap-2 md:gap-4 px-4 md:px-0 md:pl-4">
                 <?php for ($i=1; $i <= 13; $i++) : ?>
-                <div class="w-10 h-9 day-default flex items-center justify-center hover:text-white">
-                    <span class="flex-none"><?= $i ?></span>
-                </div>
+                <a href="https://sermadre.com/embarazo/semana-<?= $i?>"
+                    class="w-10 h-9 day-default flex items-center justify-center hover:text-white" target="_blank">
+                    <?= $i ?>
+                </a>
                 <?php endfor ?>
             </div>
         </div>
@@ -36,9 +37,10 @@
             </div>
             <div class="grid grid-cols-5 md:grid-cols-3 gap-2 md:gap-4 px-4 md:px-0 md:pl-4">
                 <?php for ($i=14; $i <= 28; $i++) : ?>
-                <div class="w-10 h-9 day-default flex items-center justify-center hover:text-white">
+                <a href="https://sermadre.com/embarazo/semana-<?= $i?>"
+                    class="w-10 h-9 day-default flex items-center justify-center hover:text-white" target="_blank">
                     <?= $i ?>
-                </div>
+                </a>
                 <?php endfor ?>
             </div>
         </div>
@@ -58,10 +60,11 @@
                     alt="tercer trimestre" width="164" height="150">
             </div>
             <div class="grid grid-cols-5 md:grid-cols-3 gap-2 md:gap-4 px-4 md:px-0 md:pl-4">
-                <?php for ($i=29; $i <= 42; $i++) : ?>
-                <div class="w-10 h-9 day-default flex items-center justify-center hover:text-white">
+                <?php for ($i=29; $i <= 40; $i++) : ?>
+                <a href="https://sermadre.com/embarazo/semana-<?= $i?>"
+                    class="w-10 h-9 day-default flex items-center justify-center hover:text-white" target="_blank">
                     <?= $i ?>
-                </div>
+                </a>
                 <?php endfor ?>
             </div>
         </div>
