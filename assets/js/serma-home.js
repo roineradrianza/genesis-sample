@@ -101,12 +101,12 @@ class blogPosts {
     getPostCardLg (element, index) {
         let classes = index == 1 ? 'mr-n1 hidden md:inline' : 'ml-n1'
         return `
-            <div class="${classes}" post-${index}>
-                <div class="rounded-lg border-2 border-t-0 border-gray-300">
+            <div class="${classes} rounded-lg border-2 border-t-0 border-gray-300" post-${index}>
+                <div>
                     <div>
                         <div class="relative ml-n1">
                             <a href="${element.link}" target="_blank">
-                                <img class="rounded-lg max-h-60 w-full object-cover" src="${element.featured_image}">
+                                <img class="rounded-lg h-48 w-full object-cover" src="${element.featured_image}">
                             </a>
                             <span
                                 class="bg-gradient-to-b from-transparent to-neutral-800 h-10 w-full absolute bottom-0 px-8 text-white font-normal text-md capitalize ">
