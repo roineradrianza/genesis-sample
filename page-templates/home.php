@@ -18,7 +18,9 @@
         </div>
 
         <div class="md:pt-3 pb-3">
-            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-image.png" alt="Estamos contigo">
+            <div>
+                <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-image.png" alt="Estamos contigo">
+            </div>
             <div class="flex justify-center md:hidden">
                 <button class="my-3 rounded bg-green-lighten px-4 py-3 text-white font-regular">
                     +Únete a la comunidad
@@ -59,7 +61,7 @@
             <div class="rounded-lg">
                 <div class="relative serma-image-container">
                     <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
-                        <img class="rounded-lg" src="<?=$args['medical_articles'][0]['featured_image']?>">
+                        <img loading="lazy" class="rounded-lg" src="<?=$args['medical_articles'][0]['featured_image']?>">
                         <div class="bg-gradient-to-b from-transparent to-neutral-800 h-10 md:h-14 w-full absolute bottom-0">
                     </a>
                     <span
@@ -67,7 +69,7 @@
                     <button
                         class="cursor-default h-7 px-2 md:h-10 md:px-3 md:px-5 text-white bg-green-lighten rounded-lg absolute bottom-3 md:bottom-5 right-4 md:right-8">
                         <span class="flex">
-                            <img class="mr-0 md:mr-2"
+                            <img loading="lazy" class="mr-0 md:mr-2"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
                                 width="15px" height="15px">
                             <span class="hidden md:inline font-normal">Verificado por un especialista</span>
@@ -95,7 +97,7 @@
             <div class="md:px-6">
                 <div class="relative">
                     <a href="<?= $article['link'] ?>" target="_blank">
-                        <img class="h-24 md:h-auto object-cover rounded-lg md:rounded-none md:rounded-l-lg" src="<?= $article['featured_image'] ?>">
+                        <img loading="lazy" class="h-24 md:h-auto object-cover rounded-lg md:rounded-none md:rounded-l-lg" src="<?= $article['featured_image'] ?>">
                     </a>
                     <div
                         class="rounded-lg md:rounded-none md:rounded-l-lg md:bg-gradient-to-b from-transparent to-neutral-800 h-14 w-full absolute bottom-0">
@@ -104,7 +106,7 @@
                         <button
                             class="cursor-default h-7 md:h-8 px-2 text-white bg-green-lighten rounded-lg absolute bottom-2 md:bottom-3 right-2 md:right-4">
                             <span class="flex">
-                                <img class="mr-0"
+                                <img loading="lazy" class="mr-0"
                                     src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
                                     width="15px" height="15px">
                             </span>
@@ -221,7 +223,7 @@
                         </div>
 
                         <div>
-                            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-1.png"
+                            <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-1.png"
                                 alt="Acceso a la comunidad">
                         </div>
                     </div>
@@ -238,7 +240,7 @@
                         </div>
 
                         <div>
-                            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-2.png"
+                            <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-2.png"
                                 alt="Acceso a la comunidad">
                         </div>
                     </div>
@@ -263,7 +265,7 @@
             <div class="flex justify-center md:inline">
                 <button class="rounded bg-white px-5 py-2 font-normal">
                     <span class="flex items-center text-black">
-                        <img class="w-6 h-6 mr-2"
+                        <img loading="lazy" class="w-6 h-6 mr-2"
                             src="<?=get_stylesheet_directory_uri()?>/assets/icons/community-invitation/cta-icon.svg"
                             width="20px" height="20px">
                         ¡Invitación limitada!
@@ -273,7 +275,7 @@
         </div>
 
         <div class="md:pt-3 pb-3">
-            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/home/comunidad/comunidad-preview.png"
+            <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/comunidad/comunidad-preview.png"
                 alt="Acceso a la comunidad">
         </div>
     </div>

@@ -8,7 +8,7 @@
                     <br class="hidden md:inline">
                     trimestre
                 </h4>
-                <img class="pregnancy-image hidden md:inline"
+                <img loading="lazy" class="pregnancy-image hidden md:inline"
                     src="<?=get_stylesheet_directory_uri()?>/assets/img/home/semanas-de-embarazo/primer-trimestre.png"
                     alt="primer trimestre" width="164" height="150">
             </div>
@@ -31,7 +31,7 @@
                     <br class="hidden md:inline">
                     trimestre
                 </h4>
-                <img class="pregnancy-image hidden md:inline"
+                <img loading="lazy" class="pregnancy-image hidden md:inline"
                     src="<?=get_stylesheet_directory_uri()?>/assets/img/home/semanas-de-embarazo/segundo-trimestre.png"
                     alt="segundo trimestre" width="164" height="150">
             </div>
@@ -55,7 +55,7 @@
                     <br class="hidden md:inline">
                     trimestre
                 </h4>
-                <img class="pregnancy-image hidden md:inline"
+                <img loading="lazy" class="pregnancy-image hidden md:inline"
                     src="<?=get_stylesheet_directory_uri()?>/assets/img/home/semanas-de-embarazo/tercer-trimestre.png"
                     alt="tercer trimestre" width="164" height="150">
             </div>
