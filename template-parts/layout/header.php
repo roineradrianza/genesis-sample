@@ -14,7 +14,7 @@
                     </button>
                 </div>
                 <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <?php echo the_custom_logo() ?>
+                    <?= the_custom_logo() ?>
                 </div>
                 <nav class="hidden md:flex space-x-5">
                     <div class="relative mr-6 my-2 bg-lighten-grey border-0 py-2 px-4 max-h-48 rounded-full">
@@ -28,15 +28,58 @@
                         </form>
                     </div>
                 </nav>
-                <div class="flex items-center justify-end md:flex-1 lg:w-0">
-                    <a href="#" class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
+                <div id="dropdownButton" data-dropdown-toggle="dropdown"
+                    class="flex items-center justify-end md:flex-1 lg:w-0">
+                    <?php if (is_user_logged_in()) : ?>
+                    <div href="#" class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
+                        <button class="focus:outline-0" id="dropdownButton"  data-dropdown-placement="bottom" data-dropdown-toggle="dropdownNavbar">
+
+                        <?php if ( !empty(get_avatar_url( SERMA_USER::get_current()['id'] ) )) : ?>
+
+                        <img class="rounded-full" src="<?= get_avatar_url( SERMA_USER::get_current()['id'] ) ?>" alt=""
+                            width="35px" height="35px">
+
+                        <?php else: ?>
+
+                        <span class="mr-2 fas fa-user-circle fa-2x text-icon"></span>
+
+                        <?php endif ?>
+
+                        </button>
+                        <div id="dropdownNavbar"
+                            class="hidden z-50 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow">
+                            <ul class="py-1 hidden" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="<?= esc_url(admin_url('admin-ajax.php')) . "?action=serma_logout" ?>"
+                                    class="block py-2 px-4 hover:bg-gray-100">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php else: ?>
+                    <a href="<?= site_url() ?>/login"
+                        class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
                         <span class="mr-2 fas fa-user-circle fa-2x text-icon"></span>
                         <span class="hidden md:inline">Ingresa</span>
                     </a>
-                    <a href="#"
+                    <a href="<?= site_url() ?>/login"
                         class="hidden ml-8 whitespace-nowrap md:inline-flex items-center justify-center px-10 py-3 border border-black rounded-md shadow-sm text-base font-medium">
                         +Únete
                     </a>
+                    <?php endif?>
+
                 </div>
             </div>
         </div>
@@ -54,4 +97,6 @@
     </div>
 </header>
 
+<?php if($args['show_nav']): ?>
 <?php get_template_part( 'template-parts/layout/nav' ); ?>
+<?php endif ?>

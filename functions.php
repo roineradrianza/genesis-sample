@@ -10,6 +10,7 @@
  * @link    https://www.studiopress.com/
  */
 
+
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
@@ -27,6 +28,12 @@ function genesis_sample_localization_setup() {
 	load_child_theme_textdomain( genesis_get_theme_handle(), get_stylesheet_directory() . '/languages' );
 
 }
+
+
+//Include custom sermadre classes
+
+//User manager class
+require_once(get_stylesheet_directory() . '/lib/Classes/User.php');
 
 // Adds helper functions.
 require_once get_stylesheet_directory() . '/lib/helper-functions.php';
@@ -275,10 +282,12 @@ add_action('wp_enqueue_scripts', 'ser_madre_theme_core_scripts');
 
 function ser_madre_theme_core_scripts() {
 	wp_register_script( 'tailwind-css', "https://cdn.tailwindcss.com", [], '3.0.12', true );
+	wp_register_script( 'tailwind-flowbite', "https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.bundle.js", 'tailwind-css', '1.3.0', true );
 	wp_register_script( 'fontawesome', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/js/all.min.js", [], '5.15.4', true );
 	wp_register_script( 'serma-core', get_stylesheet_directory_uri() . "/assets/js/serma-core.js", [], '1.0.0', true );
 	
 	wp_enqueue_script( 'tailwind-css' );
+	wp_enqueue_script( 'tailwind-flowbite' );
 	wp_enqueue_script( 'fontawesome' );
 	wp_enqueue_script( 'serma-core' );
 
@@ -291,12 +300,15 @@ function ser_madre_theme_core_scripts() {
 			}
 		},
 		theme: {
+			darkMode: false,
 			extend: {
 				colors: {
 					primary: '#62CEF9',
 					secondary: '#4D4D4D',
 					icon: '#8D8D8D',
 					text: '#6A6B7A',
+					success: '#4AC989',
+					error: '#ff7070',
 					'lighten-grey': '#F1F2F3',
 					'purple-lighten': '#A28EEC',
 					'purple-darken': '#585CE5',
@@ -373,7 +385,7 @@ remove_action( 'genesis_header', 'genesis_do_header' );
 add_action( 'genesis_header', 'serma_genesis_header' );
 
 function serma_genesis_header () {
-	get_template_part( 'template-parts/layout/header' );
+	get_template_part( 'template-parts/layout/header', null, ['show_nav' => true] );
 }
 
 //* TN Dequeue Styles - Remove Dashicons from Genesis Theme
@@ -469,3 +481,5 @@ function get_external_posts() {
 
 add_action( 'wp_ajax_serma_get_blog_posts', 'get_external_posts' );
 add_action( 'wp_ajax_nopriv_serma_get_blog_posts', 'get_external_posts' );
+
+SERMA_USER::init();

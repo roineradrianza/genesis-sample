@@ -23,7 +23,7 @@ function wphe_body_classes( $classes ) {
     
     if ( is_front_page() ) { 
         $classes[] = 'home-body';  // add custom class to blog static page frontpage
-    }                      
+    }               
  
     return $classes;
 }
