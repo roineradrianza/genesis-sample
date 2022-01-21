@@ -23,7 +23,7 @@
                                 class="text-base placeholder:text-icon bg-transparent border-0 p-1 w-96 rounded-full search-input"
                                 placeholder="Buscar">
                             <button type="submit" class="mr-3 mt-1 float-right hover:bg-transparent">
-                                <span class="fas fa-search text-icon"></span>
+                                <img class="w-4 h-5" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/search.svg">
                             </button>
                         </form>
                     </div>
@@ -41,7 +41,7 @@
 
                         <?php else: ?>
 
-                        <span class="mr-2 fas fa-user-circle fa-2x text-icon"></span>
+                        <img class="w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
 
                         <?php endif ?>
 
@@ -53,14 +53,6 @@
                                     <a href="#"
                                         class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Dashboard</a>
                                 </li>
-                                <li>
-                                    <a href="#"
-                                        class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Earnings</a>
-                                </li>
                             </ul>
                             <div class="py-1">
                                 <a href="<?= esc_url(admin_url('admin-ajax.php')) . "?action=serma_logout" ?>"
@@ -71,11 +63,11 @@
                     <?php else: ?>
                     <a href="<?= site_url() ?>/login"
                         class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
-                        <span class="mr-2 fas fa-user-circle fa-2x text-icon"></span>
+                        <img class="w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
                         <span class="hidden md:inline">Ingresa</span>
                     </a>
                     <a href="<?= site_url() ?>/login"
-                        class="hidden ml-8 whitespace-nowrap md:inline-flex items-center justify-center px-10 py-3 border border-black rounded-md shadow-sm text-base font-medium">
+                        class="hidden ml-8 whitespace-nowrap md:inline-flex items-center justify-center px-8 py-2.5 border border-black rounded-md shadow-sm text-base font-medium">
                         +Únete
                     </a>
                     <?php endif?>
@@ -83,17 +75,6 @@
                 </div>
             </div>
         </div>
-
-        <!--
-                Mobile menu, show/hide based on mobile menu state.
-
-                Entering: "duration-200 ease-out"
-                From: "opacity-0 scale-95"
-                To: "opacity-100 scale-100"
-                Leaving: "duration-100 ease-in"
-                From: "opacity-100 scale-100"
-                To: "opacity-0 scale-95"
-            -->
     </div>
 </header>
 

@@ -7,7 +7,7 @@
                         class="text-base placeholder:text-icon bg-transparent border-0 p-1 w-11/12 rounded-full search-input"
                         placeholder="Buscar">
                     <button type="submit" class="mr-1 mt-1 float-right hover:bg-transparent">
-                        <span class="fas fa-search text-icon"></span>
+                        <img class="w-4 h-5" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/search.svg">
                     </button>
                 </form>
             </div>
