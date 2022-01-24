@@ -49,8 +49,8 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 py-4 md:py-8">
-    <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
-    <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
+    <h3 class="text-purple-darken text-lg font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
+    <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8">
         Contenidos sobre maternidad y embarazo
         <br>
         verificados por especialistas
@@ -136,10 +136,10 @@
 <section
     class="serma-home-pregnancy-week-container relative container max-w-full px-4 xl:px-0 py-12 md:py-16 bg-purple-lighten-1">
     <div class="relative container max-w-screen-lg mx-auto">
-        <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-4 md:mb-8">
+        <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-4 md:mb-8">
             Tu embarazo semana tras semana
         </h2>
-        <h3 class="text-lg md:text-xl font-medium text-center mb-5 md:mb-10">
+        <h3 class="text-lg font-medium text-center mb-5 md:mb-10">
             Conoce el desarrollo de tu bebé en cada una de las etapas en la 
             <br class="hidden md:inline">
             que te encuentres.
@@ -152,8 +152,8 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 pb-0 md:pb-12 py-8">
-    <h3 class="text-purple-darken text-lg md:text-xl font-semibold text-center mb-2 md:mb-6">Novedades</h3>
-    <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
+    <h3 class="text-purple-darken text-lg font-semibold text-center mb-2 md:mb-6">Novedades</h3>
+    <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8">
         Consejos y tips que acompañan a las
         <br class="hidden md:inline">
         mamás en su etapa de maternidad
@@ -184,8 +184,8 @@
 
 <section class="container max-w-full py-4 md:mb-12 md:py-16 mt-6 border-gray-300 bg-[#F2F6FE] bg-[length:0px] md:bg-auto md:bg-transparent serma-utilities-container">
     <div class="relative container max-w-screen-lg mx-auto">
-        <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-2 md:mb-6">Utilidades</h3>
-        <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8 px-4 md:px-0">
+        <h3 class="text-purple-darken text-lg font-medium text-center mb-2 md:mb-6">Utilidades</h3>
+        <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8 px-4 md:px-0">
             Encuentra los mejores nombres, cuentos
             <br class="hidden md:inline">
             infantiles y mucho más
