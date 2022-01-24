@@ -308,7 +308,14 @@ function ser_madre_theme_core_scripts() {
 					'contain': 'contain',
 					'empty': '0px'
 				},
+				width: {
+					'30': '7.5rem',
+				},
+				maxWidth: {
+					'screen-lg': '1056px'
+				},
 				colors: {
+					black: '#212121',
 					primary: '#62CEF9',
 					secondary: '#4D4D4D',
 					icon: '#8D8D8D',
@@ -342,10 +349,12 @@ function ser_madre_theme_core_scripts() {
 				'xs': '.0.63rem',
 				'sm': '.473rem',
 				'tiny': '.7225rem',
+				'md': '.75rem',
 				'base': '0.85rem',
 				'lg': '0.956rem',
 				'xl': '1.06rem',
 				'2xl': '1.275rem',
+				'2.8xl': '1.500rem',
 				'3xl': '1.593rem',
 				'4xl': '1.91rem',
 				'4-5xl': '2.125rem',

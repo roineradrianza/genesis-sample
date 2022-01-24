@@ -49,8 +49,8 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 py-4 md:py-8">
-    <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
-    <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
+    <h3 class="text-purple-darken text-lg font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
+    <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8">
         Contenidos sobre maternidad y embarazo
         <br>
         verificados por especialistas
@@ -67,7 +67,7 @@
                     <span
                         class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-tiny md:text-base capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
                     <button
-                        class="cursor-default h-7 px-2 md:h-9 md:px-3 text-white bg-green-lighten rounded md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
+                        class="cursor-default h-7 px-2 md:h-8 md:px-3 text-white bg-green-lighten rounded md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
                         <span class="flex">
                             <img loading="lazy" class="mr-0 md:mr-2"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
@@ -136,10 +136,10 @@
 <section
     class="serma-home-pregnancy-week-container relative container max-w-full px-4 xl:px-0 py-12 md:py-16 bg-purple-lighten-1">
     <div class="relative container max-w-screen-lg mx-auto">
-        <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-4 md:mb-8">
+        <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-4 md:mb-8">
             Tu embarazo semana tras semana
         </h2>
-        <h3 class="text-lg md:text-xl font-medium text-center mb-5 md:mb-10">
+        <h3 class="text-lg font-medium text-center mb-5 md:mb-10">
             Conoce el desarrollo de tu bebé en cada una de las etapas en la 
             <br class="hidden md:inline">
             que te encuentres.
@@ -152,8 +152,8 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 pb-0 md:pb-12 py-8">
-    <h3 class="text-purple-darken text-lg md:text-xl font-semibold text-center mb-2 md:mb-6">Novedades</h3>
-    <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
+    <h3 class="text-purple-darken text-lg font-semibold text-center mb-2 md:mb-6">Novedades</h3>
+    <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8">
         Consejos y tips que acompañan a las
         <br class="hidden md:inline">
         mamás en su etapa de maternidad
@@ -184,8 +184,8 @@
 
 <section class="container max-w-full py-4 md:mb-12 md:py-16 mt-6 border-gray-300 bg-[#F2F6FE] bg-[length:0px] md:bg-auto md:bg-transparent serma-utilities-container">
     <div class="relative container max-w-screen-lg mx-auto">
-        <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-2 md:mb-6">Utilidades</h3>
-        <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8 px-4 md:px-0">
+        <h3 class="text-purple-darken text-lg font-medium text-center mb-2 md:mb-6">Utilidades</h3>
+        <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8 px-4 md:px-0">
             Encuentra los mejores nombres, cuentos
             <br class="hidden md:inline">
             infantiles y mucho más
@@ -214,7 +214,7 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-red-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-2xl font-bold mb-4 md:font-extrabold">
+                            <h2 class="text-xl font-semibold mb-4">
                                 Lactancia Materna
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
@@ -231,7 +231,7 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-green-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-2xl font-bold mb-4 md:font-extrabold">
+                            <h2 class="text-xl font-semibold mb-4">
                                 Psicología Prenatal
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
@@ -254,7 +254,7 @@
 
 <section class="container max-w-screen-lg mt-6 md:mt-auto mx-auto">
     <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-purple-lighten rounded-2xl serma-community-cta-container">
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-[#a28eece6] rounded-2xl serma-community-cta-container">
         <div class="pt-4 md:pt-12">
             <h2 class="text-center md:text-left text-3xl md:text-5xl font-light text-white">
                 Obtén un acceso a la <span class="font-bold">comunidad</span>
@@ -286,7 +286,7 @@
         SerMadre es un sitio web sobre el embarazo y la maternidad
     </h2>
 
-    <p class="text-base text-secondary break-normal">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
+    <p class="text-base text-secondary break-all">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
         productos, atención de
         maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de
         embarazo, revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios

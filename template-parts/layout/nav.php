@@ -17,7 +17,7 @@
                 <a class="flex text-center items-center block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4 md:text-black text-[#262D47]"
                     href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/comunidad.svg"
-                        alt="Comunidad" width="30px" height="30px">
+                        alt="Comunidad" width="24px" height="24px">
                     <span class="ml-2 font-bold md:font-normal">Comunidad</span>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 <a class="group-hover flex text-center items-center block border border-white rounded hover:border-gray-200 text-blue-500 group-hover:bg-gray-200 hover:bg-gray-200 py-2 px-4 md:text-black text-[#262D47]"
                     href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/utilidades.svg"
-                        alt="Comunidad" width="30px" height="30px">
+                        alt="Comunidad" width="24px" height="24px">
                     <span class="w-full text-left ml-2 font-bold md:font-normal">Utilidades</span>
                     <div>
                         <span class="fas fa-chevron-down text-icon mr-1 fa-sm group-hover:hidden text-right"></span>
@@ -60,7 +60,7 @@
                 <a class="group-hover flex text-center items-center block border border-white rounded hover:border-gray-200 text-blue-500 group-hover:bg-gray-200 hover:bg-gray-200 py-2 px-4 md:text-black text-[#262D47]"
                     href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/contenido.svg"
-                        alt="Comunidad" width="30px" height="30px">
+                        alt="Comunidad" width="24px" height="24px">
                     <span class="w-full text-left ml-2 font-bold md:font-normal">Contenido</span>
                     <div>
                         <span class="fas fa-chevron-down text-icon mr-1 fa-sm group-hover:hidden text-right"></span>
@@ -95,7 +95,7 @@
                 <a class="group-hover flex text-center items-center block border border-white rounded hover:border-gray-200 text-blue-500 group-hover:bg-gray-200 hover:bg-gray-200 py-2 px-4 md:text-black text-[#262D47]"
                     href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/servicios.svg"
-                        alt="Comunidad" width="30px" height="30px">
+                        alt="Comunidad" width="24px" height="24px">
                     <span class="w-full text-left ml-2 font-bold md:font-normal">Servicios</span>
                     <div>
                         <span class="fas fa-chevron-down text-icon mr-1 fa-sm group-hover:hidden text-right"></span>
@@ -120,7 +120,7 @@
                 <a class="group-hover flex text-center items-center block border border-white rounded hover:border-gray-200 text-blue-500 group-hover:bg-gray-200 hover:bg-gray-200 py-2 px-4 md:text-black text-[#262D47]"
                     href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/herramientas.svg"
-                        alt="Comunidad" width="30px" height="30px">
+                        alt="Comunidad" width="24px" height="24px">
                     <span class="w-full text-left ml-2 font-bold md:font-normal">Herramientas</span>
                     <div>
                         <span class="fas fa-chevron-down text-icon mr-1 fa-sm group-hover:hidden text-right"></span>
@@ -145,7 +145,7 @@
                 <a class="flex text-center items-center block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4 md:text-black text-[#262D47]"
                     href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/marketplace.svg"
-                        alt="Comunidad" width="30px" height="30px">
+                        alt="Comunidad" width="24px" height="24px">
                     <span class="ml-2 font-bold md:font-normal">Marketplace</span>
                 </a>
             </li>
