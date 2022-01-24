@@ -254,7 +254,7 @@
 
 <section class="container max-w-screen-lg mt-6 md:mt-auto mx-auto">
     <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-purple-lighten rounded-2xl serma-community-cta-container">
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-[#a28eece6] rounded-2xl serma-community-cta-container">
         <div class="pt-4 md:pt-12">
             <h2 class="text-center md:text-left text-3xl md:text-5xl font-light text-white">
                 Obtén un acceso a la <span class="font-bold">comunidad</span>
