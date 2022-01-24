@@ -67,7 +67,7 @@
                     <span
                         class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-tiny md:text-base capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
                     <button
-                        class="cursor-default h-7 px-2 md:h-9 md:px-3 text-white bg-green-lighten rounded md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
+                        class="cursor-default h-7 px-2 md:h-8 md:px-3 text-white bg-green-lighten rounded md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
                         <span class="flex">
                             <img loading="lazy" class="mr-0 md:mr-2"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
@@ -286,7 +286,7 @@
         SerMadre es un sitio web sobre el embarazo y la maternidad
     </h2>
 
-    <p class="text-base text-secondary break-normal">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
+    <p class="text-base text-secondary break-all">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
         productos, atención de
         maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de
         embarazo, revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios
