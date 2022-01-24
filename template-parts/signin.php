@@ -17,7 +17,7 @@
     </div>
     <div id="myTabContent">
         <div class="pu-4 px-4 md:px-0 rounded-lg" id="login" role="tabpanel" aria-labelledby="login-tab">
-            <div class="container serma-login-container max-w-full mx-auto pb-10">
+            <div class="container serma-login-container max-w-full mx-auto pb-10 bg-empty md:bg-cover">
                 <div class="container max-w-md mx-auto">
                     <?= get_template_part( 'template-parts/signin/login' ); ?>
                 </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="hidden pt-4 pb-8 px-4 md:px-0 rounded-lg" id="register" role="tabpanel" aria-labelledby="register-tab">
-            <div class="container serma-register-container-1 max-w-full mx-auto">
+            <div class="container serma-register-container-1 bg-empty md:bg-cover max-w-full mx-auto">
                 <div class="container max-w-md mx-auto">
                     <?= get_template_part( 'template-parts/signin/register' ); ?>
                 </div>
