@@ -308,6 +308,9 @@ function ser_madre_theme_core_scripts() {
 					'contain': 'contain',
 					'empty': '0px'
 				},
+				maxWidth: {
+					'screen-lg': '1056px',
+				},
 				colors: {
 					primary: '#62CEF9',
 					secondary: '#4D4D4D',
