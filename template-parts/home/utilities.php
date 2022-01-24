@@ -3,7 +3,7 @@
         <div class="flex-none md:flex-auto w-11/12 md:w-auto border-x-2 rounded-lg border-b-2 border-gray-300 bg-white">
             <div class="grid grid-cols-1 rounded-t-lg utilities-cta-1">
                 <div class="pt-8 pl-6">
-                    <h2 class="font-base md:text-2xl font-bold mb-4 md:font-semibold text-white">
+                    <h2 class="md:text-xl font-medium mb-4 text-white">
                         Nombres
                         <br>
                         para Bebés
@@ -85,7 +85,7 @@
             class="flex-none md:flex-auto w-11/12 md:w-auto border-x-2 rounded-lg border-b-2 border-gray-300 bg-white bg-white">
             <div class="grid grid-cols-1 rounded-t-lg utilities-cta-2">
                 <div class="pt-8 pl-6">
-                    <h2 class="font-base md:text-2xl font-bold mb-4 md:font-semibold text-white">
+                    <h2 class="md:text-xl font-medium mb-4 text-white">
                         Cuentos
                         <br>
                         infantiles
@@ -165,7 +165,7 @@
             class="flex-none md:flex-auto w-11/12 md:w-auto border-x-2 rounded-lg border-b-2 border-gray-300 bg-white bg-white">
             <div class="grid grid-cols-1 rounded-t-lg utilities-cta-3">
                 <div class="pt-8 pl-6">
-                    <h2 class="font-base md:text-2xl font-bold mb-4 md:font-semibold text-white">
+                    <h2 class="md:text-xl font-medium mb-4 text-white">
                         Dibujos para
                         <br>
                         colorear
