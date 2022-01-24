@@ -12,6 +12,10 @@
  * @link    https://www.studiopress.com/
  */
 
+if (is_user_logged_in()) {
+	wp_redirect( site_url() );
+}
+
 add_filter( 'body_class', 'genesis_sample_login_body_class' );
 /**
  * Adds landing page body class.

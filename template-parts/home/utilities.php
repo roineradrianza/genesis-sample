@@ -11,16 +11,16 @@
                 </div>
             </div>
 
-            <div>
+            <div class="pt-4">
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/baby.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 100 nombres para bebés
                             </h2>
                         </div>
@@ -32,14 +32,14 @@
                 </a>
 
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/boy.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Top nombre de niños
                             </h2>
                         </div>
@@ -51,14 +51,14 @@
                 </a>
 
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/girl.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Top nombre de niñas
                             </h2>
                         </div>
@@ -70,8 +70,8 @@
                 </a>
 
 
-                <div class="flex justify-end pr-8 py-4">
-                    <button class="rounded outline outline-1 outline-black px-5 py-2 md:px-7 md:py-3 font-regular">
+                <div class="flex justify-end pr-6 py-4">
+                    <button class="rounded outline outline-1 outline-black px-5 py-2 md:px-7 md:py-2.5 font-normal">
                         +Ver más
                     </button>
                 </div>
@@ -93,16 +93,16 @@
                 </div>
             </div>
 
-            <div>
+            <div class="pt-4">
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/reading.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Wurny: El dinosaudio Refunfuñon
                             </h2>
                         </div>
@@ -114,14 +114,14 @@
                 </a>
 
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/reading.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Wurny: El dinosaudio Refunfuñon
                             </h2>
                         </div>
@@ -133,14 +133,14 @@
 
                 </a>
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/reading.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Wurny: El dinosaudio Refunfuñon
                             </h2>
                         </div>
@@ -151,8 +151,8 @@
                     </div>
                 </a>
 
-                <div class="flex justify-end pr-8 py-4">
-                    <button class="rounded outline outline-1 outline-black px-5 py-2 md:px-7 md:py-3 font-regular">
+                <div class="flex justify-end pr-6 py-4">
+                    <button class="rounded outline outline-1 outline-black px-5 py-2 md:px-7 md:py-2.5 font-normal">
                         +Ver más
                     </button>
                 </div>
@@ -173,16 +173,16 @@
                 </div>
             </div>
 
-            <div>
+            <div class="pt-4">
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/drawing.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Dibujos de Super héroes
                             </h2>
                         </div>
@@ -194,14 +194,14 @@
                 </a>
 
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/drawing.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Dibujos de Animales
                             </h2>
                         </div>
@@ -213,14 +213,14 @@
                 </a>
 
                 <a href="#">
-                    <div class="grid grid-cols-5 rounded-t-lg py-4">
+                    <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/drawing.svg">
                         </div>
 
-                        <div class="col-span-3">
-                            <h2 class="font-base">
+                        <div class="col-span-5 flex items-center">
+                            <h2 class="font-medium">
                                 Dibujos de Cuentos y Leyendas
                             </h2>
                         </div>
@@ -231,8 +231,8 @@
                     </div>
                 </a>
 
-                <div class="flex justify-end pr-8 py-4">
-                    <button class="rounded outline outline-1 outline-black px-5 py-2 md:px-7 md:py-3 font-regular">
+                <div class="flex justify-end pr-6 py-4">
+                    <button class="rounded outline outline-1 outline-black px-5 py-2 md:px-7 md:py-2.5 font-normal">
                         +Ver más
                     </button>
                 </div>

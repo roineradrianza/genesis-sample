@@ -281,13 +281,13 @@ function genesis_sample_comments_gravatar( $args ) {
 add_action('wp_enqueue_scripts', 'ser_madre_theme_core_scripts');
 
 function ser_madre_theme_core_scripts() {
-	wp_register_script( 'tailwind-css', "https://cdn.tailwindcss.com", [], '3.0.12', true );
-	wp_register_script( 'tailwind-flowbite', "https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.bundle.js", 'tailwind-css', '1.3.0', true );
+	wp_register_script( 'tailwind-css', "https://cdn.tailwindcss.com", [], '3.0.12', false );
+	wp_register_script( 'tailwind-flowbite', "https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.bundle.js", 'tailwind-css', '1.3.0', false );
 	wp_register_script( 'fontawesome', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/js/all.min.js", [], '5.15.4', true );
 	wp_register_script( 'serma-core', get_stylesheet_directory_uri() . "/assets/js/serma-core.js", [], '1.0.0', true );
-	
+
 	wp_enqueue_script( 'tailwind-css' );
-	wp_enqueue_script( 'tailwind-flowbite' );
+	wp_enqueue_script( 'tailwind-flowbite' );	
 	wp_enqueue_script( 'fontawesome' );
 	wp_enqueue_script( 'serma-core' );
 
@@ -302,6 +302,12 @@ function ser_madre_theme_core_scripts() {
 		theme: {
 			darkMode: false,
 			extend: {
+				backgroundSize: {
+					'auto': 'auto',
+					'cover': 'cover',
+					'contain': 'contain',
+					'empty': '0px'
+				},
 				colors: {
 					primary: '#62CEF9',
 					secondary: '#4D4D4D',

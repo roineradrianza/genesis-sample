@@ -1,14 +1,14 @@
 <section class="container max-w-screen-lg mx-auto">
     <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-4 px-7 md:px-14 bg-yellow-lighten rounded-lg serma-home-hero-container">
-        <div class="py-7 md:py-14">
-            <h1 class="text-center md:text-left text-4-5xl md:text-6xl font-bold text-purple-lighten">Estamos contigo
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 px-7 md:px-14 bg-yellow-lighten rounded-lg serma-home-hero-container">
+        <div class="py-7 md:py-10">
+            <h1 class="text-center md:text-left text-4-5xl md:text-5xl font-bold text-purple-lighten">Estamos contigo
             </h1>
-            <p class="my-4 md:my-8 text-center md:text-left text-base md:text-lg font-bold text-black">
+            <p class="my-4 md:my-6 text-center md:text-left text-base md:text-base font-bold text-black">
                 Antes <span class="text-[#FF7070] mx-2 md:mx-4">•</span> Durante <span
                     class="text-[#FF7070] mx-2 md:mx-4">•</span> Y después del embarazo
             </p>
-            <h2 class="text-center md:text-left text-lg md:text-2xl text-secondary">
+            <h2 class="text-center md:text-left text-lg md:text-xl text-secondary">
                 Toda la información que necesitas sobre <br>
                 el embarazo y la maternidad en línea.
             </h2>
@@ -17,9 +17,9 @@
             </button>
         </div>
 
-        <div class="md:pt-3 pb-3">
+        <div class="md:pt-3 pb-3 md:flex items-center">
             <div>
-                <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-image.png" alt="Estamos contigo">
+                <img class="md:w-4/5 mx-auto" loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-image.png" alt="Estamos contigo">
             </div>
             <div class="flex justify-center md:hidden">
                 <button class="my-3 rounded bg-green-lighten px-4 py-3 text-white font-regular">
@@ -31,12 +31,12 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto flex px-4 xl:px-0 pt-8 md:py-8">
-    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-28 left-0 rounded-full w-10 h-10 z-10"
+    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-20 left-0 rounded-full w-9 h-9 z-10"
         serma-carousel-target="areas_carousel">
         <span class="fas fa-chevron-left text-secondary fa-sm text-center"></i>
     </div>
 
-    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute inset-y-28 right-0 rounded-full w-10 h-10 z-10"
+    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute inset-y-20 right-0 rounded-full w-9 h-9 z-10"
         serma-carousel-target="areas_carousel">
         <span class="fas fa-chevron-right text-secondary fa-sm text-center"></span>
     </div>
@@ -67,12 +67,12 @@
                     <span
                         class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-tiny md:text-base capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
                     <button
-                        class="cursor-default h-7 px-2 md:h-10 md:px-3 md:px-5 text-white bg-green-lighten rounded-lg absolute bottom-3 md:bottom-5 right-4 md:right-8">
+                        class="cursor-default h-7 px-2 md:h-9 md:px-3 text-white bg-green-lighten rounded md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
                         <span class="flex">
                             <img loading="lazy" class="mr-0 md:mr-2"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
-                                width="15px" height="15px">
-                            <span class="hidden md:inline font-normal">Verificado por un especialista</span>
+                                width="17px" height="17px">
+                            <span class="hidden md:inline font-normal text-tiny">Verificado por un especialista</span>
                         </span>
                     </button>
                 </div>
@@ -104,7 +104,7 @@
                         <span
                             class="absolute bottom-2 md:bottom-3 left-4 text-white font-normal hidden md:inline capitalize text-base"><?= wp_date('F j, Y', strtotime($article['published_at'])) ?></span>
                         <button
-                            class="cursor-default h-7 md:h-8 px-2 text-white bg-green-lighten rounded-lg absolute bottom-2 md:bottom-3 right-2 md:right-4">
+                            class="cursor-default h-7 md:h-8 px-2 text-white bg-green-lighten rounded md:rounded-md absolute bottom-2 md:bottom-3 right-2 md:right-4">
                             <span class="flex">
                                 <img loading="lazy" class="mr-0"
                                     src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
@@ -152,7 +152,7 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 pb-0 md:pb-12 py-8">
-    <h3 class="text-purple-darken text-lg md:text-xl font-medium text-center mb-2 md:mb-6">Novedades</h3>
+    <h3 class="text-purple-darken text-lg md:text-xl font-semibold text-center mb-2 md:mb-6">Novedades</h3>
     <h2 class="text-black text-2xl md:text-4xl text-center font-semibold mb-8">
         Consejos y tips que acompañan a las
         <br class="hidden md:inline">
@@ -214,11 +214,11 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-red-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-2xl font-bold mb-4 md:font-semibold">
+                            <h2 class="text-2xl font-bold mb-4 md:font-extrabold">
                                 Lactancia Materna
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
-                                Ver detalles <span class="fas fa-arrow-right"></span>
+                                Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
                             </button>
                         </div>
 
@@ -231,11 +231,11 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-green-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-2xl font-bold md:font-semibold mb-4">
+                            <h2 class="text-2xl font-bold mb-4 md:font-extrabold">
                                 Psicología Prenatal
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
-                                Ver detalles <span class="fas fa-arrow-right"></span>
+                                Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
                             </button>
                         </div>
 
@@ -254,7 +254,7 @@
 
 <section class="container max-w-screen-lg mt-6 md:mt-auto mx-auto">
     <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-purple-lighten rounded-lg serma-community-cta-container">
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-purple-lighten rounded-2xl serma-community-cta-container">
         <div class="pt-4 md:pt-12">
             <h2 class="text-center md:text-left text-3xl md:text-5xl font-light text-white">
                 Obtén un acceso a la <span class="font-bold">comunidad</span>

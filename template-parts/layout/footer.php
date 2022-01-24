@@ -9,12 +9,12 @@
             </p>
             <div class="flex justify-center md:justify-start mt-6">
                 <a href="https://www.facebook.com/sermadrela/"
-                    class="bg-indigo-600 px-4 py-2 font-semibold inline-flex items-center space-x-2 rounded-full mr-4">
+                    class="bg-indigo-600 py-2 px-3.5 font-semibold inline-flex items-center rounded-full mr-4">
                     <span class="fab fa-facebook-f text-white" style="font-size: 30px;"></span>
                 </a>
 
                 <a href="https://www.instagram.com/sermadreoficial/"
-                    class="bg-indigo-600 px-3 py-2 font-semibold inline-flex items-center space-x-2 rounded-full">
+                    class="bg-indigo-600 py-2 px-2.5 font-semibold inline-flex items-center rounded-full">
                     <span class="fab fa-instagram text-white" style="font-size: 30px;"></span>
                 </a>
             </div>
@@ -92,7 +92,7 @@
 
         <div>
             <h4 class="font-bold md:font-semibold md:text-lg text-center md:text-left my-6 md:my-0">Contacto</h4>
-            <div class="mt-3">
+            <div class="mt-5">
                 <p class="font-regular text-base mb-6 text-center md:text-left">
                     <a href="mailto:contacto@sermadre.com">
                         <span class="far fa-envelope fa-lg text-indigo-700 mr-2"></span>
