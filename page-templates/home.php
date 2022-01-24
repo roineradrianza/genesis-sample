@@ -214,7 +214,7 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-red-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-2xl font-bold mb-4 md:font-extrabold">
+                            <h2 class="text-xl font-semibold mb-4">
                                 Lactancia Materna
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
@@ -231,7 +231,7 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-green-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-2xl font-bold mb-4 md:font-extrabold">
+                            <h2 class="text-xl font-semibold mb-4">
                                 Psicología Prenatal
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
