@@ -116,15 +116,15 @@ class blogPosts {
                     </div>
 
                     <div class="px-4 md:px-8 pt-4 pb-8">
-                        <p class="text-primary mb-2 font-medium">
+                        <p class="text-primary mb-2 font-medium text-12px">
                             ${element.category.name}
                         </p>
-                        <h4 class="text-black text-xl md:text-xl font-semibold">
+                        <h4 class="text-black text-16px font-semibold">
                             <a href="${element.link}" target="_blank">
                                 ${element.title}
                             </a>
                         </h4>
-                        <p class="mt-4">${element.excerpt}</p>
+                        <p class="text-14px mt-4">${element.excerpt}</p>
                     </div>
                 </div>
             </div>
@@ -135,15 +135,15 @@ class blogPosts {
         return `
         <div class="grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg mb-4">
             <div class="pl-4 md:pl-6 col-span-2">
-                <p class="serma-category text-tiny md:text-base text-primary md:mb-2 font-medium">
+                <p class="serma-category text-tiny md:text-12px text-primary md:mb-2 font-medium">
                     ${element.category.name}
                 </p>
-                <h4 class="text-black text-lg md:text-xl font-semibold mb-4">
+                <h4 class="text-black text-lg md:text-16px font-semibold mb-4">
                     <a href="${element.link}" target="_blank">
                     ${element.title}
                     </a>
                 </h4>
-                <p class="text-secondary text-tiny md:text-md font-normal capitalize">
+                <p class="text-secondary text-tiny md:text-12px font-normal capitalize">
                     ${element.published_at_formatted}
                 </p>
             </div>

@@ -2,13 +2,13 @@
     <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 px-7 md:px-14 bg-yellow-lighten rounded-lg serma-home-hero-container">
         <div class="py-7 md:py-10">
-            <h1 class="text-center md:text-left text-4-5xl md:text-5xl font-bold text-purple-lighten">Estamos contigo
+            <h1 class="text-center md:text-left text-4-5xl md:text-48px font-bold text-purple-lighten">Estamos contigo
             </h1>
-            <p class="my-4 md:my-6 text-center md:text-left text-base md:text-base font-bold text-black">
+            <p class="my-4 md:my-6 text-center md:text-left text-14px font-bold text-black">
                 Antes <span class="text-[#FF7070] mx-2 md:mx-4">•</span> Durante <span
                     class="text-[#FF7070] mx-2 md:mx-4">•</span> Y después del embarazo
             </p>
-            <h2 class="text-center md:text-left text-lg md:text-xl text-secondary">
+            <h2 class="text-center md:text-left text-18px text-secondary">
                 Toda la información que necesitas sobre <br>
                 el embarazo y la maternidad en línea.
             </h2>
@@ -49,7 +49,7 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 py-4 md:py-8">
-    <h3 class="text-purple-darken text-lg font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
+    <h3 class="text-purple-darken text-14px font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
     <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8">
         Contenidos sobre maternidad y embarazo
         <br>
@@ -72,15 +72,15 @@
                             <img loading="lazy" class="mr-0 md:mr-2"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
                                 width="17px" height="17px">
-                            <span class="hidden md:inline font-normal text-tiny">Verificado por un especialista</span>
+                            <span class="hidden md:inline font-normal text-12px">Verificado por un especialista</span>
                         </span>
                     </button>
                 </div>
             </div>
             <div class="serma-post-content-container px-3 md:px-8 pt-4 pb-8">
-                <p class="serma-category text-primary mb-2 font-medium">
+                <p class="serma-category text-primary mb-2 font-medium text-12px">
                     <?=$args['medical_articles'][0]['category']['name']?></p>
-                <h4 class="text-black text-xl md:text-1.5-xl font-bold md:font-semibold">
+                <h4 class="text-black text-18px font-bold md:font-semibold">
                     <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
                         <?=$args['medical_articles'][0]['title']?>
                     </a>
@@ -115,15 +115,15 @@
                 </div>
             </div>
             <div class="col-span-2 md:col-auto serma-post-content-container pl-1 md:pl-0 md:px-2">
-                <p class="text-tiny md:text-base serma-category text-primary md:mb-2 font-medium">
+                <p class="text-tiny md:text-12px serma-category text-primary md:mb-2 font-medium">
                     <?= $article['category']['name'] ?>
                 </p>
-                <h4 class="text-black text-xl font-bold md:font-semibold mb-1 md:mb-2">
+                <h4 class="text-black text-16px font-bold md:font-semibold mb-1 md:mb-2">
                     <a href="<?= $article['link'] ?>" target="_blank">
                         <?= $article['title'] ?>
                     </a>
                 </h4>
-                <p class="text-base hidden md:inline"> <?= $article['excerpt'] ?></p>
+                <p class="text-14px hidden md:inline"> <?= $article['excerpt'] ?></p>
                 <p class="text-tiny md:text-base text-secondary font-normal md:hidden capitalize ">
                     <?= wp_date('F j, Y', strtotime($article['published_at'])) ?></p>
             </div>
@@ -139,7 +139,7 @@
         <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-4 md:mb-8">
             Tu embarazo semana tras semana
         </h2>
-        <h3 class="text-lg font-medium text-center mb-5 md:mb-10">
+        <h3 class="text-14px font-medium text-center mb-5 md:mb-10">
             Conoce el desarrollo de tu bebé en cada una de las etapas en la 
             <br class="hidden md:inline">
             que te encuentres.
@@ -152,7 +152,7 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 pb-0 md:pb-12 py-8">
-    <h3 class="text-purple-darken text-lg font-semibold text-center mb-2 md:mb-6">Novedades</h3>
+    <h3 class="text-purple-darken text-14px font-semibold text-center mb-2 md:mb-6">Novedades</h3>
     <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8">
         Consejos y tips que acompañan a las
         <br class="hidden md:inline">
@@ -184,7 +184,7 @@
 
 <section class="container max-w-full py-4 md:mb-12 md:py-16 mt-6 border-gray-300 bg-[#F2F6FE] bg-[length:0px] md:bg-auto md:bg-transparent serma-utilities-container">
     <div class="relative container max-w-screen-lg mx-auto">
-        <h3 class="text-purple-darken text-lg font-medium text-center mb-2 md:mb-6">Utilidades</h3>
+        <h3 class="text-purple-darken text-14px font-medium text-center mb-2 md:mb-6">Utilidades</h3>
         <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8 px-4 md:px-0">
             Encuentra los mejores nombres, cuentos
             <br class="hidden md:inline">
@@ -200,10 +200,10 @@
 <section class="container max-w-screen-lg mx-auto mb-2 md:my-8 py-4 md:py-8 md:border-t border-gray-300 md:pt-12">
     <div class="grid grid-cols-3 gap-4 mx-4 md:mx-0">
         <div class="col-span-3 md:col-span-1 pt-8">
-            <h2 class="text-center md:text-left text-3xl text-black font-semibold">
+            <h2 class="text-center md:text-left text-24px text-black font-semibold">
                 Asesórate en linea con un especialista
             </h2>
-            <p class="text-center md:text-left text-base text-secondary my-3 md:my-6">
+            <p class="text-center md:text-left text-14px text-secondary my-3 md:my-6">
                 Actualmente brindamos asesorias virtuales sobre
                 estos temas:
             </p>
@@ -214,10 +214,10 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-red-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-1.5-xl font-semibold mb-4">
+                            <h2 class="text-18px font-semibold mb-4">
                                 Lactancia Materna
                             </h2>
-                            <button class="bg-transparent font-normal text-purple-darken text-base">
+                            <button class="bg-transparent font-normal text-purple-darken text-14px">
                                 Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
                             </button>
                         </div>
@@ -231,10 +231,10 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-green-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-1.5-xl font-semibold mb-4">
+                            <h2 class="text-18px font-semibold mb-4">
                                 Psicología Prenatal
                             </h2>
-                            <button class="bg-transparent font-normal text-purple-darken text-base">
+                            <button class="bg-transparent font-normal text-purple-darken text-14px">
                                 Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
                             </button>
                         </div>
@@ -256,10 +256,10 @@
     <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 px-7 md:px-14 bg-[#a28eece6] rounded-2xl serma-community-cta-container">
         <div class="pt-4 md:pt-12">
-            <h2 class="text-center md:text-left text-3xl md:text-5xl font-light text-white">
+            <h2 class="text-center md:text-left text-3xl md:text-40px font-light text-white">
                 Obtén un acceso a la <span class="font-bold">comunidad</span>
             </h2>
-            <p class="my-2 md:my-6 text-center md:text-left font-light text-base md:text-lg text-white">
+            <p class="my-2 md:my-6 text-center md:text-left font-light text-base md:text-14px text-white">
                 Tu experiencia podria ayudar a una mami con dificultad.
             </p>
             <div class="flex justify-center md:inline">
@@ -282,11 +282,11 @@
 </section>
 
 <section class="relative container hidden md:block max-w-screen-lg mx-auto px-4 xl:px-0 py-8">
-    <h2 class="text-black text-3xl font-semibold mb-8">
+    <h2 class="text-black text-24px font-semibold mb-8">
         SerMadre es un sitio web sobre el embarazo y la maternidad
     </h2>
 
-    <p class="text-base text-secondary break-all">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
+    <p class="text-14px text-secondary break-all">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
         productos, atención de
         maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de
         embarazo, revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios

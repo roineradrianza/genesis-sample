@@ -362,6 +362,13 @@ function ser_madre_theme_core_scripts() {
 				'5xl': '2.55rem',
 				'6xl': '3.4rem',
 				'7xl': '4.25rem',
+				'12px': '12px',
+				'14px': '14px',
+				'16px': '16px',
+				'18px': '18px',
+				'24px': '24px',
+				'40px': '40px',
+				'48px': '48px',
 			}
 		},
 

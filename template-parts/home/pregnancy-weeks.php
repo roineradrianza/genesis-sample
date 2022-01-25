@@ -3,7 +3,7 @@
     <div class="flex-none bg-purple-lighten-2 px-0 md:px-5 py-3 md:py-6 rounded-lg-2x mr-3 md:mr-6 md:w-2/6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
             <div class="px-4 md:px-0">
-                <h4 class="text-1.5-xl font-semibold text-black mb-5 md:mb-10">
+                <h4 class="text-18px font-semibold text-black mb-5 md:mb-10">
                     Primer
                     <br class="hidden md:inline">
                     trimestre
@@ -26,7 +26,7 @@
     <div class="flex-none bg-purple-lighten-3 px-0 md:px-5 py-3 md:py-6 rounded-lg-2x mr-3 md:mr-6 md:w-2/6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
             <div class="px-4 md:px-0">
-                <h4 class="text-1.5-xl font-semibold text-black mb-5 md:mb-10">
+                <h4 class="text-18px font-semibold text-black mb-5 md:mb-10">
                     Segundo
                     <br class="hidden md:inline">
                     trimestre
@@ -50,7 +50,7 @@
     <div class="flex-none bg-purple-lighten-4 px-0 md:px-5 py-3 md:py-6 rounded-lg-2x mr-3 md:mr-6 md:w-2/6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
             <div class="px-4 md:px-0">
-                <h4 class="text-1.5-xl font-semibold text-black mb-5 md:mb-10">
+                <h4 class="text-18px font-semibold text-black mb-5 md:mb-10">
                     Tercer
                     <br class="hidden md:inline">
                     trimestre

@@ -4,7 +4,7 @@
             <div class="flex justify-center md:justify-start">
                 <?php the_custom_logo(); ?>
             </div>
-            <p class="text-center md:text-left mt-8 text-base">
+            <p class="text-center md:text-left mt-8 text-14px">
                 Ser Madre Perú es la comunidad <br> más grande para el embarazo.
             </p>
             <div class="flex justify-center md:justify-start mt-6">
@@ -21,34 +21,34 @@
         </div>
 
         <div class="hidden md:inline">
-            <h4 class="font-bold md:font-semibold text-lg">Sobre Sermadre</h4>
+            <h4 class="font-bold md:font-semibold text-14px">Sobre Sermadre</h4>
             <ul class="mt-3">
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Comunidad
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Utilidades
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Contenido
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Servicios
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Herramientas
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Marketplace
                 </li>
@@ -56,34 +56,34 @@
         </div>
 
         <div class="hidden md:inline">
-            <h4 class="font-bold md:font-semibold text-lg">Recursos</h4>
+            <h4 class="font-bold md:font-semibold text-14px">Recursos</h4>
             <ul class="mt-3">
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Nosotros
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Preguntas frecuentes
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Contacto
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Condiciones de uso
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Políticas de privacidad
                 </li>
 
-                <li class="py-2 font-awesome-icons text-base">
+                <li class="py-2 font-awesome-icons text-14px">
                     <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Empresas
                 </li>
@@ -91,9 +91,9 @@
         </div>
 
         <div>
-            <h4 class="font-bold md:font-semibold md:text-lg text-center md:text-left my-6 md:my-0">Contacto</h4>
+            <h4 class="font-bold md:font-semibold text-14px text-center md:text-left my-6 md:my-0">Contacto</h4>
             <div class="mt-5">
-                <p class="font-regular text-base mb-6 text-center md:text-left">
+                <p class="font-regular text-14px mb-6 text-center md:text-left">
                     <a href="mailto:contacto@sermadre.com">
                         <span class="far fa-envelope fa-lg text-indigo-700 mr-2"></span>
                         contacto@sermadre.com
@@ -103,12 +103,12 @@
                     <a class="flex" href="tel:+1 202-600-9576">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/footer/telefono.svg"
                             width="24px" height="24px" class="mr-2"></img>
-                        <span class="font-bold text-xl text-black">
+                        <span class="font-bold text-18px text-black">
                             +1 202-600-9576
                         </span>
                     </a>
                 </p>
-                <p class="font-regular text-base flex justify-center md:block">
+                <p class="font-regular text-14px flex justify-center md:block">
                     <a class="flex" href="www.sermadre.com">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/footer/link.svg"
                             width="24px" height="24px" class="mr-2"></img>
@@ -122,7 +122,7 @@
     </div>
 </div>
 <div class="container mx-auto py-2 max-w-screen-xl">
-    <div class="flex justify-center text-center md:text-right black-text font-semibold">
+    <div class="flex justify-center text-center md:text-right black-text font-semibold text-14px">
         Sermadre.com 2021 © Todos los derechos reservados
     </div>
 </div>
