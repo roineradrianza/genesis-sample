@@ -143,7 +143,7 @@ class blogPosts {
                     ${element.title}
                     </a>
                 </h4>
-                <p class="text-secondary text-tiny md:text-base font-normal capitalize">
+                <p class="text-secondary text-tiny md:text-md font-normal capitalize">
                     ${element.published_at_formatted}
                 </p>
             </div>

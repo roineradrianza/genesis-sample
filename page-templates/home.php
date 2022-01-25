@@ -56,8 +56,8 @@
         verificados por especialistas
     </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-        <div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-0">
+        <div class="border border-gray-300 rounded-lg">
             <div class="rounded-lg">
                 <div class="relative serma-image-container">
                     <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
@@ -65,7 +65,7 @@
                         <div class="bg-gradient-to-b from-transparent to-neutral-800 h-10 md:h-14 w-full absolute bottom-0">
                     </a>
                     <span
-                        class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-tiny md:text-base capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
+                        class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-tiny md:text-md capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
                     <button
                         class="cursor-default h-7 px-2 md:h-8 md:px-3 text-white bg-green-lighten rounded md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
                         <span class="flex">
@@ -77,10 +77,10 @@
                     </button>
                 </div>
             </div>
-            <div class="serma-post-content-container px-3 md:px-8 pt-4 pb-8 border border-gray-300 rounded-b-lg">
+            <div class="serma-post-content-container px-3 md:px-8 pt-4 pb-8">
                 <p class="serma-category text-primary mb-2 font-medium">
                     <?=$args['medical_articles'][0]['category']['name']?></p>
-                <h4 class="text-black text-xl md:text-3xl font-bold md:font-semibold">
+                <h4 class="text-black text-xl md:text-1.5-xl font-bold md:font-semibold">
                     <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
                         <?=$args['medical_articles'][0]['title']?>
                     </a>
@@ -90,10 +90,10 @@
 
     </div>
 
-    <div class="mt-4 md:mt-0">
+    <div class="mt-4 md:mt-0 grid grid-cols-1 gap-y-4">
         <?php unset($args['medical_articles'][0]) ?>
         <?php foreach ( $args['medical_articles'] as $article ): ?>
-        <div class="grid grid-cols-3 md:grid-cols-2 gap-3 md:gap-0 pb-4">
+        <div class="grid grid-cols-3 md:grid-cols-2 gap-3 md:gap-0">
             <div class="md:px-6">
                 <div class="relative">
                     <a href="<?= $article['link'] ?>" target="_blank">
@@ -102,7 +102,7 @@
                     <div
                         class="rounded-lg md:rounded-none md:rounded-l-lg md:bg-gradient-to-b from-transparent to-neutral-800 h-14 w-full absolute bottom-0">
                         <span
-                            class="absolute bottom-2 md:bottom-3 left-4 text-white font-normal hidden md:inline capitalize text-base"><?= wp_date('F j, Y', strtotime($article['published_at'])) ?></span>
+                            class="absolute bottom-2 md:bottom-3 left-4 text-white font-normal hidden md:inline capitalize text-md"><?= wp_date('F j, Y', strtotime($article['published_at'])) ?></span>
                         <button
                             class="cursor-default h-7 md:h-8 px-2 text-white bg-green-lighten rounded md:rounded-md absolute bottom-2 md:bottom-3 right-2 md:right-4">
                             <span class="flex">
@@ -214,7 +214,7 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-red-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-xl font-semibold mb-4">
+                            <h2 class="text-1.5-xl font-semibold mb-4">
                                 Lactancia Materna
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
@@ -231,7 +231,7 @@
                 <div class="flex-none md:flex-auto w-11/12 md:w-auto">
                     <div class="grid grid-cols-2 bg-green-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
-                            <h2 class="text-xl font-semibold mb-4">
+                            <h2 class="text-1.5-xl font-semibold mb-4">
                                 Psicología Prenatal
                             </h2>
                             <button class="bg-transparent font-normal text-purple-darken text-base">
