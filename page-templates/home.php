@@ -1,4 +1,4 @@
-<section class="container max-w-screen-lg mx-auto">
+<section class="container max-w-screen-lg mx-auto md:mt-6">
     <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 px-7 md:px-14 bg-yellow-lighten rounded-lg serma-home-hero-container">
         <div class="py-7 md:py-10">
