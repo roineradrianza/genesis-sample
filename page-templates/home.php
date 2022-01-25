@@ -77,7 +77,7 @@
                     </button>
                 </div>
             </div>
-            <div class="serma-post-content-container px-3 md:px-8 pt-4 pb-8 border-2 border-gray-300 rounded-b-lg">
+            <div class="serma-post-content-container px-3 md:px-8 pt-4 pb-8 border border-gray-300 rounded-b-lg">
                 <p class="serma-category text-primary mb-2 font-medium">
                     <?=$args['medical_articles'][0]['category']['name']?></p>
                 <h4 class="text-black text-xl md:text-3xl font-bold md:font-semibold">
@@ -197,7 +197,7 @@
     </div>
 </section>
 
-<section class="container max-w-screen-lg mx-auto mb-2 md:my-8 py-4 md:py-8 md:border-t-2 border-gray-300 md:pt-12 md:border-t-2">
+<section class="container max-w-screen-lg mx-auto mb-2 md:my-8 py-4 md:py-8 md:border-t border-gray-300 md:pt-12">
     <div class="grid grid-cols-3 gap-4 mx-4 md:mx-0">
         <div class="col-span-3 md:col-span-1 pt-8">
             <h2 class="text-center md:text-left text-3xl text-black font-semibold">

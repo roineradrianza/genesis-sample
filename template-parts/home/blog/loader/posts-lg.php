@@ -1,5 +1,5 @@
 <div class="w-full">
-    <div class="animate-pulse h-full space-x-5 border-2 rounded-lg">
+    <div class="animate-pulse h-full space-x-5 border rounded-lg">
         <div class="w-full bg-gray-300 h-52 mb-6">
         </div>
         <div class="flex flex-col space-y-3 pb-6">

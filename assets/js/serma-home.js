@@ -99,12 +99,12 @@ class blogPosts {
     }
 
     getPostCardLg (element, index) {
-        let classes = index == 1 ? 'mr-n1 hidden md:inline' : 'ml-n1'
+        let classes = index == 1 ? 'hidden md:inline' : ''
         return `
-            <div class="${classes} rounded-lg border-2 border-t-0 border-gray-300" post-${index}>
+            <div class="${classes} rounded-lg border border-t-0 border-gray-300" post-${index}>
                 <div>
                     <div>
-                        <div class="relative ml-n1">
+                        <div class="relative">
                             <a href="${element.link}" target="_blank">
                                 <img class="rounded-lg h-48 w-full object-cover" src="${element.featured_image}">
                             </a>
@@ -133,7 +133,7 @@ class blogPosts {
 
     getPostCardSm (element, index) {
         return `
-        <div class="grid grid-cols-3 gap-2 py-4 md:py-6 border-2 border-gray-300 rounded-lg mb-4">
+        <div class="grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg mb-4">
             <div class="pl-4 md:pl-6 col-span-2">
                 <p class="serma-category text-tiny md:text-base text-primary md:mb-2 font-medium">
                     ${element.category.name}
