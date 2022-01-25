@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -108,7 +108,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -127,7 +127,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
 
@@ -146,7 +146,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -188,7 +188,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -207,7 +207,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -226,7 +226,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
