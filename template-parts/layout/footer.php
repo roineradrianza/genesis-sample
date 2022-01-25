@@ -24,32 +24,32 @@
             <h4 class="font-bold md:font-semibold text-lg">Sobre Sermadre</h4>
             <ul class="mt-3">
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Comunidad
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Utilidades
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Contenido
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Servicios
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Herramientas
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Marketplace
                 </li>
             </ul>
@@ -59,32 +59,32 @@
             <h4 class="font-bold md:font-semibold text-lg">Recursos</h4>
             <ul class="mt-3">
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Nosotros
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Preguntas frecuentes
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Contacto
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Condiciones de uso
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Políticas de privacidad
                 </li>
 
                 <li class="py-2 font-awesome-icons text-base">
-                    <span class="fas fa-chevron-right text-[#585CE5] mr-2"></span>
+                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
                     Empresas
                 </li>
             </ul>

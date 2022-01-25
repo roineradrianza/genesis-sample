@@ -353,6 +353,7 @@ function ser_madre_theme_core_scripts() {
 				'base': '0.85rem',
 				'lg': '0.956rem',
 				'xl': '1.06rem',
+				'1.5-xl': '1.123rem',
 				'2xl': '1.275rem',
 				'2.8xl': '1.500rem',
 				'3xl': '1.593rem',

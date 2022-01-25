@@ -1,9 +1,9 @@
 <div class="flex flex-row md:max-w-[98%] px-4 md:px-0 space-x-0 md:space-x-5">
     <div class="flex-none w-[98%] md:w-2/6">
-        <div class="flex-none md:flex-auto w-11/12 md:w-auto border-x-2 rounded-lg border-b-2 border-gray-300 bg-white">
+        <div class="flex-none md:flex-auto w-11/12 md:w-auto border-x rounded-lg border-b border-gray-300 bg-white">
             <div class="grid grid-cols-1 rounded-t-lg utilities-cta-1">
                 <div class="pt-8 pl-6">
-                    <h2 class="md:text-xl font-medium mb-4 text-white">
+                    <h2 class="md:text-1.5-xl font-medium mb-4 text-white">
                         Nombres
                         <br>
                         para Bebés
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -82,10 +82,10 @@
 
     <div class="flex-none w-[110%] md:w-2/6">
         <div
-            class="flex-none md:flex-auto w-11/12 md:w-auto border-x-2 rounded-lg border-b-2 border-gray-300 bg-white bg-white">
+            class="flex-none md:flex-auto w-11/12 md:w-auto border-x rounded-lg border-b border-gray-300 bg-white bg-white">
             <div class="grid grid-cols-1 rounded-t-lg utilities-cta-2">
                 <div class="pt-8 pl-6">
-                    <h2 class="md:text-xl font-medium mb-4 text-white">
+                    <h2 class="md:text-1.5-xl font-medium mb-4 text-white">
                         Cuentos
                         <br>
                         infantiles
@@ -108,7 +108,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -127,7 +127,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
 
@@ -146,7 +146,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -162,10 +162,10 @@
 
     <div class="flex-none w-[110%] md:w-2/6">
         <div
-            class="flex-none md:flex-auto w-11/12 md:w-auto border-x-2 rounded-lg border-b-2 border-gray-300 bg-white bg-white">
+            class="flex-none md:flex-auto w-11/12 md:w-auto border-x rounded-lg border-b border-gray-300 bg-white bg-white">
             <div class="grid grid-cols-1 rounded-t-lg utilities-cta-3">
                 <div class="pt-8 pl-6">
-                    <h2 class="md:text-xl font-medium mb-4 text-white">
+                    <h2 class="md:text-1.5-xl font-medium mb-4 text-white">
                         Dibujos para
                         <br>
                         colorear
@@ -188,7 +188,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -207,7 +207,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
@@ -226,7 +226,7 @@
                         </div>
 
                         <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-md"></span>
+                            <span class="fas fa-chevron-right text-tiny text-secondary"></span>
                         </div>
                     </div>
                 </a>
