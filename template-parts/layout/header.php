@@ -31,7 +31,7 @@
                 <div id="dropdownButton" data-dropdown-toggle="dropdown"
                     class="flex items-center justify-end md:flex-1 lg:w-0">
                     <?php if (is_user_logged_in()) : ?>
-                    <div href="#" class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
+                    <div href="#" class="group inline-flex items-center font-medium text-secondary hover:text-gray-900">
                         <button class="focus:outline-0" id="dropdownButton"  data-dropdown-placement="bottom" data-dropdown-toggle="dropdownNavbar">
 
                         <?php if ( !empty(get_avatar_url( SERMA_USER::get_current()['id'] ) )) : ?>
@@ -41,7 +41,8 @@
 
                         <?php else: ?>
 
-                        <img class="w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
+                        <img class="group-hover:hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
+                        <img class="group-hover:inline hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar-2.svg">
 
                         <?php endif ?>
 
@@ -62,12 +63,13 @@
                     </div>
                     <?php else: ?>
                     <a href="<?= site_url() ?>/login"
-                        class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
-                        <img class="w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
-                        <span class="hidden md:inline">Ingresa</span>
+                        class="group inline-flex items-center font-medium text-secondary hover:text-gray-900">
+                        <img class="group-hover:hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg" width="24px">
+                        <img class="group-hover:inline hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar-2.svg" width="24px">
+                        <span class="group-hover:text-purple-darken hidden md:inline">Ingresa</span>
                     </a>
                     <a href="<?= site_url() ?>/login"
-                        class="hidden ml-8 whitespace-nowrap md:inline-flex items-center justify-center px-8 py-2.5 border border-black rounded-md shadow-sm text-14px font-medium">
+                        class="hidden ml-8 whitespace-nowrap md:inline-flex items-center justify-center px-8 py-2.5 border hover:border-purple-darken hover:text-purple-darken border-black rounded-md shadow-sm text-14px font-medium">
                         +Únete
                     </a>
                     <?php endif?>

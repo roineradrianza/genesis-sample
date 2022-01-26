@@ -37,22 +37,22 @@
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Nombre para bebés</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Nombre para bebés</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Cuentos infantiles</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Cuentos infantiles</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Dibujos para colorear</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Dibujos para colorear</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Calendario de embarazo</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calendario de embarazo</a>
                     </li>
                 </ul>
             </li>
@@ -72,22 +72,22 @@
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Artículos útiles</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Artículos útiles</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Cursos para padres</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Cursos para padres</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Notas verificadas</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Notas verificadas</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Reviews de productos</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Reviews de productos</a>
                     </li>
                 </ul>
             </li>
@@ -107,12 +107,12 @@
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Lactancia Materna</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Lactancia Materna</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Psicología Prenatal</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Psicología Prenatal</a>
                     </li>
                 </ul>
             </li>
@@ -132,12 +132,12 @@
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Calculadora de ovación</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de ovación</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0">Calculadora de parto</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de parto</a>
                     </li>
                 </ul>
             </li>

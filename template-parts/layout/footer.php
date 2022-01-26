@@ -9,13 +9,13 @@
             </p>
             <div class="flex justify-center md:justify-start mt-6">
                 <a href="https://www.facebook.com/sermadrela/"
-                    class="bg-indigo-600 py-2 px-3.5 font-semibold inline-flex items-center rounded-full mr-4">
-                    <span class="fab fa-facebook-f text-white" style="font-size: 30px;"></span>
+                    class="group relative bg-purple-darken hover:bg-purple-darken-1 py-2 px-3.5 font-semibold inline-flex items-center rounded-full mr-4">
+                    <span class="fab fa-facebook-f text-white group-hover:text-purple-darken" style="font-size: 30px;"></span>
                 </a>
 
                 <a href="https://www.instagram.com/sermadreoficial/"
-                    class="bg-indigo-600 py-2 px-2.5 font-semibold inline-flex items-center rounded-full">
-                    <span class="fab fa-instagram text-white" style="font-size: 30px;"></span>
+                    class="group relative bg-purple-darken hover:bg-purple-darken-1 py-2 px-2.5 font-semibold inline-flex items-center rounded-full">
+                    <span class="fab fa-instagram text-white group-hover:text-purple-darken" style="font-size: 30px;"></span>
                 </a>
             </div>
         </div>
@@ -23,33 +23,33 @@
         <div class="hidden md:inline">
             <h4 class="font-bold md:font-semibold text-14px">Sobre Sermadre</h4>
             <ul class="mt-3">
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Comunidad
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Utilidades
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Contenido
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Servicios
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Herramientas
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Marketplace
                 </li>
             </ul>
@@ -58,33 +58,33 @@
         <div class="hidden md:inline">
             <h4 class="font-bold md:font-semibold text-14px">Recursos</h4>
             <ul class="mt-3">
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Nosotros
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Preguntas frecuentes
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Contacto
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Condiciones de uso
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Políticas de privacidad
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px">
-                    <span class="fas fa-chevron-right text-tiny text-[#585CE5] mr-2"></span>
+                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
+                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Empresas
                 </li>
             </ul>
@@ -94,22 +94,22 @@
             <h4 class="font-bold md:font-semibold text-14px text-center md:text-left my-6 md:my-0">Contacto</h4>
             <div class="mt-5">
                 <p class="font-regular text-14px mb-6 text-center md:text-left">
-                    <a href="mailto:contacto@sermadre.com">
+                    <a class="hover:text-purple-darken" href="mailto:contacto@sermadre.com">
                         <span class="far fa-envelope fa-lg text-indigo-700 mr-2"></span>
                         contacto@sermadre.com
                     </a>
                 </p>
                 <p class="font-regular text-base mb-6 flex justify-center md:block">
-                    <a class="flex" href="tel:+1 202-600-9576">
+                    <a class="flex text-black hover:text-purple-darken" href="tel:+1 202-600-9576">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/footer/telefono.svg"
                             width="24px" height="24px" class="mr-2"></img>
-                        <span class="font-bold text-18px text-black">
+                        <span class="font-bold text-18px">
                             +1 202-600-9576
                         </span>
                     </a>
                 </p>
                 <p class="font-regular text-14px flex justify-center md:block">
-                    <a class="flex" href="www.sermadre.com">
+                    <a class="flex hover:text-purple-darken" href="www.sermadre.com">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/footer/link.svg"
                             width="24px" height="24px" class="mr-2"></img>
                         www.sermadre.com

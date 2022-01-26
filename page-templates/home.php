@@ -19,7 +19,8 @@
 
         <div class="md:pt-3 pb-3 md:flex items-center">
             <div>
-                <img class="md:w-4/5 mx-auto" loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-image.png" alt="Estamos contigo">
+                <img class="md:w-4/5 mx-auto" loading="lazy"
+                    src="<?=get_stylesheet_directory_uri()?>/assets/img/home/hero-image.png" alt="Estamos contigo">
             </div>
             <div class="flex justify-center md:hidden">
                 <button class="my-3 rounded bg-green-lighten px-4 py-3 text-white font-regular">
@@ -31,14 +32,14 @@
 </section>
 
 <section class="relative container max-w-screen-lg mx-auto flex px-4 xl:px-0 pt-8 md:py-8">
-    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-20 left-0 rounded-full w-9 h-9 z-10"
+    <div class="group hover:bg-purple-darken hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute inset-y-20 left-0 rounded-full w-9 h-9 z-10"
         serma-carousel-target="areas_carousel">
-        <span class="fas fa-chevron-left text-secondary fa-sm text-center"></i>
+        <span class="group-hover:text-white fas fa-chevron-left text-secondary fa-sm text-center"></i>
     </div>
 
-    <div class="hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute inset-y-20 right-0 rounded-full w-9 h-9 z-10"
+    <div class="group hover:bg-purple-darken hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute inset-y-20 right-0 rounded-full w-9 h-9 z-10"
         serma-carousel-target="areas_carousel">
-        <span class="fas fa-chevron-right text-secondary fa-sm text-center"></span>
+        <span class="group-hover:text-white fas fa-chevron-right text-secondary fa-sm text-center"></span>
     </div>
 
     <div class="serma-carousel scroll-smooth container max-w-screen-lg mx-auto flex gap-4 pb-4 overflow-x-scroll md:overflow-hidden"
@@ -57,12 +58,14 @@
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-0">
-        <div class="border border-gray-300 rounded-lg">
+        <div class="group relative border border-gray-300 rounded-lg">
             <div class="rounded-lg">
                 <div class="relative serma-image-container">
                     <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
-                        <img loading="lazy" class="rounded-lg" src="<?=$args['medical_articles'][0]['featured_image']?>">
-                        <div class="bg-gradient-to-b from-transparent to-neutral-800 h-10 md:h-14 w-full absolute bottom-0">
+                        <img loading="lazy" class="rounded-lg"
+                            src="<?=$args['medical_articles'][0]['featured_image']?>">
+                        <div
+                            class="bg-gradient-to-b from-transparent to-neutral-800 h-10 md:h-14 w-full absolute bottom-0">
                     </a>
                     <span
                         class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-tiny md:text-md capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
@@ -80,8 +83,9 @@
             <div class="serma-post-content-container px-3 md:px-8 pt-4 pb-8">
                 <p class="serma-category text-primary mb-2 font-medium text-12px">
                     <?=$args['medical_articles'][0]['category']['name']?></p>
-                <h4 class="text-black text-18px font-bold md:font-semibold">
-                    <a href="<?= $args['medical_articles'][0]['link'] ?>" target="_blank">
+                <h4 class="text-black group-hover:text-purple-darken text-18px font-bold md:font-semibold">
+                    <a class="hover:text-purple-darken" href="<?= $args['medical_articles'][0]['link'] ?>"
+                        target="_blank">
                         <?=$args['medical_articles'][0]['title']?>
                     </a>
                 </h4>
@@ -93,11 +97,13 @@
     <div class="mt-4 md:mt-0 grid grid-cols-1 gap-y-4">
         <?php unset($args['medical_articles'][0]) ?>
         <?php foreach ( $args['medical_articles'] as $article ): ?>
-        <div class="grid grid-cols-3 md:grid-cols-2 gap-3 md:gap-0">
+        <div class="group relative grid grid-cols-3 md:grid-cols-2 gap-3 md:gap-0">
             <div class="md:px-6">
                 <div class="relative">
                     <a href="<?= $article['link'] ?>" target="_blank">
-                        <img loading="lazy" class="h-24 md:h-auto object-cover rounded-lg md:rounded-none md:rounded-l-lg" src="<?= $article['featured_image'] ?>">
+                        <img loading="lazy"
+                            class="h-24 md:h-auto object-cover rounded-lg md:rounded-none md:rounded-l-lg"
+                            src="<?= $article['featured_image'] ?>">
                     </a>
                     <div
                         class="rounded-lg md:rounded-none md:rounded-l-lg md:bg-gradient-to-b from-transparent to-neutral-800 h-14 w-full absolute bottom-0">
@@ -118,8 +124,8 @@
                 <p class="text-tiny md:text-12px serma-category text-primary md:mb-2 font-medium">
                     <?= $article['category']['name'] ?>
                 </p>
-                <h4 class="text-black text-16px font-bold md:font-semibold mb-1 md:mb-2">
-                    <a href="<?= $article['link'] ?>" target="_blank">
+                <h4 class="text-black group-hover:text-purple-darken text-16px font-bold md:font-semibold mb-1 md:mb-2">
+                    <a class="hover:text-purple-darken" href="<?= $article['link'] ?>" target="_blank">
                         <?= $article['title'] ?>
                     </a>
                 </h4>
@@ -140,7 +146,7 @@
             Tu embarazo semana tras semana
         </h2>
         <h3 class="text-14px font-medium text-center mb-5 md:mb-10">
-            Conoce el desarrollo de tu bebé en cada una de las etapas en la 
+            Conoce el desarrollo de tu bebé en cada una de las etapas en la
             <br class="hidden md:inline">
             que te encuentres.
         </h3>
@@ -160,14 +166,14 @@
     </h2>
 
     <div class="relative container max-w-screen-lg px-2 md:px-4 mx-auto">
-        <div class="hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute left-0 rounded-full w-10 h-10 z-10"
+        <div class="group hover:bg-purple-darken hidden md:flex cursor-pointer serma-carousel-arrow-left justify-center items-center bg-lighten-grey serma-carousel-arrow-left absolute left-0 rounded-full w-10 h-10 z-10"
             serma-carousel-target="blog_categories">
-            <span class="fas fa-chevron-left text-secondary fa-sm text-center"></i>
+            <span class="group-hover:text-white fas fa-chevron-left text-secondary fa-sm text-center"></i>
         </div>
 
-        <div class="hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute right-0 rounded-full w-10 h-10 z-10"
+        <div class="group hover:bg-purple-darken hidden md:flex cursor-pointer serma-carousel-arrow-right justify-center items-center bg-lighten-grey serma-carousel-arrow-right absolute right-0 rounded-full w-10 h-10 z-10"
             serma-carousel-target="blog_categories">
-            <span class="fas fa-chevron-right text-secondary fa-sm text-center"></span>
+            <span class="group-hover:text-white fas fa-chevron-right text-secondary fa-sm text-center"></span>
         </div>
 
         <div class="serma-carousel relative container max-w-screen-lg md:max-w-4xl mx-auto scroll-smooth overflow-x-scroll md:overflow-x-hidden"
@@ -182,7 +188,8 @@
     </div>
 </section>
 
-<section class="container max-w-full py-4 md:mb-12 md:py-16 mt-6 border-gray-300 bg-[#F2F6FE] bg-[length:0px] md:bg-auto md:bg-transparent serma-utilities-container">
+<section
+    class="container max-w-full py-4 md:mb-12 md:py-16 mt-6 border-gray-300 bg-[#F2F6FE] bg-[length:0px] md:bg-auto md:bg-transparent serma-utilities-container">
     <div class="relative container max-w-screen-lg mx-auto">
         <h3 class="text-purple-darken text-14px font-medium text-center mb-2 md:mb-6">Utilidades</h3>
         <h2 class="text-black text-2xl md:text-2.8xl text-center font-semibold mb-8 px-4 md:px-0">
@@ -192,7 +199,7 @@
         </h2>
         <div
             class="relative container max-w-screen-lg col-span-3 md:col-span-2 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-visible">
-                <?=get_template_part('template-parts/home/utilities', null, $args)?>
+            <?=get_template_part('template-parts/home/utilities', null, $args)?>
         </div>
     </div>
 </section>
@@ -217,13 +224,16 @@
                             <h2 class="text-18px font-semibold mb-4">
                                 Lactancia Materna
                             </h2>
-                            <button class="bg-transparent font-normal text-purple-darken text-14px">
-                                Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
-                            </button>
+                            <div class="pb-1 inline hover:border-b hover:border-purple-darken">
+                                <button class="bg-transparent font-normal text-purple-darken text-14px">
+                                    Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
+                                </button>
+                            </div>
                         </div>
 
                         <div>
-                            <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-1.png"
+                            <img loading="lazy"
+                                src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-1.png"
                                 alt="Acceso a la comunidad">
                         </div>
                     </div>
@@ -234,13 +244,16 @@
                             <h2 class="text-18px font-semibold mb-4">
                                 Psicología Prenatal
                             </h2>
-                            <button class="bg-transparent font-normal text-purple-darken text-14px">
-                                Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
-                            </button>
+                            <div class="pb-1 inline hover:border-b hover:border-purple-darken">
+                                <button class="bg-transparent font-normal text-purple-darken text-14px">
+                                    Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
+                                </button>
+                            </div>
                         </div>
 
                         <div>
-                            <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-2.png"
+                            <img loading="lazy"
+                                src="<?=get_stylesheet_directory_uri()?>/assets/img/home/especialistas/cta-2.png"
                                 alt="Acceso a la comunidad">
                         </div>
                     </div>
@@ -263,19 +276,25 @@
                 Tu experiencia podria ayudar a una mami con dificultad.
             </p>
             <div class="flex justify-center md:inline">
-                <button class="rounded bg-white px-5 py-2 font-normal">
+                <button class="group relative rounded bg-white px-5 py-2 font-normal">
                     <span class="flex items-center text-black">
-                        <img loading="lazy" class="w-6 h-6 mr-2"
+                        <img loading="lazy" class="group-hover:hidden w-6 h-6 mr-2"
                             src="<?=get_stylesheet_directory_uri()?>/assets/icons/community-invitation/cta-icon.svg"
                             width="20px" height="20px">
-                        ¡Invitación limitada!
+                        <img loading="lazy" class="group-hover:inline hidden w-6 h-6 mr-2"
+                            src="<?=get_stylesheet_directory_uri()?>/assets/icons/community-invitation/cta-icon-2.svg"
+                            width="20px" height="20px">
+                        <span class="group-hover:text-purple-darken">
+                            ¡Invitación limitada!
+                        </span>
                     </span>
                 </button>
             </div>
         </div>
 
         <div class="md:pt-3 pb-3">
-            <img loading="lazy" src="<?=get_stylesheet_directory_uri()?>/assets/img/home/comunidad/comunidad-preview.png"
+            <img loading="lazy"
+                src="<?=get_stylesheet_directory_uri()?>/assets/img/home/comunidad/comunidad-preview.png"
                 alt="Acceso a la comunidad">
         </div>
     </div>
@@ -286,7 +305,8 @@
         SerMadre es un sitio web sobre el embarazo y la maternidad
     </h2>
 
-    <p class="text-14px text-secondary break-all">Diarios de embarazo y desarrollo infantil, calendario de embarazo, revisiones de
+    <p class="text-14px text-secondary break-all">Diarios de embarazo y desarrollo infantil, calendario de embarazo,
+        revisiones de
         productos, atención de
         maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de
         embarazo, revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios

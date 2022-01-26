@@ -33,6 +33,7 @@ module.exports = {
                 'lighten-grey': '#F1F2F3',
                 'purple-lighten': '#A28EEC',
                 'purple-darken': '#585CE5',
+                'purple-darken-1': '#585ce526',
                 'purple-lighten-1': '#a28eec1a',
                 'purple-lighten-2': '#a28eec26',
                 'purple-lighten-3': '#a28eec40',

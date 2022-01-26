@@ -101,7 +101,7 @@ class blogPosts {
     getPostCardLg (element, index) {
         let classes = index == 1 ? 'hidden md:inline' : ''
         return `
-            <div class="${classes} rounded-lg border border-t-0 border-gray-300" post-${index}>
+            <div class="${classes} group relative rounded-lg border border-t-0 border-gray-300" post-${index}>
                 <div>
                     <div>
                         <div class="relative">
@@ -119,8 +119,8 @@ class blogPosts {
                         <p class="text-primary mb-2 font-medium text-12px">
                             ${element.category.name}
                         </p>
-                        <h4 class="text-black text-16px font-semibold">
-                            <a href="${element.link}" target="_blank">
+                        <h4 class="text-black group-hover:text-purple-darken text-16px font-semibold">
+                            <a class="hover:text-purple-darken" href="${element.link}" target="_blank">
                                 ${element.title}
                             </a>
                         </h4>
@@ -133,13 +133,13 @@ class blogPosts {
 
     getPostCardSm (element, index) {
         return `
-        <div class="grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg mb-4">
+        <div class="group relative grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg mb-4">
             <div class="pl-4 md:pl-6 col-span-2">
                 <p class="serma-category text-tiny md:text-12px text-primary md:mb-2 font-medium">
                     ${element.category.name}
                 </p>
-                <h4 class="text-black text-lg md:text-16px font-semibold mb-4">
-                    <a href="${element.link}" target="_blank">
+                <h4 class="text-black group-hover:text-purple-darken text-lg md:text-16px font-semibold mb-4">
+                    <a class="hover:text-purple-darken" href="${element.link}" target="_blank">
                     ${element.title}
                     </a>
                 </h4>
