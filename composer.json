@@ -11,7 +11,8 @@
 		}
 	],
 	"require": {
-		"composer/installers": "^1"
+		"composer/installers": "^1",
+		"ahmadawais/sendy-php-api": "^6.0"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
@@ -20,7 +21,11 @@
 		"wp-coding-standards/wpcs": "^1.1"
 	},
 	"config": {
-		"sort-order": true
+		"sort-order": true,
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"composer/installers": true
+		}
 	},
 	"scripts": {
 		"install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",

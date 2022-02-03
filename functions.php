@@ -10,8 +10,8 @@
  * @link    https://www.studiopress.com/
  */
 
-
 // Starts the engine.
+require_once get_stylesheet_directory() . '/vendor/autoload.php';
 require_once get_template_directory() . '/lib/init.php';
 
 // Sets up the Theme.
@@ -31,6 +31,17 @@ function genesis_sample_localization_setup() {
 
 
 //Include custom sermadre classes
+
+//Enviroment vars
+require_once(get_stylesheet_directory() . '/config/env.php');
+
+//Mail provider class
+
+require_once(get_stylesheet_directory() . '/lib/Classes/Mail.php');
+
+//Sendy class
+
+require_once(get_stylesheet_directory() . '/lib/Classes/Sendy.php');
 
 //User manager class
 require_once(get_stylesheet_directory() . '/lib/Classes/User.php');
@@ -363,11 +374,14 @@ function ser_madre_theme_core_scripts() {
 				'5xl': '2.55rem',
 				'6xl': '3.4rem',
 				'7xl': '4.25rem',
+				'10px': '10px',
 				'12px': '12px',
+				'13px': '13px',
 				'14px': '14px',
 				'16px': '16px',
 				'18px': '18px',
 				'24px': '24px',
+				'36px': '36px',
 				'40px': '40px',
 				'48px': '48px',
 			}
@@ -507,3 +521,15 @@ add_action( 'wp_ajax_serma_get_blog_posts', 'get_external_posts' );
 add_action( 'wp_ajax_nopriv_serma_get_blog_posts', 'get_external_posts' );
 
 SERMA_USER::init();
+
+add_filter('wp_mail_smtp_custom_options', function( $phpmailer ) {
+	$phpmailer->SMTPOptions = array(
+		'ssl' => array(
+			'verify_peer'       => false,
+			'verify_peer_name'  => false,
+			'allow_self_signed' => true
+		)
+	);
+
+	return $phpmailer;
+} );

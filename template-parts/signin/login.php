@@ -1,6 +1,6 @@
 <form id="serma_login_form" class="space-y-6" action="" method="POST">
-    <h3 class="text-4xl font-semibold text-[#262D47] text-center">¡Entra a sermadre!</h3>
-    <p class="text-center text-lg">
+    <h3 class="text-[30px] font-semibold text-[#262D47] text-center">¡Entra a sermadre!</h3>
+    <p class="text-center text-16px">
         Ingresa tu dirección de correo electrónico para iniciar sesión en tu cuenta de sermadre
     </p>
     <div>
@@ -20,7 +20,7 @@
                     class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300">
             </div>
             <div class="ml-3">
-                <label for="remember" class="font-medium text-gray-900">Recordar contraseña</label>
+                <label for="remember" class="font-medium text-gray-900 text-14px">Recordar contraseña</label>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="flex justify-center">
-        <button type="submit" class="text-white bg-green-lighten font-medium rounded px-10 py-3 text-center text-xl"
+        <button type="submit" class="text-white bg-green-lighten font-medium rounded px-10 py-3 text-center text-18px"
             serma-submit-btn>
             ¡Acceder!
         </button>

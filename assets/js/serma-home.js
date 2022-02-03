@@ -119,7 +119,7 @@ class blogPosts {
                         <p class="text-primary mb-2 font-medium text-12px">
                             ${element.category.name}
                         </p>
-                        <h4 class="text-black group-hover:text-purple-darken text-16px font-semibold">
+                        <h4 class="text-black group-hover:text-purple-darken text-14px md:text-16px font-semibold">
                             <a class="hover:text-purple-darken" href="${element.link}" target="_blank">
                                 ${element.title}
                             </a>
@@ -132,22 +132,23 @@ class blogPosts {
     }
 
     getPostCardSm (element, index) {
+        let spacing = index == 1 ? 'mt-7' : 'mb-4'
         return `
-        <div class="group relative grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg mb-4">
+        <div class="group relative grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg ${spacing}">
             <div class="pl-4 md:pl-6 col-span-2">
-                <p class="serma-category text-tiny md:text-12px text-primary md:mb-2 font-medium">
+                <p class="serma-category text-12px text-primary mb-2 font-medium">
                     ${element.category.name}
                 </p>
-                <h4 class="text-black group-hover:text-purple-darken text-lg md:text-16px font-semibold mb-4">
+                <h4 class="text-black group-hover:text-purple-darken text-14px md:text-16px font-semibold mb-4">
                     <a class="hover:text-purple-darken" href="${element.link}" target="_blank">
                     ${element.title}
                     </a>
                 </h4>
-                <p class="text-secondary text-tiny md:text-12px font-normal capitalize">
+                <p class="text-secondary text-12px font-normal capitalize">
                     ${element.published_at_formatted}
                 </p>
             </div>
-            <div class="md:pr-6">
+            <div class="md:pr-6 flex md:inline justify-center">
                 <a href="${element.link}" target="_blank">
                     <img class="rounded-lg w-20 md:w-24 h-20 object-cover" src="${element.featured_image}">
                 </a>
