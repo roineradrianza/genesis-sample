@@ -517,19 +517,12 @@ function get_external_posts() {
     ));
 }
 
+// show admin bar only for admins
+if (!current_user_can('manage_options')) {
+    add_filter('show_admin_bar', '__return_false');
+}
+
 add_action( 'wp_ajax_serma_get_blog_posts', 'get_external_posts' );
 add_action( 'wp_ajax_nopriv_serma_get_blog_posts', 'get_external_posts' );
 
 SERMA_USER::init();
-
-add_filter('wp_mail_smtp_custom_options', function( $phpmailer ) {
-	$phpmailer->SMTPOptions = array(
-		'ssl' => array(
-			'verify_peer'       => false,
-			'verify_peer_name'  => false,
-			'allow_self_signed' => true
-		)
-	);
-
-	return $phpmailer;
-} );
