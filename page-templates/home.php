@@ -68,9 +68,9 @@
                             class="bg-gradient-to-b from-transparent to-neutral-800 h-10 md:h-14 w-full absolute bottom-0">
                     </a>
                     <span
-                        class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-12px md:text-md capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
+                        class="absolute bottom-3 md:bottom-6 left-4 md:left-8 text-white font-normal text-12px sm:hidden lg:inline md:text-md capitalize"><?=wp_date('F j, Y', strtotime($args['medical_articles'][0]['published_at']))?></span>
                     <button
-                        class="cursor-default h-7 px-2 md:h-8 md:px-3 text-white bg-green-lighten rounded-none md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
+                        class="cursor-default w-7 md:w-auto h-7 px-2 md:h-8 md:px-3 text-white bg-green-lighten md:rounded-md absolute bottom-3 md:bottom-5 right-4 md:right-8">
                         <span class="flex">
                             <img loading="lazy" class="mr-0 md:mr-2"
                                 src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
@@ -108,9 +108,9 @@
                     <div
                         class="rounded-lg md:rounded-none md:rounded-l-lg md:bg-gradient-to-b from-transparent to-neutral-800 h-14 w-full absolute bottom-0">
                         <span
-                            class="absolute bottom-2 md:bottom-3 left-4 text-white font-normal hidden md:inline capitalize text-md"><?= wp_date('F j, Y', strtotime($article['published_at'])) ?></span>
+                            class="absolute bottom-2 md:bottom-3 left-4 text-white font-normal hidden lg:inline capitalize text-md"><?= wp_date('F j, Y', strtotime($article['published_at'])) ?></span>
                         <button
-                            class="cursor-default h-7 md:h-8 px-2 text-white bg-green-lighten rounded-none md:rounded-md absolute bottom-2 md:bottom-3 right-2 md:right-4">
+                            class="cursor-default w-7 md:w-auto h-7 md:h-8 px-2 text-white bg-green-lighten md:rounded-md absolute bottom-2 md:bottom-3 right-2 md:right-4">
                             <span class="flex">
                                 <img loading="lazy" class="mr-0"
                                     src="<?=get_stylesheet_directory_uri()?>/assets/icons/article/verificado.svg"
@@ -154,7 +154,7 @@
         </h3>
     </div>
     <div
-        class="relative container max-w-screen-lg px-2 md:px-0 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-visible invisible-scrollbar">
+        class="relative container max-w-screen-lg px-2 md:px-0 mx-auto scroll-smooth overflow-x-scroll lg:overflow-x-visible invisible-scrollbar">
         <?=get_template_part('template-parts/home/pregnancy-weeks')?>
     </div>
 </section>

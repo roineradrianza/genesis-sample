@@ -7,10 +7,11 @@
             <div class="flex justify-between items-center py-3 md:justify-start">
                 <div class="-mr-2 -my-2 md:hidden">
                     <button type="button"
-                        class="serma-menu-toggle-btn bg-white rounded-md p-2 inline-flex items-center justify-center text-icon hover:text-black focus:outline-none focus:text-black"
+                        class="serma-menu-toggle-btn bg-white rounded-md pt-2 inline-flex items-center justify-center text-icon hover:text-black focus:outline-none focus:text-black"
                         aria-expanded="false">
                         <span class="sr-only">Abrir menu</span>
-                        <span class="fas fa-bars fa-lg mt-1" id="serma_menu_toggle_icon"></span>
+                        <span class="fas fa-bars fa-lg mt-1 open-icon"></span>
+                        <img class="hidden close-icon" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/close.svg" width="30px"></img>
                     </button>
                 </div>
                 <div class="flex justify-start lg:w-0 lg:flex-1">
