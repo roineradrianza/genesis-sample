@@ -99,6 +99,18 @@
 
 <div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
+        <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/lactancia-y-embarazo.png"
+            alt="Lactancia y embarazo" width="55px" height="55px">
+    </div>
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
+        Lactancia
+        <br>
+        y embarazo
+    </p>
+</div>
+
+<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+    <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/reviews-de-productos.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
