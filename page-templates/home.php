@@ -217,7 +217,7 @@
                 Contacta a un especialista
             </h2>
             <p class="text-center md:text-left text-14px text-secondary my-3 md:my-6">
-                Ofrecemos asesorías virtuales sobre →
+                Ofrecemos asesorías virtuales sobre <span class="hidden md:inline">→</span>
             </p>
         </div>
         <div
