@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
     let serma_login_form = document.querySelector('#serma_login_form')
     let serma_reset_password_form = document.querySelector('#serma_reset_password_form')
+    let serma_register_form = document.querySelector('#serma_register_form')
 
     serma_login_form.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -10,6 +11,11 @@ window.addEventListener('load', () => {
     serma_reset_password_form.addEventListener('submit', (e) => {
         e.preventDefault()
         serma_reset_pass('serma_reset_password_form')
+    })
+    
+    serma_register_form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        serma_register('serma_register_form')
     })
 })
 
@@ -93,6 +99,48 @@ function serma_reset_pass(form) {
         }
     }, err => {
         submit_btn.innerHTML = 'Acceder'
+        alert_container.classList.add(`bg-error`)
+        alert_container.classList.remove('hidden')
+        alert_container_txt.innerHTML = "No ha sido posible procesar la información enviada"
+    })
+}
+
+function serma_register(form) {
+    let url = wp_url + 'serma_register'
+    let data = new FormData(document.getElementById(form))
+
+    let submit_btn = document.querySelector(`#${form} [serma-submit-btn]`)
+    let alert_container = document.querySelector(`#${form} [serma-alert-container]`)
+    let alert_container_txt = document.querySelector(`#${form} [serma-alert-txt]`)
+
+    alert_container.classList = ['flex p-4 my-4 rounded-lg hidden']
+
+    submit_btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i>'
+
+    Http.post(url, data).then(res => {
+        submit_btn.innerHTML = 'Guardar y finalizar'
+        if (res.hasOwnProperty('message')) {
+
+            alert_container_txt.innerHTML = res.message
+
+            let status = 'error'
+
+            if (res.status == 'success') {
+                status = 'success'
+                if (res.data.hasOwnProperty('errors')) {
+                    status = 'error'
+                }
+            }
+            alert_container.classList.add(`bg-${status}`)
+            alert_container.classList.remove('hidden')
+        }
+        else {
+            alert_container.classList.add(`bg-error`)
+            alert_container.classList.remove('hidden')
+            alert_container_txt.innerHTML = 'Ocurrió un error desconocido, intente de nuevo'
+        }
+    }, err => {
+        submit_btn.innerHTML = 'Guardar y finalizar'
         alert_container.classList.add(`bg-error`)
         alert_container.classList.remove('hidden')
         alert_container_txt.innerHTML = "No ha sido posible procesar la información enviada"

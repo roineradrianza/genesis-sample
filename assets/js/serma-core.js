@@ -4,18 +4,19 @@ window.addEventListener('load', () => {
     let menu_nav = document.querySelector('.serma-nav-menu')
 
     menu_btn_toggle.addEventListener('click', (e) => {
-        let toggle_icon = document.querySelector('#serma_menu_toggle_icon')
+        let open_icon = document.querySelector('.open-icon')
+        let close_icon = document.querySelector('.close-icon')
 
         if(menu_btn_toggle.classList.contains('opened')) {
             menu_btn_toggle.classList.remove('opened')
             menu_nav.classList.add('hidden')
-            toggle_icon.classList.remove('fa-times')
-            toggle_icon.classList.add('fa-bars')
+            open_icon.classList.remove('hidden')
+            close_icon.classList.add('hidden')
         } else {
             menu_btn_toggle.classList.add('opened')
             menu_nav.classList.remove('hidden')
-            toggle_icon.classList.remove('fa-bars')
-            toggle_icon.classList.add('fa-times')
+            open_icon.classList.add('hidden')
+            close_icon.classList.remove('hidden')
         }
         
     })

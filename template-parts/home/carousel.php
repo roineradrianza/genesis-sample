@@ -3,7 +3,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/nombres-para-bebes.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Nombres para 
         <br>
         bebés
@@ -17,7 +17,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/cuentos-infantiles.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Cuentos 
         <br>
         infantiles
@@ -29,7 +29,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/dibujos-para-colorear.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Dibujos para 
         <br>
         colorear
@@ -41,7 +41,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/generador-de-nombres.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Generador de 
         <br>
         nombres
@@ -54,7 +54,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/calendario-de-embarazo.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Calendario de
         <br>
         embarazo
@@ -66,7 +66,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/articulos-utiles.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Artículos
         <br>
         útiles
@@ -78,7 +78,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/cursos-para-padres.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Cursos
         <br>
         para padres
@@ -90,7 +90,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/notas-verificadas.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Notas
         <br>
         verificadas
@@ -102,7 +102,7 @@
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/reviews-de-productos.png"
             alt="Nombre para bebés" width="55px" height="55px">
     </div>
-    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-tiny md:text-md leading-4">
+    <p class="text-black group-hover:text-purple-darken mt-4 font-medium text-center text-12px md:text-md leading-4">
         Reviews de
         <br>
         productos

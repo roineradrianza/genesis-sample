@@ -1726,6 +1726,10 @@ p.entry-meta {
 
 }
 
+.invisible-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
 /* Print Styles
 ---------------------------------------------------------------------------- */
 

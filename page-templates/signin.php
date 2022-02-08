@@ -84,9 +84,9 @@ function ser_madre_theme_login_styles() {
 
 
 function ser_madre_theme_login_scripts() {
-	wp_register_script( 'tailwind-flowbite-datepicker', "https://unpkg.com/@themesberg/flowbite@1.3.0/dist/datepicker.bundle.js", 'tailwind-flowbite', '1.3.0', true );
+	wp_register_script( 'tailwind-flowbite-datepicker', get_stylesheet_directory_uri() . "/assets/js/flowbite/datepicker.js", 'tailwind-flowbite', '1.3.0', true );
 	wp_register_script( 'serma-http', get_stylesheet_directory_uri() . "/assets/js/Classes/Http.min.js", '1.0.0', true );
-	wp_register_script( 'serma-login', get_stylesheet_directory_uri() . "/assets/js/serma-login.js", ['serma-http'], '1.0.0', true );
+	wp_register_script( 'serma-login', get_stylesheet_directory_uri() . "/assets/js/serma-login.js", ['serma-http'], '1.0.1', true );
 	
 	wp_enqueue_script( 'tailwind-flowbite-datepicker' );
 	wp_enqueue_script( 'serma-http' );
@@ -117,6 +117,13 @@ function login_inline_css()
 			background-image: url('".get_stylesheet_directory_uri()."/assets/img/login/register-bg-01.svg');
 			background-size: 100%;
 			background-position: center;
+		}
+
+
+		.serma-register-container-2 {
+			background-image: url('".get_stylesheet_directory_uri()."/assets/img/login/register-bg-02.svg');
+			background-size: 100%;
+			background-position: top;
 		}
 
 		[role='tab'].active {

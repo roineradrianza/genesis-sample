@@ -87,6 +87,24 @@ function homepage_inline_css()
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        @media only screen and (max-width: 550px) {
+
+            .serma-community-cta-container {
+                background-size: 220%;
+                background-position: 7% -64%;
+            }
+        
+        }
+        
+        @media only screen and (max-width: 479px) {
+
+            .serma-community-cta-container {
+                background-size: 200%;
+                background-position: -8% 0%;
+            }
+        
+        }
     </style>
  ";
 }
@@ -123,7 +141,7 @@ if ( is_front_page() ) {
 }    
 
 function ser_madre_theme_home_scripts() {
-	wp_register_script( 'serma-home', get_stylesheet_directory_uri() . "/assets/js/serma-home.js", [], '1.0.3', true );
+	wp_register_script( 'serma-home', get_stylesheet_directory_uri() . "/assets/js/serma-home.js", [], '1.0.8', true );
 	wp_enqueue_script( 'serma-home' );
     wp_localize_script( 'serma-home', 'serma_ajax_url', esc_url(admin_url('admin-ajax.php')) . "?action=" );
 }

@@ -101,7 +101,7 @@ class blogPosts {
     getPostCardLg (element, index) {
         let classes = index == 1 ? 'hidden md:inline' : ''
         return `
-            <div class="${classes} rounded-lg border border-t-0 border-gray-300" post-${index}>
+            <div class="${classes} group relative rounded-lg border border-t-0 border-gray-300" post-${index}>
                 <div>
                     <div>
                         <div class="relative">
@@ -116,15 +116,15 @@ class blogPosts {
                     </div>
 
                     <div class="px-4 md:px-8 pt-4 pb-8">
-                        <p class="text-primary mb-2 font-medium">
+                        <p class="text-primary mb-2 font-medium text-12px">
                             ${element.category.name}
                         </p>
-                        <h4 class="text-black text-xl md:text-xl font-semibold">
-                            <a href="${element.link}" target="_blank">
+                        <h4 class="text-black group-hover:text-purple-darken text-14px md:text-16px font-semibold">
+                            <a class="hover:text-purple-darken" href="${element.link}" target="_blank">
                                 ${element.title}
                             </a>
                         </h4>
-                        <p class="mt-4">${element.excerpt}</p>
+                        <p class="text-14px mt-4">${element.excerpt}</p>
                     </div>
                 </div>
             </div>
@@ -132,22 +132,23 @@ class blogPosts {
     }
 
     getPostCardSm (element, index) {
+        let spacing = index == 1 ? 'mt-7' : 'mb-4'
         return `
-        <div class="grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg mb-4">
+        <div class="group relative grid grid-cols-3 gap-2 py-4 md:py-6 border border-gray-300 rounded-lg ${spacing}">
             <div class="pl-4 md:pl-6 col-span-2">
-                <p class="serma-category text-tiny md:text-base text-primary md:mb-2 font-medium">
+                <p class="serma-category text-12px text-primary mb-2 font-medium">
                     ${element.category.name}
                 </p>
-                <h4 class="text-black text-lg md:text-xl font-semibold mb-4">
-                    <a href="${element.link}" target="_blank">
+                <h4 class="text-black group-hover:text-purple-darken text-14px md:text-16px font-semibold mb-4">
+                    <a class="hover:text-purple-darken" href="${element.link}" target="_blank">
                     ${element.title}
                     </a>
                 </h4>
-                <p class="text-secondary text-tiny md:text-md font-normal capitalize">
+                <p class="text-secondary text-12px font-normal capitalize">
                     ${element.published_at_formatted}
                 </p>
             </div>
-            <div class="md:pr-6">
+            <div class="md:pr-6 flex md:inline justify-center">
                 <a href="${element.link}" target="_blank">
                     <img class="rounded-lg w-20 md:w-24 h-20 object-cover" src="${element.featured_image}">
                 </a>

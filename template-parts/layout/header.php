@@ -7,10 +7,11 @@
             <div class="flex justify-between items-center py-3 md:justify-start">
                 <div class="-mr-2 -my-2 md:hidden">
                     <button type="button"
-                        class="serma-menu-toggle-btn bg-white rounded-md p-2 inline-flex items-center justify-center text-icon hover:text-black focus:outline-none focus:text-black"
+                        class="serma-menu-toggle-btn bg-white rounded-md pt-2 inline-flex items-center justify-center text-icon hover:text-black focus:outline-none focus:text-black"
                         aria-expanded="false">
                         <span class="sr-only">Abrir menu</span>
-                        <span class="fas fa-bars fa-lg mt-1" id="serma_menu_toggle_icon"></span>
+                        <span class="fas fa-bars fa-lg mt-1 open-icon"></span>
+                        <img class="hidden close-icon" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/close.svg" width="30px"></img>
                     </button>
                 </div>
                 <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -20,7 +21,7 @@
                     <div class="relative mr-6 my-2 bg-lighten-grey border-0 py-2 px-4 max-h-48 rounded-full">
                         <form id="serma_search_form" action="<?= site_url() ?>" method="GET">
                             <input type="search" name="s"
-                                class="text-base placeholder:text-icon bg-transparent border-0 p-1 w-96 rounded-full search-input"
+                                class="text-14px placeholder:text-icon bg-transparent border-0 p-1 w-96 rounded-full search-input"
                                 placeholder="Buscar">
                             <button type="submit" class="mr-3 mt-1 float-right hover:bg-transparent">
                                 <img class="w-4 h-5" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/search.svg">
@@ -31,7 +32,7 @@
                 <div id="dropdownButton" data-dropdown-toggle="dropdown"
                     class="flex items-center justify-end md:flex-1 lg:w-0">
                     <?php if (is_user_logged_in()) : ?>
-                    <div href="#" class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
+                    <div href="#" class="group inline-flex items-center font-medium text-secondary hover:text-gray-900">
                         <button class="focus:outline-0" id="dropdownButton"  data-dropdown-placement="bottom" data-dropdown-toggle="dropdownNavbar">
 
                         <?php if ( !empty(get_avatar_url( SERMA_USER::get_current()['id'] ) )) : ?>
@@ -41,7 +42,8 @@
 
                         <?php else: ?>
 
-                        <img class="w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
+                        <img class="group-hover:hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
+                        <img class="group-hover:inline hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar-2.svg">
 
                         <?php endif ?>
 
@@ -62,12 +64,13 @@
                     </div>
                     <?php else: ?>
                     <a href="<?= site_url() ?>/login"
-                        class="inline-flex items-center font-medium text-secondary hover:text-gray-900">
-                        <img class="w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg">
-                        <span class="hidden md:inline">Ingresa</span>
+                        class="group inline-flex items-center font-medium text-secondary hover:text-gray-900">
+                        <img class="group-hover:hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar.svg" width="24px">
+                        <img class="group-hover:inline hidden w-7 h-7 mr-2" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/avatar-2.svg" width="24px">
+                        <span class="group-hover:text-purple-darken hidden md:inline">Ingresa</span>
                     </a>
                     <a href="<?= site_url() ?>/login"
-                        class="hidden ml-8 whitespace-nowrap md:inline-flex items-center justify-center px-8 py-2.5 border border-black rounded-md shadow-sm text-base font-medium">
+                        class="hidden ml-8 whitespace-nowrap md:inline-flex items-center justify-center px-8 py-2.5 border hover:border-purple-darken hover:text-purple-darken border-black rounded-md shadow-sm text-14px font-medium">
                         +Únete
                     </a>
                     <?php endif?>

@@ -10,8 +10,8 @@
  * @link    https://www.studiopress.com/
  */
 
-
 // Starts the engine.
+require_once get_stylesheet_directory() . '/vendor/autoload.php';
 require_once get_template_directory() . '/lib/init.php';
 
 // Sets up the Theme.
@@ -31,6 +31,17 @@ function genesis_sample_localization_setup() {
 
 
 //Include custom sermadre classes
+
+//Enviroment vars
+require_once(get_stylesheet_directory() . '/config/env.php');
+
+//Mail provider class
+
+require_once(get_stylesheet_directory() . '/lib/Classes/Mail.php');
+
+//Sendy class
+
+require_once(get_stylesheet_directory() . '/lib/Classes/Sendy.php');
 
 //User manager class
 require_once(get_stylesheet_directory() . '/lib/Classes/User.php');
@@ -325,6 +336,7 @@ function ser_madre_theme_core_scripts() {
 					'lighten-grey': '#F1F2F3',
 					'purple-lighten': '#A28EEC',
 					'purple-darken': '#585CE5',
+					'purple-darken-1': '#585ce526',
 					'purple-lighten-1': '#a28eec1a',
 					'purple-lighten-2': '#a28eec26',
 					'purple-lighten-3': '#a28eec40',
@@ -362,6 +374,16 @@ function ser_madre_theme_core_scripts() {
 				'5xl': '2.55rem',
 				'6xl': '3.4rem',
 				'7xl': '4.25rem',
+				'10px': '10px',
+				'12px': '12px',
+				'13px': '13px',
+				'14px': '14px',
+				'16px': '16px',
+				'18px': '18px',
+				'24px': '24px',
+				'36px': '36px',
+				'40px': '40px',
+				'48px': '48px',
 			}
 		},
 
@@ -493,6 +515,11 @@ function get_external_posts() {
             'args' => $data
         ]
     ));
+}
+
+// show admin bar only for admins
+if (!current_user_can('manage_options')) {
+    add_filter('show_admin_bar', '__return_false');
 }
 
 add_action( 'wp_ajax_serma_get_blog_posts', 'get_external_posts' );
