@@ -5,7 +5,8 @@
                 <?php the_custom_logo(); ?>
             </div>
             <p class="text-center md:text-left mt-8 text-14px">
-                Ser Madre Perú es la comunidad <br> más grande para el embarazo.
+                SerMadre es la comunidad de madres <br>
+                y embarazadas más grande de Perú.
             </p>
             <div class="flex justify-center md:justify-start mt-6">
                 <a href="https://www.facebook.com/sermadrela/"

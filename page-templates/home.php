@@ -2,15 +2,15 @@
     <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 px-7 md:px-14 bg-yellow-lighten rounded-lg serma-home-hero-container">
         <div class="py-7 md:py-10">
-            <h1 class="text-center md:text-left text-36px md:text-48px font-bold text-purple-lighten">Estamos contigo
+            <h1 class="text-center md:text-left text-36px md:text-48px font-bold text-purple-lighten">Te acompañamos
+
             </h1>
             <p class="my-4 md:my-6 text-center md:text-left text-12px md:text-14px font-bold text-black">
                 Antes <span class="text-[#FF7070] mx-2 md:mx-4">•</span> Durante <span
                     class="text-[#FF7070] mx-2 md:mx-4">•</span> Y después del embarazo
             </p>
             <h2 class="text-center md:text-left text-14px md:text-18px text-secondary">
-                Toda la información que necesitas sobre <br>
-                el embarazo y la maternidad en línea.
+                El contenido que necesitas para disfrutar del <br> privilegio de ser madre.
             </h2>
             <button class="mt-6 rounded bg-green-lighten px-5 py-4 text-white font-regular hidden md:inline">
                 +Únete a la comunidad
@@ -52,9 +52,11 @@
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 py-4 md:py-8">
     <h3 class="text-purple-darken text-13px md:text-14px font-medium text-center mb-2 md:mb-6">Artículos médicos</h3>
     <h2 class="text-black text-18px md:text-2.8xl text-center font-semibold mb-8">
-        Contenidos sobre maternidad y embarazo
+        Especialistas hablan sobre 
+        <br class="md:hidden">
+        maternidad y
         <br class="hidden md:inline">
-        verificados por especialistas
+        embarazo
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-0">
@@ -143,14 +145,10 @@
     class="serma-home-pregnancy-week-container relative container max-w-full px-4 xl:px-0 py-12 md:py-16 bg-purple-lighten-1">
     <div class="relative container max-w-screen-lg mx-auto">
         <h2 class="text-black text-18px md:text-2.8xl text-center font-semibold mb-4 md:mb-8">
-            Tu embarazo semana 
-            <br class="md:hidden">
-            tras semana
+            Tú bebé, semana a semana
         </h2>
         <h3 class="text-secondary text-14px font-medium text-center mb-7 md:mb-10">
-            Conoce el desarrollo de tu bebé en cada una de las etapas en la
-            <br class="hidden md:inline">
-            que te encuentres.
+            Conoce cómo se desarrolla tu bebé en cada mes de gestación
         </h3>
     </div>
     <div
@@ -162,9 +160,11 @@
 <section class="relative container max-w-screen-lg mx-auto px-4 xl:px-0 pb-0 md:pb-12 py-10">
     <h3 class="text-purple-darken text-13px md:text-14px font-semibold text-center mb-2 md:mb-6">Novedades</h3>
     <h2 class="text-black text-18px md:text-2.8xl text-center font-semibold mb-8">
-        Consejos y tips que acompañan a las
+        Información, recomendaciones y 
+        <br class="md:hidden">
+        tips que 
         <br class="hidden md:inline">
-        mamás en su etapa de maternidad
+        acompañan la aventura de ser madre
     </h2>
 
     <div class="relative container max-w-screen-lg px-2 md:px-4 mx-auto">
@@ -195,9 +195,11 @@
     <div class="relative container max-w-screen-lg mx-auto">
         <h3 class="text-purple-darken text-13px md:text-14px font-medium text-center mb-2 md:mb-6">Utilidades</h3>
         <h2 class="text-black text-18px md:text-2.8xl text-center font-semibold mb-8 px-4 md:px-0">
-            Encuentra los mejores nombres, cuentos
+            Los mejores nombres para bebé, 
+            <br class="md:hidden">
+            cuentos 
             <br class="hidden md:inline">
-            infantiles y mucho más
+            infantiles y dibujos para colorear están
         </h2>
         <div
             class="relative container max-w-screen-lg col-span-3 md:col-span-2 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-hidden invisible-scrollbar">
@@ -210,13 +212,12 @@
     <div class="grid grid-cols-3 gap-4 mx-4 md:mx-0">
         <div class="col-span-3 md:col-span-1 pt-8">
             <h2 class="text-center md:text-left text-18px md:text-24px text-black font-semibold">
-                Asesórate en linea con un 
+                ¿Necesitas asesoría? 
                 <br class="md:hidden">
-                especialista
+                Contacta a un especialista
             </h2>
             <p class="text-center md:text-left text-14px text-secondary my-3 md:my-6">
-                Actualmente brindamos asesorias virtuales sobre
-                estos temas:
+                Ofrecemos asesorías virtuales sobre →
             </p>
         </div>
         <div
@@ -226,7 +227,7 @@
                     <div class="grid grid-cols-2 bg-red-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
                             <h2 class="text-black text-16px md:text-18px font-semibold mb-4">
-                                Lactancia 
+                                Lactancia
                                 <br class="md:hidden">
                                 Materna
                             </h2>
@@ -248,7 +249,7 @@
                     <div class="grid grid-cols-2 bg-green-lighten-1 rounded-lg">
                         <div class="pt-8 pl-6">
                             <h2 class="text-black text-16px md:text-18px font-semibold mb-4">
-                                Psicología 
+                                Psicología
                                 <br class="md:hidden">
                                 Prenatal
                             </h2>
@@ -278,12 +279,13 @@
         class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 mx-4 md:mx-0 py-4 md:py-0 px-7 md:px-14 bg-[#a28eece6] rounded-2xl serma-community-cta-container">
         <div class="pt-4 md:pt-12">
             <h2 class="text-center md:text-left text-24px md:text-40px font-light text-white">
-                Obtén un acceso a la <span class="font-bold">comunidad</span>
+                Sé parte de nuestra <br>
+                <span class="font-bold">comunidad</span>
             </h2>
             <p class="my-2 md:my-6 text-center md:text-left font-light text-13px md:text-14px text-white">
-                Tu experiencia podria ayudar a una 
+                Ayuda a otras madres compartiendo tu 
                 <br class="md:hidden">
-                mami con dificultad.
+                experiencia
             </p>
             <div class="flex justify-center md:inline">
                 <button class="group relative rounded bg-white sm:mb-10 px-5 py-2 font-normal">
@@ -312,18 +314,13 @@
 
 <section class="relative container hidden md:block max-w-screen-lg mx-auto px-4 xl:px-0 py-8">
     <h2 class="text-black text-24px font-semibold mb-8">
-        SerMadre es un sitio web sobre el embarazo y la maternidad
+        SerMadre: tu sitio web sobre embarazo y maternidad
     </h2>
 
-    <p class="text-14px text-secondary break-all">Diarios de embarazo y desarrollo infantil, calendario de embarazo,
-        revisiones de
-        productos, atención de
-        maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de
-        embarazo, revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios
-        de embarazo y desarrollo infantil, calendario de embarazo, revisiones de productos, atención de maternidad y
-        muchas otras secciones y servicios útiles. Diarios de embarazo y desarrollo infantil, calendario de embarazo,
-        revisiones de productos, atención de maternidad y muchas otras secciones y servicios útiles. Diarios de embarazo
-        y desarrollo infantil, calendario de embarazo, revisiones de productos, atención de maternidad y muchas otras
-        secciones y servicios útiles.
+    <p class="text-14px text-secondary break-all">
+        Ser Madre es una ventana de información dirigida a mujeres que
+        transitan el viaje de la maternidad en cualquiera de sus etapas. Brinda contenidos, atiende sus dudas, escucha
+        sus experiencias y las hace parte de una comunidad de mamás que quieren estar conectadas para forjar relaciones
+        e intercambiar historias.
     </p>
 </section>

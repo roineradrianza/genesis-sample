@@ -49,11 +49,6 @@
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Dibujos para colorear</a>
                     </li>
-
-                    <li class="pt-4">
-                        <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calendario de embarazo</a>
-                    </li>
                 </ul>
             </li>
             <li class="flex-1 md:mr-2 py-2 relative group">
@@ -72,17 +67,12 @@
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Artículos útiles</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">De interés</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Cursos para padres</a>
-                    </li>
-
-                    <li class="pt-4">
-                        <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Notas verificadas</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Firmado por especialistas</a>
                     </li>
 
                     <li class="pt-4">
@@ -114,6 +104,11 @@
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Psicología Prenatal</a>
                     </li>
+                    
+                    <li class="pt-4">
+                        <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Cursos para padres</a>
+                    </li>
                 </ul>
             </li>
             <li class="flex-1 md:mr-2 py-2 group relative">
@@ -132,12 +127,17 @@
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de ovación</a>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de ovulación</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de parto</a>
+                    </li>
+                    
+                    <li class="pt-4">
+                        <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
+                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calendario de embarazo</a>
                     </li>
                 </ul>
             </li>
