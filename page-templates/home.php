@@ -193,13 +193,13 @@
 <section
     class="container max-w-full py-10 md:py-16 md:mb-12 mt-6 border-gray-300 bg-[#F2F6FE] bg-[length:0px] md:bg-auto md:bg-transparent serma-utilities-container">
     <div class="relative container max-w-screen-lg mx-auto">
-        <h3 class="text-purple-darken text-13px md:text-14px font-medium text-center mb-2 md:mb-6">Utilidades</h3>
+        <h3 class="text-purple-darken text-13px md:text-14px font-medium text-center mb-2 md:mb-6">Encuentra</h3>
         <h2 class="text-black text-18px md:text-2.8xl text-center font-semibold mb-8 px-4 md:px-0">
             Los mejores nombres para bebé, 
             <br class="md:hidden">
             cuentos 
             <br class="hidden md:inline">
-            infantiles y dibujos para colorear están
+            infantiles y dibujos para colorear están aquí
         </h2>
         <div
             class="relative container max-w-screen-lg col-span-3 md:col-span-2 mx-auto scroll-smooth overflow-x-scroll md:overflow-x-hidden invisible-scrollbar">
@@ -217,7 +217,7 @@
                 Contacta a un especialista
             </h2>
             <p class="text-center md:text-left text-14px text-secondary my-3 md:my-6">
-                Ofrecemos asesorías virtuales sobre →
+                Ofrecemos asesorías virtuales sobre <span class="hidden md:inline">→</span>
             </p>
         </div>
         <div
