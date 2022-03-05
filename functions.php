@@ -517,12 +517,67 @@ function get_external_posts() {
     ));
 }
 
+function get_search_ajax_handler()
+{
+
+    $data =  empty($_POST) ? json_decode(file_get_contents("php://input"), true) : $_POST;
+	$data['query'] = stripcslashes($data['query']);
+	$data['post_type'] = stripcslashes($data['post_type']);
+	$data['page'] = intval(stripcslashes($data['page']));
+
+	$posts = [];
+
+	switch ($data['post_type']) {
+		case 'post':
+			$posts = serma_get_posts_rest(
+				'https://sermadre.com/blog',
+				[
+					'url' => 'wp/v2/posts',
+					'args' => [
+						'search' => $data['query'],
+						'per_page' => 5,
+						'page' => $data['page']++,
+					]
+				]
+			);
+			for ($i=0; $i < count($posts); $i++) { 
+				$posts[$i]['post_title'] = $posts[$i]['title'];
+			}
+			break;
+		
+		default:
+			$args = [
+				's' => $data['query'],
+				'post_type' => $data['post_type'],
+				'post_status' => 'publish',
+				'posts_per_page' => 5,
+				'paged' => $data['page']++,
+				'order' => 'ASC',
+			];
+			$posts = get_posts( $args );
+			for ($i=0; $i < count($posts); $i++) {
+				$posts[$i]->link = get_permalink( $posts[$i] );
+				$posts[$i] = array($posts[$i]);
+			}
+			break;
+	}
+
+	foreach ($posts as $post) {
+		get_template_part( 'template-parts/search/post', '', $post );
+	}
+
+	die;
+
+}
+
 // show admin bar only for admins
 if (!current_user_can('manage_options')) {
     add_filter('show_admin_bar', '__return_false');
 }
 
+add_action( 'wp_ajax_serma_get_search_ajax', 'get_search_ajax_handler' );
 add_action( 'wp_ajax_serma_get_blog_posts', 'get_external_posts' );
+add_action( 'wp_ajax_nopriv_serma_get_search_ajax', 'get_search_ajax_handler' );
 add_action( 'wp_ajax_nopriv_serma_get_blog_posts', 'get_external_posts' );
 
 SERMA_USER::init();

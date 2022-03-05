@@ -1,14 +1,28 @@
 <nav class="serma-nav-menu hidden md:block md:border-y-2 border-gray-300 relative z-20 bg-white">
     <div class="container mx-auto max-w-screen-lg py-2 md:py-0 min-h-screen md:min-h-full">
         <div class="flex md:hidden justify-center">
-            <div class="my-2 bg-lighten-grey border-0 w-full mx-5 py-1 px-4 max-h-10 rounded-full">
+            <div class="my-2 border border-[#D4D5DA] w-full mx-5 py-1 px-4 max-h-10 rounded-full">
                 <form id="serma_search_form" action="<?= site_url() ?>" method="GET">
-                    <input type="search" name="s"
-                        class="text-14px placeholder:text-icon bg-transparent border-0 p-1 w-11/12 rounded-full search-input"
-                        placeholder="Buscar">
-                    <button type="submit" class="mr-1 mt-1 float-right hover:bg-transparent">
-                        <img class="w-4 h-5" src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/search.svg">
-                    </button>
+                    <div class="grid grid-cols-10">
+                        <div class="col-span-3 flex align-center border-r border-[#D4D5DA] pr-3">
+                            <select name="post_type" class="text-12px bg-transparent focus:outline-none border-none">
+                                <option value="Nombres" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Nombres' ? 'selected' : '' ?>>Nombres</option>
+                                <option value="Artículos" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Artículos' ? 'selected' : '' ?>>Artículos</option>
+                                <!-- <option value="Productos" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Productos' ? 'selected' : '' ?>>Productos</option> -->
+                            </select>
+                        </div>
+                        <div class="col-span-5 pl-2">
+                            <input type="search" name="s"
+                                class="text-12px placeholder:text-icon bg-transparent border-0 p-1 rounded-full search-input"
+                                placeholder="Buscar...">
+                        </div>
+                        <div class="col-span-2">
+                            <button type="submit" class="mr-3 mt-1 float-right hover:bg-transparent">
+                                <img class="w-4 h-5"
+                                    src="<?= get_stylesheet_directory_uri() ?>/assets/icons/header/search.svg">
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -104,7 +118,7 @@
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Psicología Prenatal</a>
                     </li>
-                    
+
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Cursos para padres</a>
@@ -134,7 +148,7 @@
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de parto</a>
                     </li>
-                    
+
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calendario de embarazo</a>
