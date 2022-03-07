@@ -40,7 +40,7 @@
                     href="#">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/utilidades.svg"
                         alt="Comunidad" width="24px" height="24px">
-                    <span class="w-full text-left ml-2 md:font-normal">Utilidades</span>
+                    <span class="w-full text-left ml-2 md:font-normal">Encuentra</span>
                     <div>
                         <span class="fas fa-chevron-down text-icon mr-1 fa-sm group-hover:hidden text-right"></span>
                         <span class="fas fa-chevron-up text-icon mr-1 fa-sm hidden group-hover:block text-right"></span>
