@@ -1,4 +1,4 @@
-<nav class="serma-nav-menu hidden md:block md:border-y-2 border-gray-300 relative z-20 bg-white">
+<nav class="serma-nav-menu hidden md:block md:border-y border-gray-300 relative z-20 bg-white">
     <div class="container mx-auto max-w-screen-lg py-2 md:py-0 min-h-screen md:min-h-full">
         <div class="flex md:hidden justify-center">
             <div class="my-2 border border-[#D4D5DA] w-full mx-5 py-1 px-4 max-h-10 rounded-full">
