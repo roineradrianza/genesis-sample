@@ -1,10 +1,10 @@
 <nav class="serma-nav-menu hidden md:block md:border-y border-gray-300 relative z-20 bg-white">
     <div class="container mx-auto max-w-screen-lg py-2 md:py-0 min-h-screen md:min-h-full">
         <div class="flex md:hidden justify-center">
-            <div class="my-2 border border-[#D4D5DA] w-full mx-5 py-1 px-4 max-h-10 rounded-full">
+            <div class="my-2 bg-[#F2F6FE] w-full mx-5 py-1 px-4 max-h-10 rounded-full">
                 <form id="serma_search_form" action="<?= site_url() ?>" method="GET">
                     <div class="grid grid-cols-10">
-                        <div class="col-span-3 flex align-center border-r border-[#D4D5DA] pr-3">
+                        <div class="col-span-3 flex align-center pr-3">
                             <select name="post_type" class="text-12px bg-transparent focus:outline-none border-none">
                                 <option value="Nombres" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Nombres' ? 'selected' : '' ?>>Nombres</option>
                                 <option value="Artículos" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Artículos' ? 'selected' : '' ?>>Artículos</option>
