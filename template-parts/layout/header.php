@@ -19,11 +19,11 @@
                     <?= the_custom_logo() ?>
                 </div>
                 <nav class="hidden md:flex justify-center space-x-5">
-                    <div class="relative max-w-xl mr-6 my-2 border border-[#D4D5DA] py-2 px-4 max-h-48 rounded-full">
+                    <div class="relative max-w-xl mr-6 my-2 bg-[#F2F6FE] py-2 px-4 max-h-48 rounded-full">
                         <form id="serma_search_form" action="<?= site_url() ?>" method="GET">
                             <div class="grid grid-cols-10">
                                 <div class="col-span-2 flex align-center border-r border-[#D4D5DA] pr-3">
-                                    <select name="post_type" class="focus:outline-none border-none">
+                                    <select name="post_type" class="bg-transparent focus:outline-none border-none">
                                         <option value="Nombres" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Nombres' ? 'selected' : '' ?>>Nombres</option>
                                         <option value="Artículos" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Artículos' ? 'selected' : '' ?>>Artículos</option>
                                         <!-- <option value="Productos" <?= isset($_GET['post_type']) && $_GET['post_type'] == 'Productos' ? 'selected' : '' ?>>Productos</option> -->
