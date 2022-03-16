@@ -12,7 +12,7 @@
             </div>
 
             <div class="pt-4">
-                <a href="#" class="group relative hover:text-purple-darken">
+                <a href="https://sermadre.com/nombres/" class="group relative hover:text-purple-darken">
                     <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
@@ -30,45 +30,6 @@
                         </div>
                     </div>
                 </a>
-
-                <a href="#" class="group relative hover:text-purple-darken">
-                    <div class="grid grid-cols-7 rounded-t-lg py-4">
-                        <div class="flex justify-center items-center">
-                            <img class="w-6 h-6"
-                                src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/boy.svg">
-                        </div>
-
-                        <div class="col-span-5 flex items-center group-hover:text-purple-darken">
-                            <h2 class="text-13px md:text-14px text-secondary font-medium group-hover:text-purple-darken">
-                                Top nombre de niños
-                            </h2>
-                        </div>
-
-                        <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-tiny text-secondary group-hover:text-purple-darken"></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="group relative hover:text-purple-darken">
-                    <div class="grid grid-cols-7 rounded-t-lg py-4">
-                        <div class="flex justify-center items-center">
-                            <img class="w-6 h-6"
-                                src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/girl.svg">
-                        </div>
-
-                        <div class="col-span-5 flex items-center group-hover:text-purple-darken">
-                            <h2 class="text-13px md:text-14px text-secondary font-medium group-hover:text-purple-darken">
-                                Top nombre de niñas
-                            </h2>
-                        </div>
-
-                        <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-tiny text-secondary group-hover:text-purple-darken"></span>
-                        </div>
-                    </div>
-                </a>
-
 
                 <div class="flex justify-end pr-6 py-4">
                     <button class="rounded outline outline-1 outline-black text-black px-5 py-2 hover:text-purple-darken hover:outline-purple-darken md:px-7 md:py-2.5 font-normal">
@@ -94,45 +55,7 @@
             </div>
 
             <div class="pt-4">
-                <a href="#" class="group relative hover:text-purple-darken">
-                    <div class="grid grid-cols-7 rounded-t-lg py-4">
-                        <div class="flex justify-center items-center">
-                            <img class="w-6 h-6"
-                                src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/reading.svg">
-                        </div>
-
-                        <div class="col-span-5 flex items-center group-hover:text-purple-darken">
-                            <h2 class="text-13px md:text-14px text-secondary font-medium group-hover:text-purple-darken">
-                                Wurny: El dinosaudio Refunfuñon
-                            </h2>
-                        </div>
-
-                        <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-tiny text-secondary group-hover:text-purple-darken"></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="group relative hover:text-purple-darken">
-                    <div class="grid grid-cols-7 rounded-t-lg py-4">
-                        <div class="flex justify-center items-center">
-                            <img class="w-6 h-6"
-                                src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/reading.svg">
-                        </div>
-
-                        <div class="col-span-5 flex items-center group-hover:text-purple-darken">
-                            <h2 class="text-13px md:text-14px text-secondary font-medium group-hover:text-purple-darken">
-                                Wurny: El dinosaudio Refunfuñon
-                            </h2>
-                        </div>
-
-                        <div class="flex justify-center items-center">
-                            <span class="fas fa-chevron-right text-tiny text-secondary group-hover:text-purple-darken"></span>
-                        </div>
-                    </div>
-
-                </a>
-                <a href="#" class="group relative hover:text-purple-darken">
+                <a href="https://sermadre.com/cuento/wurny-el-dinosaurio-refunfunon/" class="group relative hover:text-purple-darken">
                     <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
@@ -174,7 +97,7 @@
             </div>
 
             <div class="pt-4">
-                <a href="#" class="group relative hover:text-purple-darken">
+                <a href="https://sermadre.com/dibujos/" class="group relative hover:text-purple-darken">
                     <div class="grid grid-cols-7 rounded-t-lg py-4">
                         <div class="flex justify-center items-center">
                             <img class="w-6 h-6"
@@ -184,44 +107,6 @@
                         <div class="col-span-5 flex items-center group-hover:text-purple-darken">
                             <h2 class="text-13px md:text-14px text-secondary font-medium group-hover:text-purple-darken">
                                 Dibujos de Super héroes
-                            </h2>
-                        </div>
-
-                        <div class="flex justify-start items-center">
-                            <span class="fas fa-chevron-right text-tiny text-secondary group-hover:text-purple-darken"></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="group relative hover:text-purple-darken">
-                    <div class="grid grid-cols-7 rounded-t-lg py-4">
-                        <div class="flex justify-center items-center">
-                            <img class="w-6 h-6"
-                                src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/drawing.svg">
-                        </div>
-
-                        <div class="col-span-5 flex items-center group-hover:text-purple-darken">
-                            <h2 class="text-13px md:text-14px text-secondary font-medium group-hover:text-purple-darken">
-                                Dibujos de Animales
-                            </h2>
-                        </div>
-
-                        <div class="flex justify-start items-center">
-                            <span class="fas fa-chevron-right text-tiny text-secondary group-hover:text-purple-darken"></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="group relative hover:text-purple-darken">
-                    <div class="grid grid-cols-7 rounded-t-lg py-4">
-                        <div class="flex justify-center items-center">
-                            <img class="w-6 h-6"
-                                src="<?=get_stylesheet_directory_uri()?>/assets/icons/utilities/drawing.svg">
-                        </div>
-
-                        <div class="col-span-5 flex items-center">
-                            <h2 class="text-13px md:text-14px text-secondary font-medium group-hover:text-purple-darken">
-                                Dibujos de Cuentos y Leyendas
                             </h2>
                         </div>
 

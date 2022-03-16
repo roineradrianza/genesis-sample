@@ -1,4 +1,4 @@
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://sermadre.com/nombres/" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/nombres-para-bebes.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -8,11 +8,11 @@
         <br>
         bebés
     </p>
-</div>
+</a>
 
 
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://sermadre.com/cuento/" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/cuentos-infantiles.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -22,9 +22,9 @@
         <br>
         infantiles
     </p>
-</div>
+</a>
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://sermadre.com/dibujo/" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/dibujos-para-colorear.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -34,9 +34,9 @@
         <br>
         colorear
     </p>
-</div>
+</a>
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://sermadre.com/blog/generador-de-nombres/" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/generador-de-nombres.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -46,10 +46,10 @@
         <br>
         nombres
     </p>
-</div>
+</a>
 
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="#" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/calendario-de-embarazo.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -59,9 +59,9 @@
         <br>
         embarazo
     </p>
-</div>
+</a>
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://sermadre.com/blog/" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/articulos-utiles.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -71,9 +71,9 @@
         <br>
         útiles
     </p>
-</div>
+</a>
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:pb-5 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://wa.link/gr037t" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:pb-5 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/cursos-para-padres.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -83,9 +83,9 @@
         <br>
         para padres
     </p>
-</div>
+</a>
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://sermadre.com/articulos-medicos/" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/notas-verificadas.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -95,9 +95,9 @@
         <br>
         verificadas
     </p>
-</div>
+</a>
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://wa.link/gr037t" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/lactancia-y-embarazo.png"
             alt="Lactancia y embarazo" width="55px" height="55px">
@@ -107,9 +107,9 @@
         <br>
         y embarazo
     </p>
-</div>
+</a>
 
-<div class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
+<a href="https://sermadre.com/opiniones/" class="cursor-pointer flex-none group relative border border-gray-300 rounded-lg py-4 px-1 w-30 md:pt-6 md:px-2 md:w-30 hover:border-purple-darken">
     <div class="flex justify-center">
         <img loading="lazy" src="<?= get_stylesheet_directory_uri() ?>/assets/img/home/carousel/reviews-de-productos.png"
             alt="Nombre para bebés" width="55px" height="55px">
@@ -119,4 +119,4 @@
         <br>
         productos
     </p>
-</div>
+</a>

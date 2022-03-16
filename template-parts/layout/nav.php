@@ -47,27 +47,27 @@
                     </div>
                 </a>
                 <ul
-                    class="top-13 w-full origin-top md:w-80 p-8 md:border-x-2 md:border-b-2 border-gray-300 md:mt-3 
+                    class="top-13 w-full origin-top md:w-80 p-8 md:border-x md:border-b border-gray-300 md:mt-3 
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Nombre para bebés</a>
+                        <a href="https://sermadre.com/nombres/" class="ml-5 md:ml-0 hover:text-purple-darken">Nombre para bebés</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Cuentos infantiles</a>
+                        <a href="https://sermadre.com/semanas-de-embarazo/" class="ml-5 md:ml-0 hover:text-purple-darken">Cuentos infantiles</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Dibujos para colorear</a>
+                        <a href="https://sermadre.com/dibujos/" class="ml-5 md:ml-0 hover:text-purple-darken">Dibujos para colorear</a>
                     </li>
                 </ul>
             </li>
             <li class="flex-1 md:mr-2 py-2 relative group">
                 <a class="group-hover flex text-center items-center outline-0 md:border border-white rounded hover:bg-[#F2F6FE] py-2 px-4 text-black"
-                    href="#">
+                    href="https://sermadre.com/#comunidad">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/contenido.svg"
                         alt="Comunidad" width="24px" height="24px">
                     <span class="w-full text-left ml-2 md:font-normal">Contenido</span>
@@ -77,21 +77,17 @@
                     </div>
                 </a>
                 <ul
-                    class="top-13 w-full origin-top md:w-80 p-8 md:border-x-2 md:border-b-2 border-gray-300 md:mt-3 
+                    class="top-13 w-full origin-top md:w-80 p-8 pt-2 md:border-x md:border-b border-gray-300 md:mt-3 
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
-                    <li>
+
+                    <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">De interés</a>
+                        <a href="https://sermadre.com/articulos-medicos/" class="ml-5 md:ml-0 hover:text-purple-darken">Firmado por especialistas</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Firmado por especialistas</a>
-                    </li>
-
-                    <li class="pt-4">
-                        <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Reviews de productos</a>
+                        <a href="https://sermadre.com/opiniones/" class="ml-5 md:ml-0 hover:text-purple-darken">Reviews de productos</a>
                     </li>
                 </ul>
             </li>
@@ -107,21 +103,21 @@
                     </div>
                 </a>
                 <ul
-                    class="top-13 w-full origin-top md:w-80 p-8 md:border-x-2 md:border-b-2 border-gray-300 md:mt-3 
+                    class="top-13 w-full origin-top md:w-80 p-8 md:border-x md:border-b border-gray-300 md:mt-3 
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Lactancia Materna</a>
+                        <a href="https://wa.link/gr037t" class="ml-5 md:ml-0 hover:text-purple-darken">Lactancia Materna</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Psicología Prenatal</a>
+                        <a href="https://wa.link/gr037t" class="ml-5 md:ml-0 hover:text-purple-darken">Psicología Prenatal</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Cursos para padres</a>
+                        <a href="https://wa.link/gr037t" class="ml-5 md:ml-0 hover:text-purple-darken">Cursos para padres</a>
                     </li>
                 </ul>
             </li>
@@ -137,27 +133,23 @@
                     </div>
                 </a>
                 <ul
-                    class="top-13 w-full origin-top md:w-80 p-8 md:border-x-2 md:border-b-2 border-gray-300 md:mt-3 
+                    class="top-13 w-full origin-top md:w-80 p-8 md:border-x md:border-b border-gray-300 md:mt-3 
                         serma-submenu md:absolute z-10 hidden bg-white group-hover:block rounded-b-md transition duration-300 delay-150 hover:delay-150">
                     <li>
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de ovulación</a>
+                        <a href="https://sermadre.com/blog/predictor-de-genero-tipo-de-sangre/" class="ml-5 md:ml-0 hover:text-purple-darken">Sexo del niño por tipo de sangre</a>
                     </li>
 
                     <li class="pt-4">
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calculadora de parto</a>
+                        <a href="https://sermadre.com/blog/predictor-de-genero-chino/" class="ml-5 md:ml-0 hover:text-purple-darken">Predictor chino de género</a>
                     </li>
 
-                    <li class="pt-4">
-                        <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
-                        <a href="#" class="ml-5 md:ml-0 hover:text-purple-darken">Calendario de embarazo</a>
-                    </li>
                 </ul>
             </li>
             <li class="flex-1 md:mr-2 py-2">
                 <a class="flex text-center items-center outline-0 md:border border-white rounded hover:border-[#F2F6FE] hover:bg-[#F2F6FE] py-2 px-4 text-black"
-                    href="#">
+                    href="https://sermadre.com/#marketplace">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/nav/marketplace.svg"
                         alt="Comunidad" width="24px" height="24px">
                     <span class="ml-2 md:font-normal">Marketplace</span>
