@@ -25,10 +25,6 @@
         <div class="hidden md:inline">
             <h4 class="font-bold md:font-semibold text-14px">Sobre Sermadre</h4>
             <ul class="mt-3">
-                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
-                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
-                    Comunidad
-                </li>
 
                 <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
                     <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
@@ -50,10 +46,6 @@
                     Herramientas
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
-                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
-                    Marketplace
-                </li>
             </ul>
         </div>
 
@@ -72,11 +64,6 @@
 
                 <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
                     <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
-                    Contacto
-                </li>
-
-                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
-                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
                     Condiciones de uso
                 </li>
 
@@ -85,10 +72,6 @@
                     Políticas de privacidad
                 </li>
 
-                <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
-                    <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
-                    Empresas
-                </li>
             </ul>
         </div>
 
@@ -97,9 +80,9 @@
             </h4>
             <div class="mt-5">
                 <p class="font-regular text-14px mb-2 md:mb-6 text-center md:text-left">
-                    <a class="hover:text-purple-darken" href="mailto:contacto@sermadre.com">
+                    <a class="hover:text-purple-darken" href="mailto:hola@sermadre.com">
                         <span class="far fa-envelope fa-lg text-indigo-700 mr-2"></span>
-                        contacto@sermadre.com
+                        hola@sermadre.com
                     </a>
                 </p>
                 <p class="font-regular text-base mb-2 md:mb-6 flex justify-center md:block">
@@ -111,11 +94,12 @@
                         </span>
                     </a>
                 </p>
-                <p class="font-regular text-14px flex justify-center md:block">
-                    <a class="flex hover:text-purple-darken" href="www.sermadre.com">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/icons/footer/link.svg"
-                            width="24px" height="24px" class="mr-2"></img>
-                        www.sermadre.com
+                <p class="flex justify-center md:block">
+                    <a class="w-full flex justify-center md:block"
+                        href='https://play.google.com/store/apps/details?id=com.sermadre.semanas.embarazo&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+                            class="w-48"
+                            alt='Disponible en Google Play'
+                            src='https://play.google.com/intl/es-419/badges/static/images/badges/es-419_badge_web_generic.png' />
                     </a>
                 </p>
             </div>

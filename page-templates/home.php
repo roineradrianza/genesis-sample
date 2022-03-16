@@ -9,12 +9,12 @@
                 Antes <span class="text-[#FF7070] mx-2 md:mx-4">•</span> Durante <span
                     class="text-[#FF7070] mx-2 md:mx-4">•</span> Y después del embarazo
             </p>
-            <h2 class="text-center md:text-left text-14px md:text-18px text-secondary">
+            <h2 class="text-center md:text-left text-14px md:text-18px text-secondary mb-8">
                 El contenido que necesitas para disfrutar del <br> privilegio de ser madre.
             </h2>
-            <button class="mt-6 rounded bg-green-lighten px-5 py-4 text-white font-regular hidden md:inline">
+            <a href="<?= site_url() ?>/login" class="mt-6 rounded bg-green-lighten px-5 py-4 text-white hover:text-white font-regular hidden md:inline">
                 +Únete a la comunidad
-            </button>
+            </a>
         </div>
 
         <div class="md:pt-3 pb-3 md:flex items-center">
@@ -232,9 +232,9 @@
                                 Materna
                             </h2>
                             <div class="pb-1 inline hover:border-b hover:border-purple-darken">
-                                <button class="bg-transparent font-normal text-purple-darken text-14px">
+                                <a href="https://wa.link/gr037t" class="bg-transparent font-normal text-purple-darken hover:text-purple-darken text-14px">
                                     Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
-                                </button>
+                                </a>
                             </div>
                         </div>
 
@@ -254,9 +254,9 @@
                                 Prenatal
                             </h2>
                             <div class="pb-1 inline hover:border-b hover:border-purple-darken">
-                                <button class="bg-transparent font-normal text-purple-darken text-14px">
+                                <a href="https://wa.link/gr037t" class="bg-transparent font-normal text-purple-darken hover:text-purple-darken text-14px">
                                     Ver detalles <span class="ml-1 fas fa-arrow-right fa-xs"></span>
-                                </button>
+                                </a>
                             </div>
                         </div>
 
@@ -289,7 +289,7 @@
             </p>
             <div class="flex justify-center md:inline">
                 <button class="group relative rounded bg-white sm:mb-10 px-5 py-2 font-normal">
-                    <span class="flex items-center text-black">
+                    <a href="<?= site_url() ?>/login" class="flex items-center text-black">
                         <img loading="lazy" class="group-hover:hidden w-6 h-6 mr-2"
                             src="<?=get_stylesheet_directory_uri()?>/assets/icons/community-invitation/cta-icon.svg"
                             width="20px" height="20px">
@@ -299,7 +299,7 @@
                         <span class="group-hover:text-purple-darken">
                             ¡Invitación limitada!
                         </span>
-                    </span>
+                    </a>
                 </button>
             </div>
         </div>
