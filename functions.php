@@ -575,6 +575,65 @@ if (!current_user_can('manage_options')) {
     add_filter('show_admin_bar', '__return_false');
 }
 
+/**
+ * Register a nombre post type, with REST API support
+ *
+ * Based on example at: https://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function register_custom_post_type_api( $args, $post_type ) {
+	if ( 'nombres' === $post_type || 'semana' === $post_type ) {
+		$args['show_in_rest'] = true;
+	}
+	return $args;
+}
+
+function add_serma_nombres_custom_fields() {
+register_rest_field(
+'nombres', 
+'taxonomies_detailed', //New Field Name in JSON RESPONSEs
+array(
+    'get_callback'    => 'serma_nombre_get_custom_fields', // custom function name 
+    'update_callback' => null,
+    'schema'          => null,
+     )
+);
+	
+}
+	
+function serma_nombre_get_custom_fields( $object, $field_name, $request ) {
+	$origins = [];
+	$genres = [];
+	$personalities = [];
+	
+	if(!empty($object['origin'])) {
+		foreach($object['origin'] as $origin) {
+			$origins[] = get_term_by( 'term_taxonomy_id', $origin, 'origin' );
+		}
+	}
+	
+	if(!empty($object['genre'])) {
+		foreach($object['genre'] as $genre) {
+			$genres[] = get_term_by( 'term_taxonomy_id', $genre, 'genre' );
+		}
+	}
+	
+	if(!empty($object['personality_names'])) {
+		foreach($object['personality_names'] as $personality) {
+			$personalities[] = get_term_by( 'term_taxonomy_id', $personality, 'personality_names' );
+		}
+	}
+	
+	$arr = [
+		'origin' => $origins,
+		'genre' => $genres,
+		'personality' => $personalities
+	];
+	return $arr;
+};
+
+add_filter( 'register_post_type_args', 'register_custom_post_type_api', 10, 2 );
+add_action( 'rest_api_init', 'add_serma_nombres_custom_fields' );
+
 add_action( 'wp_ajax_serma_get_search_ajax', 'get_search_ajax_handler' );
 add_action( 'wp_ajax_serma_get_blog_posts', 'get_external_posts' );
 add_action( 'wp_ajax_nopriv_serma_get_search_ajax', 'get_search_ajax_handler' );
