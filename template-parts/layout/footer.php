@@ -28,7 +28,7 @@
 
                 <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
                     <span class="fas fa-chevron-right text-tiny text-purple-darken mr-2"></span>
-                    Utilidades
+                    Encuentra
                 </li>
 
                 <li class="py-2 font-awesome-icons text-14px cursor-pointer hover:text-purple-darken">
