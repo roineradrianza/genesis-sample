@@ -89,6 +89,11 @@
                         <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
                         <a href="https://sermadre.com/opiniones/" class="ml-5 md:ml-0 hover:text-purple-darken">Reviews de productos</a>
                     </li>
+
+                    <li class="pt-4">
+                        <span class="fas fa-chevron-right text-[#585CE5] mr-1 fa-sm hidden md:inline-block"></span>
+                        <a href="https://sermadre.com/blog/" class="ml-5 md:ml-0 hover:text-purple-darken">Blog</a>
+                    </li>
                 </ul>
             </li>
             <li class="flex-1 md:mr-2 py-2 group relative">
