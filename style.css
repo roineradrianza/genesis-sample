@@ -5,7 +5,7 @@ Description: Tema desarrollado para Ser Madre bajo el framework de Genesis.
 Author: Ser Madre
 Author URI: https://www.studiopress.com/
 
-Version: 3.4.1.1
+Version: 3.4.1.2
 
 Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
@@ -259,19 +259,19 @@ h6 {
 	margin: 0 0 20px;
 }
 
-h1 {
+h1, article.entry h1 {
 	font-size: 30px;
 }
 
-h2 {
+h2, article.entry h2 {
 	font-size: 27px;
 }
 
-h3 {
+h3, article.entry h3 {
 	font-size: 24px;
 }
 
-h4 {
+h4,article.entry h4 {
 	font-size: 20px;
 }
 
@@ -284,11 +284,11 @@ h4 {
 	margin-top: 40px;
 }
 
-h5 {
+h5, article.entry h5 {
 	font-size: 18px;
 }
 
-h6 {
+h6, article.entry h6 {
 	font-size: 16px;
 }
 
