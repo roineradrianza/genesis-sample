@@ -25,7 +25,6 @@ if (!class_exists('SERMA_SENDY')) {
 		{
 			$data = $_POST;
 			$config = self::$_config;
-			$config['listId'] = SERMA_SENDY_BABY_GROWING_LIST;
 			$sendy = new Sendy($config);
 			$responseArray = $sendy->subscribe(
 				[

@@ -16,6 +16,11 @@ if (is_user_logged_in()) {
 	wp_redirect( site_url() );
 }
 
+// set full width layout
+
+add_filter ( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
+
 add_filter( 'body_class', 'genesis_sample_login_body_class' );
 /**
  * Adds landing page body class.
@@ -46,6 +51,9 @@ function genesis_sample_dequeue_skip_links() {
 	wp_dequeue_script( 'skip-links' );
 
 }
+
+// Remove sidebar
+remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 
 // Removes site header elements.
 
@@ -86,7 +94,7 @@ function ser_madre_theme_login_styles() {
 function ser_madre_theme_login_scripts() {
 	wp_register_script( 'tailwind-flowbite-datepicker', get_stylesheet_directory_uri() . "/assets/js/flowbite/datepicker.js", 'tailwind-flowbite', '1.3.0', true );
 	wp_register_script( 'serma-http', get_stylesheet_directory_uri() . "/assets/js/Classes/Http.min.js", '1.0.0', true );
-	wp_register_script( 'serma-login', get_stylesheet_directory_uri() . "/assets/js/serma-login.js", ['serma-http'], '1.0.1', true );
+	wp_register_script( 'serma-login', get_stylesheet_directory_uri() . "/assets/js/serma-login.js", ['serma-http'], '1.0.2', true );
 	
 	wp_enqueue_script( 'tailwind-flowbite-datepicker' );
 	wp_enqueue_script( 'serma-http' );
