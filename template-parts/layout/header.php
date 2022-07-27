@@ -52,9 +52,9 @@
                         <button class="focus:outline-0" id="dropdownButton" data-dropdown-placement="bottom"
                             data-dropdown-toggle="dropdownNavbar">
 
-                            <?php if ( !empty(get_avatar_url( SERMA_USER::get_current()['id'] ) )) : ?>
+                            <?php if ( !empty(get_avatar_url( \SERMA\User::get_current()['id'] ) )) : ?>
 
-                            <img class="rounded-full" src="<?= get_avatar_url( SERMA_USER::get_current()['id'] ) ?>"
+                            <img class="rounded-full" src="<?= get_avatar_url( \SERMA\User::get_current()['id'] ) ?>"
                                 alt="" width="35px" height="35px">
 
                             <?php else: ?>

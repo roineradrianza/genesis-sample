@@ -30,23 +30,13 @@ function genesis_sample_localization_setup() {
 }
 
 
-//Include custom sermadre classes
+//Include sermadre autoload
+require_once(get_stylesheet_directory() . '/autoload.php');
 
 //Enviroment vars
 require_once(get_stylesheet_directory() . '/config/env.php');
 
-//Mail provider class
 
-require_once(get_stylesheet_directory() . '/lib/Classes/Mail.php');
-
-//Sendy class
-
-require_once(get_stylesheet_directory() . '/lib/Classes/Sendy.php');
-
-//User manager class
-require_once(get_stylesheet_directory() . '/lib/Classes/User.php');
-
-// Adds helper functions.
 require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 
 // Adds image upload and color select to Customizer.
@@ -283,148 +273,6 @@ function genesis_sample_comments_gravatar( $args ) {
 
 }
 
-/**
- * Load Ser Madre core scripts
- *
- * @since 3.4.1
- *
- */
-add_action('wp_enqueue_scripts', 'ser_madre_theme_core_scripts');
-
-function ser_madre_theme_core_scripts() {
-	wp_register_script( 'tailwind-css', "https://cdn.tailwindcss.com", [], '3.0.12', false );
-	wp_register_script( 'tailwind-flowbite', "https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.bundle.js", 'tailwind-css', '1.3.0', false );
-	wp_register_script( 'fontawesome', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/js/all.min.js", [], '5.15.4', true );
-	wp_register_script( 'serma-core', get_stylesheet_directory_uri() . "/assets/js/serma-core.js", [], '1.0.0', true );
-
-	wp_enqueue_script( 'tailwind-css' );
-	wp_enqueue_script( 'tailwind-flowbite' );	
-	wp_enqueue_script( 'fontawesome' );
-	wp_enqueue_script( 'serma-core' );
-
-	wp_add_inline_script( 'tailwind-css', "
-	tailwind.config = {
-		variants: {
-			extend: {
-				// ...
-				display: ['hover', 'focus', 'group-hover'],
-			}
-		},
-		theme: {
-			darkMode: false,
-			extend: {
-				backgroundSize: {
-					'auto': 'auto',
-					'cover': 'cover',
-					'contain': 'contain',
-					'empty': '0px'
-				},
-				width: {
-					'30': '7.5rem',
-				},
-				maxWidth: {
-					'screen-lg': '1056px'
-				},
-				colors: {
-					black: '#212121',
-					primary: '#62CEF9',
-					secondary: '#4D4D4D',
-					icon: '#8D8D8D',
-					text: '#6A6B7A',
-					success: '#4AC989',
-					error: '#ff7070',
-					'lighten-grey': '#F1F2F3',
-					'purple-lighten': '#A28EEC',
-					'purple-darken': '#585CE5',
-					'purple-darken-1': '#585ce526',
-					'purple-lighten-1': '#a28eec1a',
-					'purple-lighten-2': '#a28eec26',
-					'purple-lighten-3': '#a28eec40',
-					'purple-lighten-4': '#a28eec59',
-					'green-lighten': '#4AC989',
-					'green-lighten-1': '#4ac98926',
-					'red-lighten-1': '#ff707026',
-					'cyan-lighten-1': '#62cef940',
-					'yellow-lighten': 'rgba(236, 172, 74, 0.25)',
-				},
-				margin: {
-					'n1': '-1px',
-				},
-				borderRadius: {
-					'lg-2x': '1em'
-				}
-			},
-			fontFamily: {
-				'body': ['\"Inter\"']
-			},
-			fontSize: {
-				'xs': '.0.63rem',
-				'sm': '.473rem',
-				'tiny': '.7225rem',
-				'md': '.75rem',
-				'base': '0.85rem',
-				'lg': '0.956rem',
-				'xl': '1.06rem',
-				'1.5-xl': '1.123rem',
-				'2xl': '1.275rem',
-				'2.8xl': '1.500rem',
-				'3xl': '1.593rem',
-				'4xl': '1.91rem',
-				'4-5xl': '2.125rem',
-				'5xl': '2.55rem',
-				'6xl': '3.4rem',
-				'7xl': '4.25rem',
-				'10px': '10px',
-				'12px': '12px',
-				'13px': '13px',
-				'14px': '14px',
-				'16px': '16px',
-				'18px': '18px',
-				'24px': '24px',
-				'36px': '36px',
-				'40px': '40px',
-				'48px': '48px',
-			}
-		},
-
-	}" );
-}
-
-add_action('wp_enqueue_scripts', 'ser_madre_theme_core_styles');
-
-function ser_madre_theme_core_styles() {
-	wp_register_style( 'fontawesome', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/css/fontawesome.min.css", '' ,'5.15.4', true );
-	wp_register_style( 'fontawesome-all', get_stylesheet_directory_uri() . "/assets/icons/fontawesome-5.15.4/css/all.min.css", ['fontawesome'], '5.15.4', true );
-	wp_register_style( 'google-font-inter', "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap" );
-
-	wp_enqueue_style( 'fontawesome' );
-	wp_enqueue_style( 'fontawesome-all' );
-	wp_enqueue_style( 'google-font-inter' );
-
-
-}
-
-remove_action( 'genesis_footer', 'genesis_do_footer' );
-add_action( 'genesis_footer', 'serma_genesis_footer' );
-
-/**
- * Ser Madre footer
- *
- * @since 3.4.1
- *
- * @return mixed Footer template
- */
-
-function serma_genesis_footer () {
-	get_template_part( 'template-parts/layout/footer' );
-}
-
-remove_action( 'genesis_header', 'genesis_do_header' );
-add_action( 'genesis_header', 'serma_genesis_header' );
-
-function serma_genesis_header () {
-	get_template_part( 'template-parts/layout/header', null, ['show_nav' => true] );
-}
 
 //* TN Dequeue Styles - Remove Dashicons from Genesis Theme
 add_action( 'wp_print_styles', 'tn_dequeue_dashicons_style' );
@@ -504,19 +352,6 @@ function serma_get_posts_rest($base_url, $endpoint = ['api' => 'posts','url' => 
 
 }
 
-function get_external_posts() {
-    $data = $_GET;
-
-    wp_send_json( serma_get_posts_rest(
-        'https://sermadre.com/blog/',
-        [
-            'api' => 'posts',
-            'url' => 'wp/v2/posts',
-            'args' => $data
-        ]
-    ));
-}
-
 function get_search_ajax_handler()
 {
 
@@ -570,73 +405,7 @@ function get_search_ajax_handler()
 
 }
 
-// show admin bar only for admins
-if (!current_user_can('manage_options')) {
-    add_filter('show_admin_bar', '__return_false');
-}
-
-/**
- * Register a nombre post type, with REST API support
- *
- * Based on example at: https://codex.wordpress.org/Function_Reference/register_post_type
- */
-function register_custom_post_type_api( $args, $post_type ) {
-	if ( 'nombres' === $post_type || 'semana' === $post_type ) {
-		$args['show_in_rest'] = true;
-	}
-	return $args;
-}
-
-function add_serma_nombres_custom_fields() {
-register_rest_field(
-'nombres', 
-'taxonomies_detailed', //New Field Name in JSON RESPONSEs
-array(
-    'get_callback'    => 'serma_nombre_get_custom_fields', // custom function name 
-    'update_callback' => null,
-    'schema'          => null,
-     )
-);
-	
-}
-	
-function serma_nombre_get_custom_fields( $object, $field_name, $request ) {
-	$origins = [];
-	$genres = [];
-	$personalities = [];
-	
-	if(!empty($object['origin'])) {
-		foreach($object['origin'] as $origin) {
-			$origins[] = get_term_by( 'term_taxonomy_id', $origin, 'origin' );
-		}
-	}
-	
-	if(!empty($object['genre'])) {
-		foreach($object['genre'] as $genre) {
-			$genres[] = get_term_by( 'term_taxonomy_id', $genre, 'genre' );
-		}
-	}
-	
-	if(!empty($object['personality_names'])) {
-		foreach($object['personality_names'] as $personality) {
-			$personalities[] = get_term_by( 'term_taxonomy_id', $personality, 'personality_names' );
-		}
-	}
-	
-	$arr = [
-		'origin' => $origins,
-		'genre' => $genres,
-		'personality' => $personalities
-	];
-	return $arr;
-};
-
-add_filter( 'register_post_type_args', 'register_custom_post_type_api', 10, 2 );
-add_action( 'rest_api_init', 'add_serma_nombres_custom_fields' );
-
 add_action( 'wp_ajax_serma_get_search_ajax', 'get_search_ajax_handler' );
-add_action( 'wp_ajax_serma_get_blog_posts', 'get_external_posts' );
 add_action( 'wp_ajax_nopriv_serma_get_search_ajax', 'get_search_ajax_handler' );
-add_action( 'wp_ajax_nopriv_serma_get_blog_posts', 'get_external_posts' );
 
-SERMA_USER::init();
+new \SERMA\Theme;
