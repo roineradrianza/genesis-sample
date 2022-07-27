@@ -34,7 +34,7 @@
         </div>
         <div class="hidden pb-8 px-4 md:px-0 rounded-lg" id="register" role="tabpanel" aria-labelledby="register-tab">
             <div class="container max-w-full mx-auto">
-                <?= get_template_part( 'template-parts/signin/register', null, SERMA_USER::countries() ); ?>
+                <?= get_template_part( 'template-parts/signin/register', null, \SERMA\User::countries() ); ?>
             </div>
         </div>
     </div>

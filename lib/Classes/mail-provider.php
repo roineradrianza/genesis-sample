@@ -1,6 +1,8 @@
 <?php
 
-class SERMA_MAIL_PROVIDER
+namespace SERMA;
+
+class Mail_Provider
 {
 
 	public static function send_mail($to = [], $subject = '', $message = '', $headers = [], $attachments = [])

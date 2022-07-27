@@ -1,5 +1,7 @@
 <?php
 
+namespace SERMA;
+
 /**
  * SerMadre User Controller
  *
@@ -10,7 +12,7 @@
  *
  */
 
-class SERMA_USER
+class User
 {
 
 	/**
@@ -19,13 +21,13 @@ class SERMA_USER
 	public static function init()
 	{
 		//USERS ACTIONS
-		add_action('wp_ajax_nopriv_serma_login', 'SERMA_USER::login');
-		add_action('wp_ajax_nopriv_serma_register', 'SERMA_USER::register');
-		add_action('wp_ajax_serma_logout', 'SERMA_USER::logout');
-		add_action('wp_ajax_nopriv_serma_logout', 'SERMA_USER::logout');
-		add_action('wp_ajax_serma_reset_password', 'SERMA_USER::reset_password');
+		add_action('wp_ajax_nopriv_serma_login', '\SERMA\User::login');
+		add_action('wp_ajax_nopriv_serma_register', '\SERMA\User::register');
+		add_action('wp_ajax_serma_logout', '\SERMA\User::logout');
+		add_action('wp_ajax_nopriv_serma_logout', '\SERMA\User::logout');
+		add_action('wp_ajax_serma_reset_password', '\SERMA\User::reset_password');
 		//USER MANAGER
-		add_action('wp_ajax_serma_update_user', 'SERMA_USER::update');
+		add_action('wp_ajax_serma_update_user', '\SERMA\User::update');
 	}
 
 	/**
@@ -65,7 +67,7 @@ class SERMA_USER
 		$user_email = sanitize_text_field($data['email']);
 
 		$user = get_user_by('email', $user_email);
-		if ($user instanceof WP_User) {
+		if ($user instanceof \WP_User) {
 			$user_id = $user->ID;
 			$user_info = get_userdata($user_id);
 			$unique = get_password_reset_key($user_info);
@@ -99,7 +101,7 @@ class SERMA_USER
 			wp_send_json(['status' => 'danger', 'message' => 'La contraseña no puede estar vacía']);
 		}
 
-		$user = SERMA_USER::get_current_user();
+		$user = self::get_current_user();
 		wp_set_password($data['password'], $user['id']);
 		wp_signon([
 			'user_login' => $user['user_login'],
@@ -157,12 +159,12 @@ class SERMA_USER
 	 * register the user using the credentials provided
 	 * @return Void
 	 */
-	public static function register() : Void
+	public static function register(): Void
 	{
 		$data = !empty($_POST) ? $_POST : json_decode(file_get_contents("php://input"), true);
-		$data['pregnant_wish'] = !empty($data['pregnant_wish']) ? true : false ;
-		$data['pregnant_date'] = !empty($data['pregnant_date']) ? 
-		DateTime::createFromFormat('d/m/Y', $data['pregnant_date'])->format('Y-m-d') : '0000-00-00' ;
+		$data['pregnant_wish'] = !empty($data['pregnant_wish']) ? true : false;
+		$data['pregnant_date'] = !empty($data['pregnant_date']) ?
+			\DateTime::createFromFormat('d/m/Y', $data['pregnant_date'])->format('Y-m-d') : '0000-00-00';
 		$args = [
 			'user_login' => sanitize_user($data['username']),
 			'user_email' => sanitize_email($data['email']),
@@ -173,10 +175,10 @@ class SERMA_USER
 			'role' => 'subscriber'
 		];
 		$result = wp_insert_user($args);
-		if (!is_wp_error( $result )) {
-			add_user_meta( $result, 'country', sanitize_text_field( $data['country'] ) );
-			add_user_meta( $result, 'pregnant_wish', $data['pregnant_wish'] );
-			add_user_meta( $result, 'pregnant_date', sanitize_text_field( $data['pregnant_date'] ) );
+		if (!is_wp_error($result)) {
+			add_user_meta($result, 'country', sanitize_text_field($data['country']));
+			add_user_meta($result, 'pregnant_wish', $data['pregnant_wish']);
+			add_user_meta($result, 'pregnant_date', sanitize_text_field($data['pregnant_date']));
 		};
 		$message = ['status' => 'success', 'message' => 'Registro completado éxitosamente, puedes iniciar sesión con tus credenciales.', 'data' => $result];
 		if (!$result) {
@@ -190,8 +192,8 @@ class SERMA_USER
 			}
 		}
 		if ($message['status'] == 'success') {
-			SERMA_SENDY::subscribe();
-			SERMA_MAIL_PROVIDER::send_user_credentials_mail($args);
+			Sendy::subscribe();
+			Mail_Provider::send_user_credentials_mail($args);
 		}
 		wp_send_json($message);
 	}
